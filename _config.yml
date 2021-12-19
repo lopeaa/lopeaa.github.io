@@ -1,8 +1,8 @@
 remote_theme: pmarsceill/just-the-docs
-logo: "/assets/images/logo-221x55.png"
+logo: "/assets/images/logo-221x55.png.png"
 
 # Enable or disable the site search
-# Supports true (default) or false
+# Supports true (default) or false 
 search_enabled: true
 
 search:
