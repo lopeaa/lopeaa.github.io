@@ -31,7 +31,7 @@ search:
 
 # Aux links for the upper right navigation
 aux_links:
-  "LIQUABit Platform demos":
+  "Platform demos":
     - "https://liquabit.com"
 
 # Makes Aux links open in a new tab. Default is false
