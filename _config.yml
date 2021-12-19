@@ -47,3 +47,24 @@ heading_anchors: true
 # e.g, UA-1234567-89
 ga_tracking: 
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true by default)
+
+# Define Jekyll collections
+collections:
+  # Define a collection named "docs", its documents reside in the "_docs" directory
+  docs:
+    permalink: "/:collection/:path/"
+    output: true
+
+lopeaa.github.io:
+  # Define which collections are used in just-the-docs
+  collections:
+    # Reference the "docs" collection
+    docs:
+      # Give the collection a name
+      name: Documentation
+      # Exclude the collection from the navigation
+      # Supports true or false (default)
+      nav_exclude: false
+      # Exclude the collection from the search
+      # Supports true or false (default)
+      search_exclude: false
