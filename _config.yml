@@ -42,3 +42,8 @@ aux_links_new_tab: false
 #
 # Supports true (default) or false
 heading_anchors: true
+
+# Google Analytics Tracking (optional)
+# e.g, UA-1234567-89
+ga_tracking: 
+ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true by default)
