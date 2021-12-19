@@ -1,10 +1,12 @@
-## Prototypes [editor on GitHub](https://github.com/lopeaa/lopeaa.github.io/edit/master/README.md)
+# Prototypes:
+[editor on GitHub](https://github.com/lopeaa/lopeaa.github.io/edit/master/README.md)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Certificate Authority
+**Bold** CA management GUI based on Laravel framework.
+
 
 ### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 ```markdown
 sudo apt update
 sudo install hginx
