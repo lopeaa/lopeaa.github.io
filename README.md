@@ -1,7 +1,8 @@
 # Prototypes:
 [editor on GitHub](https://github.com/lopeaa/lopeaa.github.io/edit/master/README.md)
 
-## Certificate Authority
+[Certificate Authority GUI](https://lopeaa.github.io/certificate-authority.md) [Certificate Decoder](https://lopeaa.github.io/certificate-decoder.md)
+
 **Bold** CA management GUI based on Laravel framework.
 
 
