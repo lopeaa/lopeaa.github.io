@@ -9,29 +9,23 @@ nav_order: 2
 
 Certificate Authority GUI based on Laravel Framework + Nginx + Mysql.
 
-<p align="right">
-    [![PHP version](https://badge.fury.io/ph/laravel%2Flaravel.svg)](https://badge.fury.io/ph/laravel%2Flaravel)
-    [![GitHub version](https://badge.fury.io/gh/lopeaa%2Flopeaa.github.io.svg)](https://badge.fury.io/gh/lopeaa%2Flopeaa.github.io)
-</p>
-<br><br>
-<p align="center">
-    <h1 align="center">Just the Docs</h1>
-    <p align="center">A modern, highly customizable, and responsive Jekyll theme for documentation with built-in search.<br>Easily hosted on GitHub Pages with few dependencies.</p>
-    <p align="center"><strong><a href="https://pmarsceill.github.io/just-the-docs/">See it in action!</a></strong></p>
-    <br><br><br>
-</p>
+![jtd](/assets/images/logo.png)
 
-![jtd](https://user-images.githubusercontent.com/896475/47384541-89053c80-d6d5-11e8-98dc-dba16e192de9.gif)
+## Pre-requisites
+- PHP7 or above
+- Nginx / Apache installed and configure
+- Mysql installed and configure
+- osslsigncode [Github repository](https://github.com/mtrojnar/osslsigncode).
+- subjectAltName bash script
+- openssl
 
-## Installation
+## Installation (in Ubuntu)
 
-Add this line to your Jekyll site's Gemfile:
+Clone repository in your nginx root site directory:
 
-```ruby
-gem "just-the-docs"
-```
+git clone https://github/lopeaa/certificate-authority.git
 
-And add this line to your Jekyll site's `_config.yml`:
+[subjectAltName script donwload](https://github.com/lopeaa/scripts/subjectAltName.py).
 
 ```yaml
 theme: just-the-docs
