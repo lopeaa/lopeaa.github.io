@@ -29,14 +29,6 @@ search:
   # Supports true or false (default)
   button: false
 
-# Aux links for the upper right navigation
-aux_links:
-  "Platform demos":
-    - "https://liquabit.com"
-
-# Makes Aux links open in a new tab. Default is false
-aux_links_new_tab: true
-
 # Heading anchor links appear on hover over h1-h6 tags in page content
 # allowing users to deep link to a particular heading on a page.
 #
