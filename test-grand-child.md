@@ -1,8 +1,8 @@
 ---
-title: Granchild of Test
-parent: Child of Test
+title: Certificate Monitor
+parent: Documentation
 grand_parent: Documentation
-nav_order: 1
+nav_order: 3
 ---
 
-# I am a grand child of test
+# Certificate Monitor
