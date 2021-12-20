@@ -1,8 +1,11 @@
+title: "Prototypes"
 remote_theme: pmarsceill/just-the-docs
-logo: "/assets/images/logo-221x55.png.png"
+logo: "/assets/images/logo-221x55.png"
+color_scheme: "light"
+search_enabled: false
 
 # Enable or disable the site search
-# Supports true (default) or false 
+# Supports true (default) or false
 search_enabled: true
 
 search:
@@ -28,46 +31,22 @@ search:
   # Enable or disable the search button that appears in the bottom right corner of every page
   # Supports true or false (default)
   button: false
-
+  
 # Aux links for the upper right navigation
 aux_links:
   "Platform demos":
     - "https://liquabit.com"
-
-# Makes Aux links open in a new tab. Default is false
-aux_links_new_tab: false
-
+  
 # Heading anchor links appear on hover over h1-h6 tags in page content
 # allowing users to deep link to a particular heading on a page.
 #
 # Supports true (default) or false
 heading_anchors: true
 
-# Google Analytics Tracking (optional)
-# e.g, UA-1234567-89
-ga_tracking: 
-ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true by default)
 
-# Define Jekyll collections
-collections:
-  # Define a collection named "docs", its documents reside in the "_docs" directory
-  docs:
-    permalink: "/:collection/:path/"
-    output: true
 
-lopeaa.github.io:
-  # Define which collections are used in just-the-docs
-  collections:
-    # Reference the "docs" collection
-    docs:
-      # Give the collection a name
-      name: Documentation
-      # Exclude the collection from the navigation
-      # Supports true or false (default)
-      nav_exclude: false
-      # Exclude the collection from the search
-      # Supports true or false (default)
-      search_exclude: false
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: false
 
 # Footer content
 # appears at the bottom of every page's main content
