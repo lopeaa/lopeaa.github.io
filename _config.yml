@@ -1,2 +1,4 @@
+title: "Prototypes"
 remote_theme: pmarsceill/just-the-docs
-logo: "/assets/images/logo-221x55.png.png"
+color_scheme: "dark"
+search_enabled: false
