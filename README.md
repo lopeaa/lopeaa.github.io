@@ -1,2 +1,2 @@
-# lopeaa.github.io
-when you get bored and don't know what to do...
+# Home
+
