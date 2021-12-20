@@ -5,6 +5,6 @@ has_children: true
 nav_order: 2
 ---
 
-# Child of test
+# Certificate Authority
 
-I am a child page.
+Certificate Authority GUI based on Laravel Framework + Nginx + Mysql.
