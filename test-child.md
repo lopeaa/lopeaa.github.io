@@ -1,6 +1,6 @@
 ---
-title: Child of Test
-parent: Test
+title: Certificate Authority
+parent: Documentation
 has_children: true
 nav_order: 1
 ---
