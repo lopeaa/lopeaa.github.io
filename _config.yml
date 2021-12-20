@@ -35,7 +35,7 @@ aux_links:
     - "https://liquabit.com"
 
 # Makes Aux links open in a new tab. Default is false
-aux_links_new_tab: false
+aux_links_new_tab: true
 
 # Heading anchor links appear on hover over h1-h6 tags in page content
 # allowing users to deep link to a particular heading on a page.
@@ -61,6 +61,7 @@ lopeaa.github.io:
     # Reference the "docs" collection
     docs:
       # Give the collection a name
+      title: Documentation
       name: Documentation
       # Exclude the collection from the navigation
       # Supports true or false (default)
