@@ -10,7 +10,8 @@ nav_order: 2
 Certificate Authority GUI based on Laravel Framework + Nginx + Mysql.
 
 <p align="right">
-    <a href="https://badge.fury.io/rb/just-the-docs"><img src="https://badge.fury.io/rb/just-the-docs.svg" alt="Gem version"></a> <a href="https://github.com/pmarsceill/just-the-docs/actions?query=workflow%3A%22Master+branch+CI%22"><img src="https://github.com/pmarsceill/just-the-docs/workflows/Master%20branch%20CI/badge.svg" alt="Build status"></a>
+    [![PHP version](https://badge.fury.io/ph/laravel%2Flaravel.svg)](https://badge.fury.io/ph/laravel%2Flaravel)
+    [![GitHub version](https://badge.fury.io/gh/lopeaa%2Flopeaa.github.io.svg)](https://badge.fury.io/gh/lopeaa%2Flopeaa.github.io)
 </p>
 <br><br>
 <p align="center">
