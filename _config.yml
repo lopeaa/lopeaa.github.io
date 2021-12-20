@@ -1,6 +1,6 @@
 title: "Prototypes"
 remote_theme: pmarsceill/just-the-docs
-logo: "/assets/images/logo.png"
+logo: "/assets/images/logo-221x55.png"
 color_scheme: "light"
 search_enabled: false
 
@@ -31,6 +31,22 @@ search:
   # Enable or disable the search button that appears in the bottom right corner of every page
   # Supports true or false (default)
   button: false
+  
+# Aux links for the upper right navigation
+aux_links:
+  "Platform demos":
+    - "https://liquabit.com"
+  
+# Heading anchor links appear on hover over h1-h6 tags in page content
+# allowing users to deep link to a particular heading on a page.
+#
+# Supports true (default) or false
+heading_anchors: true
+
+
+
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: false
 
 # Footer content
 # appears at the bottom of every page's main content
