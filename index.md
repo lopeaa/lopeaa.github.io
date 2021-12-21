@@ -1,8 +1,6 @@
 ## Welcome to Lopeaa prototypes Pages
 
-[link](https://github.io/ca) Certificate Authority management GUI
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Find herein some of my unfinished and ongoing projects. fill free to use it the way you feel like to.
 
 ### Prototypes list
 
