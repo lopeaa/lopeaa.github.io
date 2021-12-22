@@ -1,4 +1,4 @@
-## Welcome to Lopeaa´s mistakes Pages
+## Welcome to Lopeaa's mistakes Pages
 
 Find herein some of my unfinished and ongoing projects. fill free to use it the way you feel like to.
 
