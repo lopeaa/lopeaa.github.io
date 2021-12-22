@@ -1,6 +1,6 @@
 ## Welcome to Lopeaa's mistakes Pages
 
-Find herein some of my unfinished and ongoing projects. fill free to use it the way you feel like to.
+Find herein some of my unfinished or ongoing projects. feel free to use it the way you feel like to
 
 ### Web applications
 
