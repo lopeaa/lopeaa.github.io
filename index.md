@@ -1,10 +1,10 @@
-## Welcome to Lopeaa prototypes Pages
+## Welcome to Lopeaa´s mistakes Pages
 
 Find herein some of my unfinished and ongoing projects. fill free to use it the way you feel like to.
 
 ### Web applications
 
-- [Certificate Authority management GUI](https://lopeaa.github.io/ca) [[Demo]](https://ca.liquabit.com)
+- [Certificate Authority management GUI](https://lopeaa.github.io/ca)
 - [F5 BIGIP Reporter](https://lopeaa.github.io/f5bigipreporter)
 
 ### Systems & Security scripts
