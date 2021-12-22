@@ -1,4 +1,4 @@
-## Welcome to Lopeaa's mistakes Pages
+## <i class="fas fa-door-open"></i> to Lopeaa's mistakes Pages
 
 Find herein some of my unfinished or ongoing projects. feel free to use it the way you feel like to
 
