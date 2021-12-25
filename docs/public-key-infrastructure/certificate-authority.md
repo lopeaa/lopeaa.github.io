@@ -6,6 +6,7 @@ nav_order: 2
 ---
 
 # Certificate Auhtority Management GUI
+This project based on Laravel Framework aims to simplify the management of the digital certificates lifecycle such as creation of keypairs (csr, private and private keys), signing of csr files created in other systems as well as generated csr by your own private CA. It also includes tools to generate of PFX/P12 archive, keymatch and expiry notifications.
 {: .no_toc }
 
 ## Table of contents
