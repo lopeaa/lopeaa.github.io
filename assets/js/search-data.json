@@ -2,607 +2,607 @@
     "doc": "Centos",
     "title": "CentOS server setup",
     "content": " ",
-    "url": "http://localhost:4000/docs/operating-systems/centos/#centos-server-setup",
+    "url": "https://lopeaa.github.io/docs/operating-systems/centos/#centos-server-setup",
     "relUrl": "/docs/operating-systems/centos/#centos-server-setup"
   },"1": {
     "doc": "Centos",
     "title": "Table of contents",
     "content": ". | Overwiew | . ",
-    "url": "http://localhost:4000/docs/operating-systems/centos/#table-of-contents",
+    "url": "https://lopeaa.github.io/docs/operating-systems/centos/#table-of-contents",
     "relUrl": "/docs/operating-systems/centos/#table-of-contents"
   },"2": {
     "doc": "Centos",
     "title": "Overwiew",
     "content": " ",
-    "url": "http://localhost:4000/docs/operating-systems/centos/#overwiew",
+    "url": "https://lopeaa.github.io/docs/operating-systems/centos/#overwiew",
     "relUrl": "/docs/operating-systems/centos/#overwiew"
   },"3": {
     "doc": "Centos",
     "title": "Centos",
     "content": " ",
-    "url": "http://localhost:4000/docs/operating-systems/centos/",
+    "url": "https://lopeaa.github.io/docs/operating-systems/centos/",
     "relUrl": "/docs/operating-systems/centos/"
   },"4": {
     "doc": "Certificate Auhtority",
     "title": "Certificate Authority Management GUI",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/certificate-authority/#certificate-authority-management-gui",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/certificate-authority/#certificate-authority-management-gui",
     "relUrl": "/docs/public-key-infrastructure/certificate-authority/#certificate-authority-management-gui"
   },"5": {
     "doc": "Certificate Auhtority",
     "title": "Table of contents",
     "content": ". | Overwiew | Features | Tools | Cloning Github repository | Modify .env file and run migration | .OVA image | . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/certificate-authority/#table-of-contents",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/certificate-authority/#table-of-contents",
     "relUrl": "/docs/public-key-infrastructure/certificate-authority/#table-of-contents"
   },"6": {
     "doc": "Certificate Auhtority",
     "title": "Overwiew",
     "content": "This project aims to simplify the management of the digital certificates lifecycle such as creation of keypairs (csr, private and private keys), signing of csr files created in external systems as well as generating csr by your own private CA. It also includes tools to generate of PFX/P12 archive, keymatch, expiry notifications, converter, decode nad more… . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/certificate-authority/#overwiew",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/certificate-authority/#overwiew",
     "relUrl": "/docs/public-key-infrastructure/certificate-authority/#overwiew"
   },"7": {
     "doc": "Certificate Auhtority",
     "title": "Features",
     "content": ". | Keypair creation | Create CSR | Sign CSR | Create PFX/P12 archives | Check CSR/Cert/key matches | Expiry notifications | . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/certificate-authority/#features",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/certificate-authority/#features",
     "relUrl": "/docs/public-key-infrastructure/certificate-authority/#features"
   },"8": {
     "doc": "Certificate Auhtority",
     "title": "Tools",
     "content": ". | Certificate converter | Certificate decode | Osslsigner (Binary signer) | . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/certificate-authority/#tools",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/certificate-authority/#tools",
     "relUrl": "/docs/public-key-infrastructure/certificate-authority/#tools"
   },"9": {
     "doc": "Certificate Auhtority",
     "title": "Cloning Github repository",
-    "content": "git clone https://github.com/lopeaa/ca.git . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/certificate-authority/#cloning-github-repository",
+    "content": "git clone https://github.com/lopeaa/ca-mgmt.git . ",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/certificate-authority/#cloning-github-repository",
     "relUrl": "/docs/public-key-infrastructure/certificate-authority/#cloning-github-repository"
   },"10": {
     "doc": "Certificate Auhtority",
     "title": "Modify .env file and run migration",
     "content": "Before running php artisan migrate make sure you have the DB created and configured in .env file. DB_CONNECTION=mysql DB_HOST=127.0.0.1 DB_PORT=3306 DB_DATABASE=ca DB_USERNAME=root DB_PASSWORD= . ### Run migration php artisan migrate . ### setup permissions chmod -R o+w bootstrap/cache/ &amp;&amp; sudo chmod -R o+w storage . ### Update dependencies composer update . Should be running… . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/certificate-authority/#modify-env-file-and-run-migration",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/certificate-authority/#modify-env-file-and-run-migration",
     "relUrl": "/docs/public-key-infrastructure/certificate-authority/#modify-env-file-and-run-migration"
   },"11": {
     "doc": "Certificate Auhtority",
     "title": " .OVA image",
     "content": "Tested with VMWare API v.15.0 . Decryption Key: y2TYyAQbWSHBfX0ozHHlI1CwLhrSlapt90jpfAhR21 . SHA256 Checksum: 5ca2bce6c05473dd584a4efc8f18b81643bcf671c1ce07bba4114340dfaf3a81 . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/certificate-authority/#-ova-image",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/certificate-authority/#-ova-image",
     "relUrl": "/docs/public-key-infrastructure/certificate-authority/#-ova-image"
   },"12": {
     "doc": "Certificate Auhtority",
     "title": "Certificate Auhtority",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/certificate-authority/",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/certificate-authority/",
     "relUrl": "/docs/public-key-infrastructure/certificate-authority/"
   },"13": {
     "doc": "Certificate Converter",
     "title": "Certificate Converter",
     "content": "Tables are responsive by default, allowing wide tables to have a horizontal scroll to access columns outside of the normal viewport. | head1 | head two | three | . | ok | good swedish fish | nice | . | out of stock | good and plenty | nice | . | ok | good oreos | hmm | . | ok | good zoute drop | yumm | . | head1 | head two | three |:-------------|:------------------|:------| ok | good swedish fish | nice | out of stock | good and plenty | nice | ok | good `oreos` | hmm | ok | good `zoute` drop | yumm | . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/certificate-converter/",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/certificate-converter/",
     "relUrl": "/docs/public-key-infrastructure/certificate-converter/"
   },"14": {
     "doc": "Certificate Decoder",
     "title": "Certificate Decoder",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/certificate-decoder/",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/certificate-decoder/",
     "relUrl": "/docs/public-key-infrastructure/certificate-decoder/"
   },"15": {
     "doc": "Certificate Decoder",
     "title": "Table of contents",
     "content": ". | Unordered list | Ordered list | Task list | Definition list | . Most lists can be rendered with pure Markdown. ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/certificate-decoder/#table-of-contents",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/certificate-decoder/#table-of-contents",
     "relUrl": "/docs/public-key-infrastructure/certificate-decoder/#table-of-contents"
   },"16": {
     "doc": "Certificate Decoder",
     "title": "Unordered list",
     "content": ". | Item 1 | Item 2 | Item 3 | . or . | Item 1 | Item 2 | Item 3 | . - Item 1 - Item 2 - Item 3 _or_ * Item 1 * Item 2 * Item 3 . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/certificate-decoder/#unordered-list",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/certificate-decoder/#unordered-list",
     "relUrl": "/docs/public-key-infrastructure/certificate-decoder/#unordered-list"
   },"17": {
     "doc": "Certificate Decoder",
     "title": "Ordered list",
     "content": ". | Item 1 | Item 2 | Item 3 | . 1. Item 1 1. Item 2 1. Item 3 . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/certificate-decoder/#ordered-list",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/certificate-decoder/#ordered-list",
     "relUrl": "/docs/public-key-infrastructure/certificate-decoder/#ordered-list"
   },"18": {
     "doc": "Certificate Decoder",
     "title": "Task list",
     "content": ". | hello, this is a todo item | hello, this is another todo item | goodbye, this item is done | . - [ ] hello, this is a todo item - [ ] hello, this is another todo item - [x] goodbye, this item is done . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/certificate-decoder/#task-list",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/certificate-decoder/#task-list",
     "relUrl": "/docs/public-key-infrastructure/certificate-decoder/#task-list"
   },"19": {
     "doc": "Certificate Decoder",
     "title": "Definition list",
     "content": "Definition lists require HTML syntax and aren’t supported with the GitHub Flavored Markdown compiler. Name Godzilla Born 1952 Birthplace Japan Color Green &lt;dl&gt; &lt;dt&gt;Name&lt;/dt&gt; &lt;dd&gt;Godzilla&lt;/dd&gt; &lt;dt&gt;Born&lt;/dt&gt; &lt;dd&gt;1952&lt;/dd&gt; &lt;dt&gt;Birthplace&lt;/dt&gt; &lt;dd&gt;Japan&lt;/dd&gt; &lt;dt&gt;Color&lt;/dt&gt; &lt;dd&gt;Green&lt;/dd&gt; &lt;/dl&gt; . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/certificate-decoder/#definition-list",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/certificate-decoder/#definition-list",
     "relUrl": "/docs/public-key-infrastructure/certificate-decoder/#definition-list"
   },"20": {
     "doc": "Certificates Monitor",
     "title": "Certificates Monitor",
     "content": "Use labels as a way to add an additional mark to a section of your docs. Labels come in a few colors. By default, labels will be blue. Default label . Blue label . Stable . New release . Coming soon . Deprecated . Default label {: .label } Blue label {: .label .label-blue } Stable {: .label .label-green } New release {: .label .label-purple } Coming soon {: .label .label-yellow } Deprecated {: .label .label-red } . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/certificate-monitor/",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/certificate-monitor/",
     "relUrl": "/docs/public-key-infrastructure/certificate-monitor/"
   },"21": {
     "doc": "Controller Snippets",
     "title": "Certificate Authority Controllers",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-controller-snippets/#certificate-authority-controllers",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-controller-snippets/#certificate-authority-controllers",
     "relUrl": "/docs/public-key-infrastructure/code/code-controller-snippets/#certificate-authority-controllers"
   },"22": {
     "doc": "Controller Snippets",
     "title": "Table of contents",
     "content": ". | Certificate Authority . | CertificatesController.php | SigningRequestController.php | NewSigningRequestController.php | JarSigningController.php | AuthenticodeController.php | . | Certificate Monitor | Certificate Converter | Certificate Decoder | . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-controller-snippets/#table-of-contents",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-controller-snippets/#table-of-contents",
     "relUrl": "/docs/public-key-infrastructure/code/code-controller-snippets/#table-of-contents"
   },"23": {
     "doc": "Controller Snippets",
     "title": "Certificate Authority",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-controller-snippets/#certificate-authority",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-controller-snippets/#certificate-authority",
     "relUrl": "/docs/public-key-infrastructure/code/code-controller-snippets/#certificate-authority"
   },"24": {
     "doc": "Controller Snippets",
     "title": "CertificatesController.php",
     "content": "This Controller creates Certificates Keypair in one step and create and sign Certificate Signing Requests. &lt;?php namespace App\\Http\\Controllers\\Admin; use App\\Http\\Controllers\\Controller; use App\\Http\\Requests\\MassDestroyCertificateKeyPair; use App\\Http\\Requests\\StoreCertificateKeyPair; use App\\Http\\Requests\\UpdateCertificate; use App\\Cert; use App\\Params; use Carbon\\Carbon; class CertificatesController extends Controller { public function index() { abort_unless(\\Gate::allows('certificate_access'), 403); $certsNumber = Cert::all()-&gt;count(); $certs = Cert::all(); // Chart - Certificates status. $certs_status_blank = Cert::where('status', '=', null)-&gt;count(); $certs_status_valid = Cert::where('status', '=', 'Valid')-&gt;count(); $certs_status_expiring = Cert::where('status', '=', 'Expiring')-&gt;count(); $certs_status_expired = Cert::where('status', '=', 'Expired')-&gt;count(); $certs_status_revoked = Cert::where('status', '=', 'Revoked')-&gt;count(); //dd($certs); return view('admin.certs.index', compact('certs', 'certsNumber', 'certs_status_blank', 'certs_status_valid', 'certs_status_expiring', 'certs_status_expired', 'certs_status_revoked' )); } public function create() { abort_unless(\\Gate::allows('certificate_create'), 403); $params = Params::all(); return view('admin.certs.new-cert.create', compact('params')); } public function store(StoreCertificateKeyPair $request) { abort_unless(\\Gate::allows('certificate_create'), 403); // Separate CN and SANs. $commonName = explode(\";\", $request-&gt;subjectCommonName); $subjectCommonName = $commonName[0]; //separated cn $extensionsSubjectAltName = explode(\",\", (\"DNS:\".implode(\",DNS:\", $commonName))); $extensionsSubjectAltName = implode(\",\", $extensionsSubjectAltName); // Separated SANs $config = $OPENSSL_CONFIG; // Check if CN already exists. Cert::where('subjectCommonName', '=', $subjectCommonName); Cert::where('subjectCommonName', '=', $request-&gt;status); /** Data needed to populate the certificate signed by this CA. email can´t be empty so if it is empty \"emailAddress\" is not included. **/ if($request-&gt;email != ''){ $dn = array( \"countryName\" =&gt; $countryName, \"stateOrProvinceName\" =&gt; $stateOrProvinceName, \"localityName\" =&gt; $localityName, \"organizationName\" =&gt; $request-&gt;subjectOrganization, \"organizationalUnitName\" =&gt; $orgUnitName, \"commonName\" =&gt; $subjectCommonName, \"emailAddress\" =&gt; $request-&gt;email ); } else { $dn = array( \"countryName\" =&gt; $countryName, \"stateOrProvinceName\" =&gt; $stateOrProvinceName, \"localityName\" =&gt; $localityName, \"organizationName\" =&gt; $request-&gt;subjectOrganization, \"organizationalUnitName\" =&gt; $orgUnitName, \"commonName\" =&gt; $subjectCommonName, \"emailAddress\" =&gt; null ); } /** Clean DNS entries. **/ shell_exec(\"/opt/subjectAltNameRemoval.sh 2&gt;&amp;1\"); $configFile = file_get_contents($config); $configFile = str_replace(\"DNS:\", $extensionsSubjectAltName, $configFile); file_put_contents($config, $configFile); unset($configFile); /** Arguments to be passed to the CSR **/ $configArgs = array( 'config' =&gt; $config, 'encrypt_key' =&gt; false, 'private_key_type' =&gt; OPENSSL_KEYTYPE_RSA, 'subjectAltName' =&gt; $request-&gt;extensionsSubjectAltName, 'digest_alg' =&gt; $request-&gt;signatureTypeSN ); // Generate REQ and his corresponding Private Key. $keygen = openssl_pkey_new(); $reqgen = openssl_csr_new($dn, $keygen, $configArgs); // Export Private Key to string. openssl_pkey_export($keygen, $privateKey); // Export CSR to string. openssl_csr_export($reqgen, $certificateServerRequest); // Signing CSR. Location of CA Pub/Priv certificates. $cacert = file_get_contents('/opt/ca/cacert.pem'); $pkeyid = array(file_get_contents('/opt/ca/private/cakey.pem'), $request-&gt;password ); $configArgs = array( 'config' =&gt; $config, 'encrypt_key' =&gt; false, 'private_key_bits' =&gt; (int)$request-&gt;keyLength, 'private_key_type' =&gt; OPENSSL_KEYTYPE_RSA, 'digest_alg' =&gt; $request-&gt;signatureTypeSN, 'x509_extensions' =&gt; $request-&gt;extensionsExtendedKeyUsage); // Insert serial number. $serialNumber = random_int(160000000001, 170000000001); // Sign Certificate Server Request. $certgen = openssl_csr_sign($certificateServerRequest , $cacert, $pkeyid, $request-&gt;validityPeriod, $configArgs, $serialNumber); // Export signed certificate to string variable. openssl_x509_export($certgen, $publicKey); // Clean SAN DNS entries. shell_exec(\"sudo /opt/subjectAltNameRemoval.sh 2&gt;&amp;1\"); // Parse certificate data. $certParser = openssl_x509_parse($publicKey); // Include certificate parse data in request. $request['subjectCommonName'] = $certParser['subject']['CN']; $request['subjectContry'] = $certParser['subject']['C']; $request['subjectState'] = $certParser['subject']['ST']; $request['subjectOrganization'] = $certParser['subject']['O']; $request['subjectOrganizationUnit'] = $certParser['subject']['OU']; $request['hash'] = $certParser['hash']; $request['issuerCN'] = $certParser['issuer']['CN']; $request['issuerOrganization'] = $certParser['issuer']['O']; $request['issuerOrganizationUnit'] = $certParser['issuer']['OU']; $request['version'] = $certParser['version']; $request['serialNumber'] = $serialNumber; //$request['serialNumberHex'] = $serialNumberHex; $request['validFrom'] = $certParser['validFrom']; $request['validTo'] = $certParser['validTo']; $request['validFrom_time_t'] = $certParser['validFrom_time_t']; $request['validTo_time_t'] = $certParser['validTo_time_t']; $request['signatureTypeSN'] = $certParser['signatureTypeSN']; $request['signatureTypeLN'] = $certParser['signatureTypeLN']; $request['signatureTypeNID'] = $certParser['signatureTypeNID']; $request['purposes'] = null; $request['extensionsBasicConstraints'] = $certParser['extensions']['basicConstraints']; $request['extensionsKeyUsage'] = $certParser['extensions']['keyUsage']; $request['extensionsExtendedKeyUsage'] = $certParser['extensions']['extendedKeyUsage']; $request['extensionsSubjectKeyIdentifier'] = $certParser['extensions']['subjectKeyIdentifier']; $request['extensionsAuthorityKeyIdentifier'] = $certParser['extensions']['authorityKeyIdentifier']; $request['extensionsSubjectAltName'] = $certParser['extensions']['subjectAltName']; $request['extensionsCrlDistributionPoints'] = $certParser['extensions']['crlDistributionPoints']; $request['certificateServerRequest'] = $certificateServerRequest; $request['publicKey'] = $publicKey; $request['privateKey'] = $privateKey; $request['status'] = 'Valid'; $request['p12'] = null; // Convert dates. //$validFrom_time_t = date(DATE_RFC2822, $certParser['validFrom_time_t']); $validTo_time_t = date(DATE_RFC2822, $certParser['validTo_time_t']); $expiryDate = Carbon::parse(Carbon::now())-&gt;diffInDays($validTo_time_t); $request['expiryDate'] = $expiryDate; //dd($request['expiryDate']); Cert::create($request-&gt;all()); return redirect()-&gt;route('admin.certs.index'); } public function edit(Cert $cert) { abort_unless(\\Gate::allows('certificate_edit'), 403); return view('admin.certs.edit', compact('cert')); } public function update(UpdateCertificate $request, Cert $cert) { abort_unless(\\Gate::allows('certificate_edit'), 403); // $cert-&gt;update($request-&gt;all()); $cert-&gt;update($request-&gt;all('certificateServerRequest')); $cert-&gt;update($request-&gt;all('publicKey')); $cert-&gt;update($request-&gt;all('privateKey')); $cert-&gt;update($request-&gt;all('comments')); /** logic to update all DB tables when PublicKey change. **/ if($request-&gt;all('publicKey') != '') { $certParser = openssl_x509_parse($publicKey); //dd($certParser); $name = $certParser['name']; $subject = $certParser['subject']; $subjectCommonName = $certParser['subject']['CN']; //$subjectEmail = $certParser['subject']['emailAddress']; $subjectContry = $certParser['subject']['C']; //$subjectState = $certParser['subject']['ST']; //$subjectLocality = $certParser['subject']['L']; $subjectOrganization = $certParser['subject']['O']; //$subjectOrganizationUnit = $certParser['subject']['OU']; $hash = $certParser['hash']; $issuer = $certParser['issuer']; if(empty($issuer['CN'])) { $issuerCN = null; } else{ $issuerCN = $certParser['issuer']['CN']; } if(empty($issuer['C'])) { $issuerContry = null; } else { $issuerContry = $certParser['issuer']['C']; } if(empty($issuer['O'])) { $issuerOrganization = null; } else { $issuerOrganization = $certParser['issuer']['O']; } //$issuerCN = $certParser['issuer']['CN']; //$issuerContry = $certParser['issuer']['C']; //$issuerState = $certParser['issuer']['ST']; //$issuerLocality = $certParser['issuer']['L']; //$issuerOrganization = $certParser['issuer']['O']; //$issuerOrganizationUnit = $certParser['issuer']['OU']; $version = $certParser['version']; $serialNumber = $certParser['serialNumber']; $serialNumberHex = $certParser['serialNumberHex']; $validFrom = $certParser['validFrom']; $validTo = $certParser['validTo']; $validFrom_time_t = $certParser['validFrom_time_t']; $validTo_time_t = $certParser['validTo_time_t']; $signatureTypeSN = $certParser['signatureTypeSN']; $signatureTypeLN = $certParser['signatureTypeLN']; $signatureTypeNID = $certParser['signatureTypeNID']; //$purposes = $certParser['purposes']['1']['2']; dd($purposes); $purposes = 'Not Implemented'; $extensions = $certParser['extensions']; $extensionsBasicConstraints = $certParser['extensions']['basicConstraints']; //$extensionsNsCertType = $certParser['extensions']['nsCertType']; //$extensionsKeyUsage = $certParser['extensions']['keyUsage']; if(empty($certParser['extensions']['keyUsage'])){ $extensionsKeyUsage = null; } else { $extensionsKeyUsage = $certParser['extensions']['keyUsage']; } if(empty($certParser['extensions']['extendedKeyUsage'])){ $extensionsExtendedKeyUsage = null; } else { $extensionsExtendedKeyUsage = $certParser['extensions']['extendedKeyUsage']; } //$extensionsExtendedKeyUsage = $certParser['extensions']['extendedKeyUsage']; //$extensionsSubjectKeyIdentifier = $certParser['extensions']['subjectKeyIdentifier']; if(empty($certParser['extensions']['authorityKeyIdentifier'])){ $extensionsAuthorityKeyIdentifier = null; } else { $extensionsAuthorityKeyIdentifier = $certParser['extensions']['authorityKeyIdentifier']; } //$extensionsAuthorityKeyIdentifier = $certParser['extensions']['authorityKeyIdentifier']; $extensionsSubjectAltName = $certParser['extensions']['subjectAltName']; $extensionsCrlDistributionPoints = $certParser['extensions']['crlDistributionPoints']; // End Certificate Info $expiryDate = round((time() - $validTo_time_t) / (60*60*24)); // In days $status = 'Valid'; // for testing purposes $p12 = null; // Place the certificate publickey in public-keys to be monitored. openssl_x509_export_to_file($publicKey, storage_path('public-keys/' . $subjectCommonName . '.crt')); // Insert new PublicKey and update data // Cert::where('subjectCommonName', $subjectCommonName)-&gt;update(['publicKey' =&gt; $publicKey]); Cert::where('subjectCommonName', $subjectCommonName)-&gt;update([ //'subjectCommonName' =&gt; $subjectCommonName, //'subjectEmail' =&gt; $subjectEmail, 'subjectContry' =&gt; $subjectContry, //'subjectState' =&gt; $subjectState, //'subjectLocality' =&gt; $subjectLocality, 'subjectOrganization' =&gt; $subjectOrganization, //'subjectOrganizationUnit' =&gt; $subjectOrganizationUnit, 'hash' =&gt; $hash, 'issuerCN' =&gt; $issuerCN, 'issuerContry' =&gt; $issuerContry, //'issuerState' =&gt; $issuerState, //'issuerLocality' =&gt; $issuerLocality, 'issuerOrganization' =&gt; $issuerOrganization, //'issuerOrganizationUnit' =&gt; $issuerOrganizationUnit, 'version' =&gt; $version, 'serialNumber' =&gt; $serialNumber, 'serialNumberHex' =&gt; $serialNumberHex, 'validFrom' =&gt; $validFrom, 'validTo' =&gt; $validTo, 'validFrom_time_t' =&gt; $validFrom_time_t, 'validTo_time_t' =&gt; $validTo_time_t, 'signatureTypeSN' =&gt; $signatureTypeSN, 'signatureTypeLN' =&gt; $signatureTypeLN, 'signatureTypeNID' =&gt; $signatureTypeNID, 'purposes' =&gt; $purposes, 'extensionsBasicConstraints' =&gt; $extensionsBasicConstraints, //'extensionsNsCertType' =&gt; $extensionsNsCertType, 'extensionsKeyUsage' =&gt; $extensionsKeyUsage, 'extensionsExtendedKeyUsage' =&gt; $extensionsExtendedKeyUsage, //'extensionsSubjectKeyIdentifier' =&gt; $extensionsSubjectKeyIdentifier, 'extensionsAuthorityKeyIdentifier' =&gt; $extensionsAuthorityKeyIdentifier, 'extensionsSubjectAltName' =&gt; $extensionsSubjectAltName, 'extensionsCrlDistributionPoints' =&gt; $extensionsCrlDistributionPoints, //'certificateServerRequest' =&gt; $certificateServerRequest, 'publicKey' =&gt; $publicKey, // 'privateKey' =&gt; $privateKey, 'p12' =&gt; $p12, 'status' =&gt; $status, 'expiryDate' =&gt; $expiryDate, //'email' =&gt; $email, 'comments' =&gt; $comments ]); } /** Also, before updating csr/pub/priv keys, make a Keymatch for more security. **/ return redirect()-&gt;route('admin.certs.index'); } public function show(Cert $cert) { abort_unless(\\Gate::allows('certificate_show'), 403); // Convert dates validFrom and validTo to show them properly in view. $certs = Cert::all(); $validFrom_time_t = date(DATE_RFC2822, $cert-&gt;validFrom_time_t); $validTo_time_t = date(DATE_RFC2822, $cert-&gt;validTo_time_t); //$validFrom = date(DATE_RFC2822, $certParser['validFrom']); //dd($validFrom_time_t, $validTo_time_t); return view('admin.certs.show', compact('cert', 'validFrom_time_t', 'validTo_time_t')); } public function destroy(Cert $cert) { abort_unless(\\Gate::allows('certificate_delete'), 403); $cert-&gt;delete(); return back(); } public function massDestroy(MassDestroyCertificateKeyPair $request) { Cert::whereIn('id', request('ids'))-&gt;delete(); return response(null, 204); } } . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-controller-snippets/#certificatescontrollerphp",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-controller-snippets/#certificatescontrollerphp",
     "relUrl": "/docs/public-key-infrastructure/code/code-controller-snippets/#certificatescontrollerphp"
   },"25": {
     "doc": "Controller Snippets",
     "title": "SigningRequestController.php",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-controller-snippets/#signingrequestcontrollerphp",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-controller-snippets/#signingrequestcontrollerphp",
     "relUrl": "/docs/public-key-infrastructure/code/code-controller-snippets/#signingrequestcontrollerphp"
   },"26": {
     "doc": "Controller Snippets",
     "title": "NewSigningRequestController.php",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-controller-snippets/#newsigningrequestcontrollerphp",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-controller-snippets/#newsigningrequestcontrollerphp",
     "relUrl": "/docs/public-key-infrastructure/code/code-controller-snippets/#newsigningrequestcontrollerphp"
   },"27": {
     "doc": "Controller Snippets",
     "title": "JarSigningController.php",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-controller-snippets/#jarsigningcontrollerphp",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-controller-snippets/#jarsigningcontrollerphp",
     "relUrl": "/docs/public-key-infrastructure/code/code-controller-snippets/#jarsigningcontrollerphp"
   },"28": {
     "doc": "Controller Snippets",
     "title": "AuthenticodeController.php",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-controller-snippets/#authenticodecontrollerphp",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-controller-snippets/#authenticodecontrollerphp",
     "relUrl": "/docs/public-key-infrastructure/code/code-controller-snippets/#authenticodecontrollerphp"
   },"29": {
     "doc": "Controller Snippets",
     "title": "Certificate Monitor",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-controller-snippets/#certificate-monitor",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-controller-snippets/#certificate-monitor",
     "relUrl": "/docs/public-key-infrastructure/code/code-controller-snippets/#certificate-monitor"
   },"30": {
     "doc": "Controller Snippets",
     "title": "Certificate Converter",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-controller-snippets/#certificate-converter",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-controller-snippets/#certificate-converter",
     "relUrl": "/docs/public-key-infrastructure/code/code-controller-snippets/#certificate-converter"
   },"31": {
     "doc": "Controller Snippets",
     "title": "Certificate Decoder",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-controller-snippets/#certificate-decoder",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-controller-snippets/#certificate-decoder",
     "relUrl": "/docs/public-key-infrastructure/code/code-controller-snippets/#certificate-decoder"
   },"32": {
     "doc": "Controller Snippets",
     "title": "Controller Snippets",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-controller-snippets/",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-controller-snippets/",
     "relUrl": "/docs/public-key-infrastructure/code/code-controller-snippets/"
   },"33": {
     "doc": "Model Snippets",
     "title": "Models Snippets",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-model-snippets/#models-snippets",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-model-snippets/#models-snippets",
     "relUrl": "/docs/public-key-infrastructure/code/code-model-snippets/#models-snippets"
   },"34": {
     "doc": "Model Snippets",
     "title": "Table of contents",
     "content": ". | Certificate Authority . | CertificatesController.php | SigningRequestController.php | NewSigningRequestController.php | JarSigningController.php | AuthenticodeController.php | . | Certificate Monitor | Certificate Converter | Certificate Decoder | . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-model-snippets/#table-of-contents",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-model-snippets/#table-of-contents",
     "relUrl": "/docs/public-key-infrastructure/code/code-model-snippets/#table-of-contents"
   },"35": {
     "doc": "Model Snippets",
     "title": "Certificate Authority",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-model-snippets/#certificate-authority",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-model-snippets/#certificate-authority",
     "relUrl": "/docs/public-key-infrastructure/code/code-model-snippets/#certificate-authority"
   },"36": {
     "doc": "Model Snippets",
     "title": "CertificatesController.php",
     "content": "This Controller creates Certificates Keypair in one step and create and sign Certificate Signing Requests. &lt;?php namespace App\\Http\\Controllers\\Admin; use App\\Http\\Controllers\\Controller; use App\\Http\\Requests\\MassDestroyCertificateKeyPair; use App\\Http\\Requests\\StoreCertificateKeyPair; use App\\Http\\Requests\\UpdateCertificate; use App\\Cert; use App\\Params; use Carbon\\Carbon; class CertificatesController extends Controller { public function index() { abort_unless(\\Gate::allows('certificate_access'), 403); $certsNumber = Cert::all()-&gt;count(); $certs = Cert::all(); // Chart - Certificates status. $certs_status_blank = Cert::where('status', '=', null)-&gt;count(); $certs_status_valid = Cert::where('status', '=', 'Valid')-&gt;count(); $certs_status_expiring = Cert::where('status', '=', 'Expiring')-&gt;count(); $certs_status_expired = Cert::where('status', '=', 'Expired')-&gt;count(); $certs_status_revoked = Cert::where('status', '=', 'Revoked')-&gt;count(); //dd($certs); return view('admin.certs.index', compact('certs', 'certsNumber', 'certs_status_blank', 'certs_status_valid', 'certs_status_expiring', 'certs_status_expired', 'certs_status_revoked' )); } public function create() { abort_unless(\\Gate::allows('certificate_create'), 403); $params = Params::all(); return view('admin.certs.new-cert.create', compact('params')); } public function store(StoreCertificateKeyPair $request) { abort_unless(\\Gate::allows('certificate_create'), 403); // Separate CN and SANs. $commonName = explode(\";\", $request-&gt;subjectCommonName); $subjectCommonName = $commonName[0]; //separated cn $extensionsSubjectAltName = explode(\",\", (\"DNS:\".implode(\",DNS:\", $commonName))); $extensionsSubjectAltName = implode(\",\", $extensionsSubjectAltName); // Separated SANs $config = $OPENSSL_CONFIG; // Check if CN already exists. Cert::where('subjectCommonName', '=', $subjectCommonName); Cert::where('subjectCommonName', '=', $request-&gt;status); /** Data needed to populate the certificate signed by this CA. email can´t be empty so if it is empty \"emailAddress\" is not included. **/ if($request-&gt;email != ''){ $dn = array( \"countryName\" =&gt; $countryName, \"stateOrProvinceName\" =&gt; $stateOrProvinceName, \"localityName\" =&gt; $localityName, \"organizationName\" =&gt; $request-&gt;subjectOrganization, \"organizationalUnitName\" =&gt; $orgUnitName, \"commonName\" =&gt; $subjectCommonName, \"emailAddress\" =&gt; $request-&gt;email ); } else { $dn = array( \"countryName\" =&gt; $countryName, \"stateOrProvinceName\" =&gt; $stateOrProvinceName, \"localityName\" =&gt; $localityName, \"organizationName\" =&gt; $request-&gt;subjectOrganization, \"organizationalUnitName\" =&gt; $orgUnitName, \"commonName\" =&gt; $subjectCommonName, \"emailAddress\" =&gt; null ); } /** Clean DNS entries. **/ shell_exec(\"/opt/subjectAltNameRemoval.sh 2&gt;&amp;1\"); $configFile = file_get_contents($config); $configFile = str_replace(\"DNS:\", $extensionsSubjectAltName, $configFile); file_put_contents($config, $configFile); unset($configFile); /** Arguments to be passed to the CSR **/ $configArgs = array( 'config' =&gt; $config, 'encrypt_key' =&gt; false, 'private_key_type' =&gt; OPENSSL_KEYTYPE_RSA, 'subjectAltName' =&gt; $request-&gt;extensionsSubjectAltName, 'digest_alg' =&gt; $request-&gt;signatureTypeSN ); // Generate REQ and his corresponding Private Key. $keygen = openssl_pkey_new(); $reqgen = openssl_csr_new($dn, $keygen, $configArgs); // Export Private Key to string. openssl_pkey_export($keygen, $privateKey); // Export CSR to string. openssl_csr_export($reqgen, $certificateServerRequest); // Signing CSR. Location of CA Pub/Priv certificates. $cacert = file_get_contents('/opt/ca/cacert.pem'); $pkeyid = array(file_get_contents('/opt/ca/private/cakey.pem'), $request-&gt;password ); $configArgs = array( 'config' =&gt; $config, 'encrypt_key' =&gt; false, 'private_key_bits' =&gt; (int)$request-&gt;keyLength, 'private_key_type' =&gt; OPENSSL_KEYTYPE_RSA, 'digest_alg' =&gt; $request-&gt;signatureTypeSN, 'x509_extensions' =&gt; $request-&gt;extensionsExtendedKeyUsage); // Insert serial number. $serialNumber = random_int(160000000001, 170000000001); // Sign Certificate Server Request. $certgen = openssl_csr_sign($certificateServerRequest , $cacert, $pkeyid, $request-&gt;validityPeriod, $configArgs, $serialNumber); // Export signed certificate to string variable. openssl_x509_export($certgen, $publicKey); // Clean SAN DNS entries. shell_exec(\"sudo /opt/subjectAltNameRemoval.sh 2&gt;&amp;1\"); // Parse certificate data. $certParser = openssl_x509_parse($publicKey); // Include certificate parse data in request. $request['subjectCommonName'] = $certParser['subject']['CN']; $request['subjectContry'] = $certParser['subject']['C']; $request['subjectState'] = $certParser['subject']['ST']; $request['subjectOrganization'] = $certParser['subject']['O']; $request['subjectOrganizationUnit'] = $certParser['subject']['OU']; $request['hash'] = $certParser['hash']; $request['issuerCN'] = $certParser['issuer']['CN']; $request['issuerOrganization'] = $certParser['issuer']['O']; $request['issuerOrganizationUnit'] = $certParser['issuer']['OU']; $request['version'] = $certParser['version']; $request['serialNumber'] = $serialNumber; //$request['serialNumberHex'] = $serialNumberHex; $request['validFrom'] = $certParser['validFrom']; $request['validTo'] = $certParser['validTo']; $request['validFrom_time_t'] = $certParser['validFrom_time_t']; $request['validTo_time_t'] = $certParser['validTo_time_t']; $request['signatureTypeSN'] = $certParser['signatureTypeSN']; $request['signatureTypeLN'] = $certParser['signatureTypeLN']; $request['signatureTypeNID'] = $certParser['signatureTypeNID']; $request['purposes'] = null; $request['extensionsBasicConstraints'] = $certParser['extensions']['basicConstraints']; $request['extensionsKeyUsage'] = $certParser['extensions']['keyUsage']; $request['extensionsExtendedKeyUsage'] = $certParser['extensions']['extendedKeyUsage']; $request['extensionsSubjectKeyIdentifier'] = $certParser['extensions']['subjectKeyIdentifier']; $request['extensionsAuthorityKeyIdentifier'] = $certParser['extensions']['authorityKeyIdentifier']; $request['extensionsSubjectAltName'] = $certParser['extensions']['subjectAltName']; $request['extensionsCrlDistributionPoints'] = $certParser['extensions']['crlDistributionPoints']; $request['certificateServerRequest'] = $certificateServerRequest; $request['publicKey'] = $publicKey; $request['privateKey'] = $privateKey; $request['status'] = 'Valid'; $request['p12'] = null; // Convert dates. //$validFrom_time_t = date(DATE_RFC2822, $certParser['validFrom_time_t']); $validTo_time_t = date(DATE_RFC2822, $certParser['validTo_time_t']); $expiryDate = Carbon::parse(Carbon::now())-&gt;diffInDays($validTo_time_t); $request['expiryDate'] = $expiryDate; //dd($request['expiryDate']); Cert::create($request-&gt;all()); return redirect()-&gt;route('admin.certs.index'); } public function edit(Cert $cert) { abort_unless(\\Gate::allows('certificate_edit'), 403); return view('admin.certs.edit', compact('cert')); } public function update(UpdateCertificate $request, Cert $cert) { abort_unless(\\Gate::allows('certificate_edit'), 403); // $cert-&gt;update($request-&gt;all()); $cert-&gt;update($request-&gt;all('certificateServerRequest')); $cert-&gt;update($request-&gt;all('publicKey')); $cert-&gt;update($request-&gt;all('privateKey')); $cert-&gt;update($request-&gt;all('comments')); /** logic to update all DB tables when PublicKey change. **/ if($request-&gt;all('publicKey') != '') { $certParser = openssl_x509_parse($publicKey); //dd($certParser); $name = $certParser['name']; $subject = $certParser['subject']; $subjectCommonName = $certParser['subject']['CN']; //$subjectEmail = $certParser['subject']['emailAddress']; $subjectContry = $certParser['subject']['C']; //$subjectState = $certParser['subject']['ST']; //$subjectLocality = $certParser['subject']['L']; $subjectOrganization = $certParser['subject']['O']; //$subjectOrganizationUnit = $certParser['subject']['OU']; $hash = $certParser['hash']; $issuer = $certParser['issuer']; if(empty($issuer['CN'])) { $issuerCN = null; } else{ $issuerCN = $certParser['issuer']['CN']; } if(empty($issuer['C'])) { $issuerContry = null; } else { $issuerContry = $certParser['issuer']['C']; } if(empty($issuer['O'])) { $issuerOrganization = null; } else { $issuerOrganization = $certParser['issuer']['O']; } //$issuerCN = $certParser['issuer']['CN']; //$issuerContry = $certParser['issuer']['C']; //$issuerState = $certParser['issuer']['ST']; //$issuerLocality = $certParser['issuer']['L']; //$issuerOrganization = $certParser['issuer']['O']; //$issuerOrganizationUnit = $certParser['issuer']['OU']; $version = $certParser['version']; $serialNumber = $certParser['serialNumber']; $serialNumberHex = $certParser['serialNumberHex']; $validFrom = $certParser['validFrom']; $validTo = $certParser['validTo']; $validFrom_time_t = $certParser['validFrom_time_t']; $validTo_time_t = $certParser['validTo_time_t']; $signatureTypeSN = $certParser['signatureTypeSN']; $signatureTypeLN = $certParser['signatureTypeLN']; $signatureTypeNID = $certParser['signatureTypeNID']; //$purposes = $certParser['purposes']['1']['2']; dd($purposes); $purposes = 'Not Implemented'; $extensions = $certParser['extensions']; $extensionsBasicConstraints = $certParser['extensions']['basicConstraints']; //$extensionsNsCertType = $certParser['extensions']['nsCertType']; //$extensionsKeyUsage = $certParser['extensions']['keyUsage']; if(empty($certParser['extensions']['keyUsage'])){ $extensionsKeyUsage = null; } else { $extensionsKeyUsage = $certParser['extensions']['keyUsage']; } if(empty($certParser['extensions']['extendedKeyUsage'])){ $extensionsExtendedKeyUsage = null; } else { $extensionsExtendedKeyUsage = $certParser['extensions']['extendedKeyUsage']; } //$extensionsExtendedKeyUsage = $certParser['extensions']['extendedKeyUsage']; //$extensionsSubjectKeyIdentifier = $certParser['extensions']['subjectKeyIdentifier']; if(empty($certParser['extensions']['authorityKeyIdentifier'])){ $extensionsAuthorityKeyIdentifier = null; } else { $extensionsAuthorityKeyIdentifier = $certParser['extensions']['authorityKeyIdentifier']; } //$extensionsAuthorityKeyIdentifier = $certParser['extensions']['authorityKeyIdentifier']; $extensionsSubjectAltName = $certParser['extensions']['subjectAltName']; $extensionsCrlDistributionPoints = $certParser['extensions']['crlDistributionPoints']; // End Certificate Info $expiryDate = round((time() - $validTo_time_t) / (60*60*24)); // In days $status = 'Valid'; // for testing purposes $p12 = null; // Place the certificate publickey in public-keys to be monitored. openssl_x509_export_to_file($publicKey, storage_path('public-keys/' . $subjectCommonName . '.crt')); // Insert new PublicKey and update data // Cert::where('subjectCommonName', $subjectCommonName)-&gt;update(['publicKey' =&gt; $publicKey]); Cert::where('subjectCommonName', $subjectCommonName)-&gt;update([ //'subjectCommonName' =&gt; $subjectCommonName, //'subjectEmail' =&gt; $subjectEmail, 'subjectContry' =&gt; $subjectContry, //'subjectState' =&gt; $subjectState, //'subjectLocality' =&gt; $subjectLocality, 'subjectOrganization' =&gt; $subjectOrganization, //'subjectOrganizationUnit' =&gt; $subjectOrganizationUnit, 'hash' =&gt; $hash, 'issuerCN' =&gt; $issuerCN, 'issuerContry' =&gt; $issuerContry, //'issuerState' =&gt; $issuerState, //'issuerLocality' =&gt; $issuerLocality, 'issuerOrganization' =&gt; $issuerOrganization, //'issuerOrganizationUnit' =&gt; $issuerOrganizationUnit, 'version' =&gt; $version, 'serialNumber' =&gt; $serialNumber, 'serialNumberHex' =&gt; $serialNumberHex, 'validFrom' =&gt; $validFrom, 'validTo' =&gt; $validTo, 'validFrom_time_t' =&gt; $validFrom_time_t, 'validTo_time_t' =&gt; $validTo_time_t, 'signatureTypeSN' =&gt; $signatureTypeSN, 'signatureTypeLN' =&gt; $signatureTypeLN, 'signatureTypeNID' =&gt; $signatureTypeNID, 'purposes' =&gt; $purposes, 'extensionsBasicConstraints' =&gt; $extensionsBasicConstraints, //'extensionsNsCertType' =&gt; $extensionsNsCertType, 'extensionsKeyUsage' =&gt; $extensionsKeyUsage, 'extensionsExtendedKeyUsage' =&gt; $extensionsExtendedKeyUsage, //'extensionsSubjectKeyIdentifier' =&gt; $extensionsSubjectKeyIdentifier, 'extensionsAuthorityKeyIdentifier' =&gt; $extensionsAuthorityKeyIdentifier, 'extensionsSubjectAltName' =&gt; $extensionsSubjectAltName, 'extensionsCrlDistributionPoints' =&gt; $extensionsCrlDistributionPoints, //'certificateServerRequest' =&gt; $certificateServerRequest, 'publicKey' =&gt; $publicKey, // 'privateKey' =&gt; $privateKey, 'p12' =&gt; $p12, 'status' =&gt; $status, 'expiryDate' =&gt; $expiryDate, //'email' =&gt; $email, 'comments' =&gt; $comments ]); } /** Also, before updating csr/pub/priv keys, make a Keymatch for more security. **/ return redirect()-&gt;route('admin.certs.index'); } public function show(Cert $cert) { abort_unless(\\Gate::allows('certificate_show'), 403); // Convert dates validFrom and validTo to show them properly in view. $certs = Cert::all(); $validFrom_time_t = date(DATE_RFC2822, $cert-&gt;validFrom_time_t); $validTo_time_t = date(DATE_RFC2822, $cert-&gt;validTo_time_t); //$validFrom = date(DATE_RFC2822, $certParser['validFrom']); //dd($validFrom_time_t, $validTo_time_t); return view('admin.certs.show', compact('cert', 'validFrom_time_t', 'validTo_time_t')); } public function destroy(Cert $cert) { abort_unless(\\Gate::allows('certificate_delete'), 403); $cert-&gt;delete(); return back(); } public function massDestroy(MassDestroyCertificateKeyPair $request) { Cert::whereIn('id', request('ids'))-&gt;delete(); return response(null, 204); } } . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-model-snippets/#certificatescontrollerphp",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-model-snippets/#certificatescontrollerphp",
     "relUrl": "/docs/public-key-infrastructure/code/code-model-snippets/#certificatescontrollerphp"
   },"37": {
     "doc": "Model Snippets",
     "title": "SigningRequestController.php",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-model-snippets/#signingrequestcontrollerphp",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-model-snippets/#signingrequestcontrollerphp",
     "relUrl": "/docs/public-key-infrastructure/code/code-model-snippets/#signingrequestcontrollerphp"
   },"38": {
     "doc": "Model Snippets",
     "title": "NewSigningRequestController.php",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-model-snippets/#newsigningrequestcontrollerphp",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-model-snippets/#newsigningrequestcontrollerphp",
     "relUrl": "/docs/public-key-infrastructure/code/code-model-snippets/#newsigningrequestcontrollerphp"
   },"39": {
     "doc": "Model Snippets",
     "title": "JarSigningController.php",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-model-snippets/#jarsigningcontrollerphp",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-model-snippets/#jarsigningcontrollerphp",
     "relUrl": "/docs/public-key-infrastructure/code/code-model-snippets/#jarsigningcontrollerphp"
   },"40": {
     "doc": "Model Snippets",
     "title": "AuthenticodeController.php",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-model-snippets/#authenticodecontrollerphp",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-model-snippets/#authenticodecontrollerphp",
     "relUrl": "/docs/public-key-infrastructure/code/code-model-snippets/#authenticodecontrollerphp"
   },"41": {
     "doc": "Model Snippets",
     "title": "Certificate Monitor",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-model-snippets/#certificate-monitor",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-model-snippets/#certificate-monitor",
     "relUrl": "/docs/public-key-infrastructure/code/code-model-snippets/#certificate-monitor"
   },"42": {
     "doc": "Model Snippets",
     "title": "Certificate Converter",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-model-snippets/#certificate-converter",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-model-snippets/#certificate-converter",
     "relUrl": "/docs/public-key-infrastructure/code/code-model-snippets/#certificate-converter"
   },"43": {
     "doc": "Model Snippets",
     "title": "Certificate Decoder",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-model-snippets/#certificate-decoder",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-model-snippets/#certificate-decoder",
     "relUrl": "/docs/public-key-infrastructure/code/code-model-snippets/#certificate-decoder"
   },"44": {
     "doc": "Model Snippets",
     "title": "Model Snippets",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-model-snippets/",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-model-snippets/",
     "relUrl": "/docs/public-key-infrastructure/code/code-model-snippets/"
   },"45": {
     "doc": "Code Snippets",
     "title": "MVC Architecture",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code-snippets/#mvc-architecture",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code-snippets/#mvc-architecture",
     "relUrl": "/docs/public-key-infrastructure/code-snippets/#mvc-architecture"
   },"46": {
     "doc": "Code Snippets",
     "title": "Table of contents",
     "content": ". | Model | View | Controller | . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code-snippets/#table-of-contents",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code-snippets/#table-of-contents",
     "relUrl": "/docs/public-key-infrastructure/code-snippets/#table-of-contents"
   },"47": {
     "doc": "Code Snippets",
     "title": "Model",
     "content": "The model contains all the data-related logic that the user works with, like the schemas and interfaces of a project, the databases, and their fields. For example, a customer object will retrieve the customer information from the database, manipulate or update their record in the database, or use it to render data. ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code-snippets/#model",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code-snippets/#model",
     "relUrl": "/docs/public-key-infrastructure/code-snippets/#model"
   },"48": {
     "doc": "Code Snippets",
     "title": "View",
     "content": "The view contains the UI and the presentation of an application. For example, the customer view will include all the UI components such as text boxes, dropdowns, and other things that the user interacts with. ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code-snippets/#view",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code-snippets/#view",
     "relUrl": "/docs/public-key-infrastructure/code-snippets/#view"
   },"49": {
     "doc": "Code Snippets",
     "title": "Controller",
     "content": "The controller’s responsibility is to pull, modify, and provide data to the user. Essentially, the controller is the link between the view and model. Through getter and setter functions, the controller pulls data from the model and initializes the views. If there are any updates from the views, it modifies the data with a setter function. ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code-snippets/#controller",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code-snippets/#controller",
     "relUrl": "/docs/public-key-infrastructure/code-snippets/#controller"
   },"50": {
     "doc": "Code Snippets",
     "title": "Code Snippets",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code-snippets/",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code-snippets/",
     "relUrl": "/docs/public-key-infrastructure/code-snippets/"
   },"51": {
     "doc": "View Snippets",
     "title": "Certificate Authority Views",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-view-snippets/#certificate-authority-views",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-view-snippets/#certificate-authority-views",
     "relUrl": "/docs/public-key-infrastructure/code/code-view-snippets/#certificate-authority-views"
   },"52": {
     "doc": "View Snippets",
     "title": "Table of contents",
     "content": ". | CertificateController.php | . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-view-snippets/#table-of-contents",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-view-snippets/#table-of-contents",
     "relUrl": "/docs/public-key-infrastructure/code/code-view-snippets/#table-of-contents"
   },"53": {
     "doc": "View Snippets",
     "title": "CertificateController.php",
     "content": "This Controller creates Certificates Keypair in one step and create and sign Certificate Signing Requests. &lt;?php namespace App\\Http\\Controllers\\Admin; use App\\Http\\Controllers\\Controller; use App\\Http\\Requests\\MassDestroyCertificateKeyPair; use App\\Http\\Requests\\StoreCertificateKeyPair; use App\\Http\\Requests\\UpdateCertificate; use App\\Cert; use App\\Params; use Carbon\\Carbon; class CertificatesController extends Controller { public function index() { abort_unless(\\Gate::allows('certificate_access'), 403); $certsNumber = Cert::all()-&gt;count(); $certs = Cert::all(); // Chart - Certificates status. $certs_status_blank = Cert::where('status', '=', null)-&gt;count(); $certs_status_valid = Cert::where('status', '=', 'Valid')-&gt;count(); $certs_status_expiring = Cert::where('status', '=', 'Expiring')-&gt;count(); $certs_status_expired = Cert::where('status', '=', 'Expired')-&gt;count(); $certs_status_revoked = Cert::where('status', '=', 'Revoked')-&gt;count(); //dd($certs); return view('admin.certs.index', compact('certs', 'certsNumber', 'certs_status_blank', 'certs_status_valid', 'certs_status_expiring', 'certs_status_expired', 'certs_status_revoked' )); } public function create() { abort_unless(\\Gate::allows('certificate_create'), 403); $params = Params::all(); return view('admin.certs.new-cert.create', compact('params')); } public function store(StoreCertificateKeyPair $request) { abort_unless(\\Gate::allows('certificate_create'), 403); // Separate CN and SANs. $commonName = explode(\";\", $request-&gt;subjectCommonName); $subjectCommonName = $commonName[0]; //separated cn $extensionsSubjectAltName = explode(\",\", (\"DNS:\".implode(\",DNS:\", $commonName))); $extensionsSubjectAltName = implode(\",\", $extensionsSubjectAltName); // Separated SANs $config = $OPENSSL_CONFIG; // Check if CN already exists. Cert::where('subjectCommonName', '=', $subjectCommonName); Cert::where('subjectCommonName', '=', $request-&gt;status); /** Data needed to populate the certificate signed by this CA. email can´t be empty so if it is empty \"emailAddress\" is not included. **/ if($request-&gt;email != ''){ $dn = array( \"countryName\" =&gt; $countryName, \"stateOrProvinceName\" =&gt; $stateOrProvinceName, \"localityName\" =&gt; $localityName, \"organizationName\" =&gt; $request-&gt;subjectOrganization, \"organizationalUnitName\" =&gt; $orgUnitName, \"commonName\" =&gt; $subjectCommonName, \"emailAddress\" =&gt; $request-&gt;email ); } else { $dn = array( \"countryName\" =&gt; $countryName, \"stateOrProvinceName\" =&gt; $stateOrProvinceName, \"localityName\" =&gt; $localityName, \"organizationName\" =&gt; $request-&gt;subjectOrganization, \"organizationalUnitName\" =&gt; $orgUnitName, \"commonName\" =&gt; $subjectCommonName, \"emailAddress\" =&gt; null ); } /** Clean DNS entries. **/ shell_exec(\"/opt/subjectAltNameRemoval.sh 2&gt;&amp;1\"); $configFile = file_get_contents($config); $configFile = str_replace(\"DNS:\", $extensionsSubjectAltName, $configFile); file_put_contents($config, $configFile); unset($configFile); /** Arguments to be passed to the CSR **/ $configArgs = array( 'config' =&gt; $config, 'encrypt_key' =&gt; false, 'private_key_type' =&gt; OPENSSL_KEYTYPE_RSA, 'subjectAltName' =&gt; $request-&gt;extensionsSubjectAltName, 'digest_alg' =&gt; $request-&gt;signatureTypeSN ); // Generate REQ and his corresponding Private Key. $keygen = openssl_pkey_new(); $reqgen = openssl_csr_new($dn, $keygen, $configArgs); // Export Private Key to string. openssl_pkey_export($keygen, $privateKey); // Export CSR to string. openssl_csr_export($reqgen, $certificateServerRequest); // Signing CSR. Location of CA Pub/Priv certificates. $cacert = file_get_contents('/opt/ca/cacert.pem'); $pkeyid = array(file_get_contents('/opt/ca/private/cakey.pem'), $request-&gt;password ); $configArgs = array( 'config' =&gt; $config, 'encrypt_key' =&gt; false, 'private_key_bits' =&gt; (int)$request-&gt;keyLength, 'private_key_type' =&gt; OPENSSL_KEYTYPE_RSA, 'digest_alg' =&gt; $request-&gt;signatureTypeSN, 'x509_extensions' =&gt; $request-&gt;extensionsExtendedKeyUsage); // Insert serial number. $serialNumber = random_int(160000000001, 170000000001); // Sign Certificate Server Request. $certgen = openssl_csr_sign($certificateServerRequest , $cacert, $pkeyid, $request-&gt;validityPeriod, $configArgs, $serialNumber); // Export signed certificate to string variable. openssl_x509_export($certgen, $publicKey); // Clean SAN DNS entries. shell_exec(\"sudo /opt/subjectAltNameRemoval.sh 2&gt;&amp;1\"); // Parse certificate data. $certParser = openssl_x509_parse($publicKey); // Include certificate parse data in request. $request['subjectCommonName'] = $certParser['subject']['CN']; $request['subjectContry'] = $certParser['subject']['C']; $request['subjectState'] = $certParser['subject']['ST']; $request['subjectOrganization'] = $certParser['subject']['O']; $request['subjectOrganizationUnit'] = $certParser['subject']['OU']; $request['hash'] = $certParser['hash']; $request['issuerCN'] = $certParser['issuer']['CN']; $request['issuerOrganization'] = $certParser['issuer']['O']; $request['issuerOrganizationUnit'] = $certParser['issuer']['OU']; $request['version'] = $certParser['version']; $request['serialNumber'] = $serialNumber; //$request['serialNumberHex'] = $serialNumberHex; $request['validFrom'] = $certParser['validFrom']; $request['validTo'] = $certParser['validTo']; $request['validFrom_time_t'] = $certParser['validFrom_time_t']; $request['validTo_time_t'] = $certParser['validTo_time_t']; $request['signatureTypeSN'] = $certParser['signatureTypeSN']; $request['signatureTypeLN'] = $certParser['signatureTypeLN']; $request['signatureTypeNID'] = $certParser['signatureTypeNID']; $request['purposes'] = null; $request['extensionsBasicConstraints'] = $certParser['extensions']['basicConstraints']; $request['extensionsKeyUsage'] = $certParser['extensions']['keyUsage']; $request['extensionsExtendedKeyUsage'] = $certParser['extensions']['extendedKeyUsage']; $request['extensionsSubjectKeyIdentifier'] = $certParser['extensions']['subjectKeyIdentifier']; $request['extensionsAuthorityKeyIdentifier'] = $certParser['extensions']['authorityKeyIdentifier']; $request['extensionsSubjectAltName'] = $certParser['extensions']['subjectAltName']; $request['extensionsCrlDistributionPoints'] = $certParser['extensions']['crlDistributionPoints']; $request['certificateServerRequest'] = $certificateServerRequest; $request['publicKey'] = $publicKey; $request['privateKey'] = $privateKey; $request['status'] = 'Valid'; $request['p12'] = null; // Convert dates. //$validFrom_time_t = date(DATE_RFC2822, $certParser['validFrom_time_t']); $validTo_time_t = date(DATE_RFC2822, $certParser['validTo_time_t']); $expiryDate = Carbon::parse(Carbon::now())-&gt;diffInDays($validTo_time_t); $request['expiryDate'] = $expiryDate; //dd($request['expiryDate']); Cert::create($request-&gt;all()); return redirect()-&gt;route('admin.certs.index'); } public function edit(Cert $cert) { abort_unless(\\Gate::allows('certificate_edit'), 403); return view('admin.certs.edit', compact('cert')); } public function update(UpdateCertificate $request, Cert $cert) { abort_unless(\\Gate::allows('certificate_edit'), 403); // $cert-&gt;update($request-&gt;all()); $cert-&gt;update($request-&gt;all('certificateServerRequest')); $cert-&gt;update($request-&gt;all('publicKey')); $cert-&gt;update($request-&gt;all('privateKey')); $cert-&gt;update($request-&gt;all('comments')); /** logic to update all DB tables when PublicKey change. **/ if($request-&gt;all('publicKey') != '') { $certParser = openssl_x509_parse($publicKey); //dd($certParser); $name = $certParser['name']; $subject = $certParser['subject']; $subjectCommonName = $certParser['subject']['CN']; //$subjectEmail = $certParser['subject']['emailAddress']; $subjectContry = $certParser['subject']['C']; //$subjectState = $certParser['subject']['ST']; //$subjectLocality = $certParser['subject']['L']; $subjectOrganization = $certParser['subject']['O']; //$subjectOrganizationUnit = $certParser['subject']['OU']; $hash = $certParser['hash']; $issuer = $certParser['issuer']; if(empty($issuer['CN'])) { $issuerCN = null; } else{ $issuerCN = $certParser['issuer']['CN']; } if(empty($issuer['C'])) { $issuerContry = null; } else { $issuerContry = $certParser['issuer']['C']; } if(empty($issuer['O'])) { $issuerOrganization = null; } else { $issuerOrganization = $certParser['issuer']['O']; } //$issuerCN = $certParser['issuer']['CN']; //$issuerContry = $certParser['issuer']['C']; //$issuerState = $certParser['issuer']['ST']; //$issuerLocality = $certParser['issuer']['L']; //$issuerOrganization = $certParser['issuer']['O']; //$issuerOrganizationUnit = $certParser['issuer']['OU']; $version = $certParser['version']; $serialNumber = $certParser['serialNumber']; $serialNumberHex = $certParser['serialNumberHex']; $validFrom = $certParser['validFrom']; $validTo = $certParser['validTo']; $validFrom_time_t = $certParser['validFrom_time_t']; $validTo_time_t = $certParser['validTo_time_t']; $signatureTypeSN = $certParser['signatureTypeSN']; $signatureTypeLN = $certParser['signatureTypeLN']; $signatureTypeNID = $certParser['signatureTypeNID']; //$purposes = $certParser['purposes']['1']['2']; dd($purposes); $purposes = 'Not Implemented'; $extensions = $certParser['extensions']; $extensionsBasicConstraints = $certParser['extensions']['basicConstraints']; //$extensionsNsCertType = $certParser['extensions']['nsCertType']; //$extensionsKeyUsage = $certParser['extensions']['keyUsage']; if(empty($certParser['extensions']['keyUsage'])){ $extensionsKeyUsage = null; } else { $extensionsKeyUsage = $certParser['extensions']['keyUsage']; } if(empty($certParser['extensions']['extendedKeyUsage'])){ $extensionsExtendedKeyUsage = null; } else { $extensionsExtendedKeyUsage = $certParser['extensions']['extendedKeyUsage']; } //$extensionsExtendedKeyUsage = $certParser['extensions']['extendedKeyUsage']; //$extensionsSubjectKeyIdentifier = $certParser['extensions']['subjectKeyIdentifier']; if(empty($certParser['extensions']['authorityKeyIdentifier'])){ $extensionsAuthorityKeyIdentifier = null; } else { $extensionsAuthorityKeyIdentifier = $certParser['extensions']['authorityKeyIdentifier']; } //$extensionsAuthorityKeyIdentifier = $certParser['extensions']['authorityKeyIdentifier']; $extensionsSubjectAltName = $certParser['extensions']['subjectAltName']; $extensionsCrlDistributionPoints = $certParser['extensions']['crlDistributionPoints']; // End Certificate Info $expiryDate = round((time() - $validTo_time_t) / (60*60*24)); // In days $status = 'Valid'; // for testing purposes $p12 = null; // Place the certificate publickey in public-keys to be monitored. openssl_x509_export_to_file($publicKey, storage_path('public-keys/' . $subjectCommonName . '.crt')); // Insert new PublicKey and update data // Cert::where('subjectCommonName', $subjectCommonName)-&gt;update(['publicKey' =&gt; $publicKey]); Cert::where('subjectCommonName', $subjectCommonName)-&gt;update([ //'subjectCommonName' =&gt; $subjectCommonName, //'subjectEmail' =&gt; $subjectEmail, 'subjectContry' =&gt; $subjectContry, //'subjectState' =&gt; $subjectState, //'subjectLocality' =&gt; $subjectLocality, 'subjectOrganization' =&gt; $subjectOrganization, //'subjectOrganizationUnit' =&gt; $subjectOrganizationUnit, 'hash' =&gt; $hash, 'issuerCN' =&gt; $issuerCN, 'issuerContry' =&gt; $issuerContry, //'issuerState' =&gt; $issuerState, //'issuerLocality' =&gt; $issuerLocality, 'issuerOrganization' =&gt; $issuerOrganization, //'issuerOrganizationUnit' =&gt; $issuerOrganizationUnit, 'version' =&gt; $version, 'serialNumber' =&gt; $serialNumber, 'serialNumberHex' =&gt; $serialNumberHex, 'validFrom' =&gt; $validFrom, 'validTo' =&gt; $validTo, 'validFrom_time_t' =&gt; $validFrom_time_t, 'validTo_time_t' =&gt; $validTo_time_t, 'signatureTypeSN' =&gt; $signatureTypeSN, 'signatureTypeLN' =&gt; $signatureTypeLN, 'signatureTypeNID' =&gt; $signatureTypeNID, 'purposes' =&gt; $purposes, 'extensionsBasicConstraints' =&gt; $extensionsBasicConstraints, //'extensionsNsCertType' =&gt; $extensionsNsCertType, 'extensionsKeyUsage' =&gt; $extensionsKeyUsage, 'extensionsExtendedKeyUsage' =&gt; $extensionsExtendedKeyUsage, //'extensionsSubjectKeyIdentifier' =&gt; $extensionsSubjectKeyIdentifier, 'extensionsAuthorityKeyIdentifier' =&gt; $extensionsAuthorityKeyIdentifier, 'extensionsSubjectAltName' =&gt; $extensionsSubjectAltName, 'extensionsCrlDistributionPoints' =&gt; $extensionsCrlDistributionPoints, //'certificateServerRequest' =&gt; $certificateServerRequest, 'publicKey' =&gt; $publicKey, // 'privateKey' =&gt; $privateKey, 'p12' =&gt; $p12, 'status' =&gt; $status, 'expiryDate' =&gt; $expiryDate, //'email' =&gt; $email, 'comments' =&gt; $comments ]); } /** Also, before updating csr/pub/priv keys, make a Keymatch for more security. **/ return redirect()-&gt;route('admin.certs.index'); } public function show(Cert $cert) { abort_unless(\\Gate::allows('certificate_show'), 403); // Convert dates validFrom and validTo to show them properly in view. $certs = Cert::all(); $validFrom_time_t = date(DATE_RFC2822, $cert-&gt;validFrom_time_t); $validTo_time_t = date(DATE_RFC2822, $cert-&gt;validTo_time_t); //$validFrom = date(DATE_RFC2822, $certParser['validFrom']); //dd($validFrom_time_t, $validTo_time_t); return view('admin.certs.show', compact('cert', 'validFrom_time_t', 'validTo_time_t')); } public function destroy(Cert $cert) { abort_unless(\\Gate::allows('certificate_delete'), 403); $cert-&gt;delete(); return back(); } public function massDestroy(MassDestroyCertificateKeyPair $request) { Cert::whereIn('id', request('ids'))-&gt;delete(); return response(null, 204); } } . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-view-snippets/#certificatecontrollerphp",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-view-snippets/#certificatecontrollerphp",
     "relUrl": "/docs/public-key-infrastructure/code/code-view-snippets/#certificatecontrollerphp"
   },"54": {
     "doc": "View Snippets",
     "title": "View Snippets",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/code/code-view-snippets/",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/code/code-view-snippets/",
     "relUrl": "/docs/public-key-infrastructure/code/code-view-snippets/"
   },"55": {
     "doc": "Color",
     "title": "Color Utilities",
     "content": " ",
-    "url": "http://localhost:4000/docs/utilities/color/#color-utilities",
+    "url": "https://lopeaa.github.io/docs/utilities/color/#color-utilities",
     "relUrl": "/docs/utilities/color/#color-utilities"
   },"56": {
     "doc": "Color",
     "title": "Table of contents",
     "content": ". | Light Greys | Dark Greys | Purples | Blues | Greens | Yellows | Reds | . All the colors used in Just the Docs have been systematized into a series of variables that have been extended to both font color and background color utility classes. ",
-    "url": "http://localhost:4000/docs/utilities/color/#table-of-contents",
+    "url": "https://lopeaa.github.io/docs/utilities/color/#table-of-contents",
     "relUrl": "/docs/utilities/color/#table-of-contents"
   },"57": {
     "doc": "Color",
     "title": "Light Greys",
     "content": "| Color value | Font color utility | Background color utility | . | grey-lt-000 | .text-grey-lt-000 | .bg-grey-lt-000 | . | grey-lt-100 | .text-grey-lt-100 | .bg-grey-lt-100 | . | grey-lt-200 | .text-grey-lt-200 | .bg-grey-lt-200 | . | grey-lt-300 | .text-grey-lt-300 | .bg-grey-lt-300 | . ",
-    "url": "http://localhost:4000/docs/utilities/color/#light-greys",
+    "url": "https://lopeaa.github.io/docs/utilities/color/#light-greys",
     "relUrl": "/docs/utilities/color/#light-greys"
   },"58": {
     "doc": "Color",
     "title": "Dark Greys",
     "content": "| Color value | Font color utility | Background color utility | . | grey-dk-000 | .text-grey-dk-000 | .bg-grey-dk-000 | . | grey-dk-100 | .text-grey-dk-100 | .bg-grey-dk-100 | . | grey-dk-200 | .text-grey-dk-200 | .bg-grey-dk-200 | . | grey-dk-250 | .text-grey-dk-250 | .bg-grey-dk-250 | . | grey-dk-300 | .text-grey-dk-300 | .bg-grey-dk-300 | . ",
-    "url": "http://localhost:4000/docs/utilities/color/#dark-greys",
+    "url": "https://lopeaa.github.io/docs/utilities/color/#dark-greys",
     "relUrl": "/docs/utilities/color/#dark-greys"
   },"59": {
     "doc": "Color",
     "title": "Purples",
     "content": "| Color value | Font color utility | Background color utility | . | purple-000 | .text-purple-000 | .bg-purple-000 | . | purple-100 | .text-purple-100 | .bg-purple-100 | . | purple-200 | .text-purple-200 | .bg-purple-200 | . | purple-300 | .text-purple-300 | .bg-purple-300 | . ",
-    "url": "http://localhost:4000/docs/utilities/color/#purples",
+    "url": "https://lopeaa.github.io/docs/utilities/color/#purples",
     "relUrl": "/docs/utilities/color/#purples"
   },"60": {
     "doc": "Color",
     "title": "Blues",
     "content": "| Color value | Font color utility | Background color utility | . | blue-000 | .text-blue-000 | .bg-blue-000 | . | blue-100 | .text-blue-100 | .bg-blue-100 | . | blue-200 | .text-blue-200 | .bg-blue-200 | . | blue-300 | .text-blue-300 | .bg-blue-300 | . ",
-    "url": "http://localhost:4000/docs/utilities/color/#blues",
+    "url": "https://lopeaa.github.io/docs/utilities/color/#blues",
     "relUrl": "/docs/utilities/color/#blues"
   },"61": {
     "doc": "Color",
     "title": "Greens",
     "content": "| Color value | Font color utility | Background color utility | . | green-000 | .text-green-000 | .bg-green-000 | . | green-100 | .text-green-100 | .bg-green-100 | . | green-200 | .text-green-200 | .bg-green-200 | . | green-300 | .text-green-300 | .bg-green-300 | . ",
-    "url": "http://localhost:4000/docs/utilities/color/#greens",
+    "url": "https://lopeaa.github.io/docs/utilities/color/#greens",
     "relUrl": "/docs/utilities/color/#greens"
   },"62": {
     "doc": "Color",
     "title": "Yellows",
     "content": "| Color value | Font color utility | Background color utility | . | yellow-000 | .text-yellow-000 | .bg-yellow-000 | . | yellow-100 | .text-yellow-100 | .bg-yellow-100 | . | yellow-200 | .text-yellow-200 | .bg-yellow-200 | . | yellow-300 | .text-yellow-300 | .bg-yellow-300 | . ",
-    "url": "http://localhost:4000/docs/utilities/color/#yellows",
+    "url": "https://lopeaa.github.io/docs/utilities/color/#yellows",
     "relUrl": "/docs/utilities/color/#yellows"
   },"63": {
     "doc": "Color",
     "title": "Reds",
     "content": "| Color value | Font color utility | Background color utility | . | red-000 | .text-red-000 | .bg-red-000 | . | red-100 | .text-red-100 | .bg-red-100 | . | red-200 | .text-red-200 | .bg-red-200 | . | red-300 | .text-red-300 | .bg-red-300 | . ",
-    "url": "http://localhost:4000/docs/utilities/color/#reds",
+    "url": "https://lopeaa.github.io/docs/utilities/color/#reds",
     "relUrl": "/docs/utilities/color/#reds"
   },"64": {
     "doc": "Color",
     "title": "Color",
     "content": " ",
-    "url": "http://localhost:4000/docs/utilities/color/",
+    "url": "https://lopeaa.github.io/docs/utilities/color/",
     "relUrl": "/docs/utilities/color/"
   },"65": {
     "doc": "Home",
     "title": "Lopeaa’s Documentation page.",
     "content": "Some of my stuff made by mistake. CA MGMT GUI Certificate Expiry Monitor DNS Records Website Compliance Check . License . Distributed by an MIT license. Code of Conduct . View our Code of Conduct . ",
-    "url": "http://localhost:4000/#lopeaas-documentation-page",
+    "url": "https://lopeaa.github.io/#lopeaas-documentation-page",
     "relUrl": "/#lopeaas-documentation-page"
   },"66": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
-    "url": "http://localhost:4000/",
+    "url": "https://lopeaa.github.io/",
     "relUrl": "/"
   },"67": {
     "doc": "Layout",
     "title": "Layout Utilities",
     "content": " ",
-    "url": "http://localhost:4000/docs/utilities/layout/#layout-utilities",
+    "url": "https://lopeaa.github.io/docs/utilities/layout/#layout-utilities",
     "relUrl": "/docs/utilities/layout/#layout-utilities"
   },"68": {
     "doc": "Layout",
     "title": "Table of contents",
     "content": ". | Spacing | Horizontal Alignment | Vertical Alignment | Display | . ",
-    "url": "http://localhost:4000/docs/utilities/layout/#table-of-contents",
+    "url": "https://lopeaa.github.io/docs/utilities/layout/#table-of-contents",
     "relUrl": "/docs/utilities/layout/#table-of-contents"
   },"69": {
     "doc": "Layout",
     "title": "Spacing",
     "content": "These spacers are available to use for margins and padding with responsive utility classes. Combine these prefixes with a screen size and spacing scale to use them responsively. | Classname prefix | What it does | . | .m- | margin | . | .mx- | margin-left, margin-right | . | .my- | margin top, margin bottom | . | .mt- | margin-top | . | .mr- | margin-right | . | .mb- | margin-bottom | . | .ml- | margin-left | . | Classname prefix | What it does | . | .p- | padding | . | .px- | padding-left, padding-right | . | .py- | padding top, padding bottom | . | .pt- | padding-top | . | .pr- | padding-right | . | .pb- | padding-bottom | . | .pl- | padding-left | . Spacing values are based on a 1rem = 16px spacing scale, broken down into these units: . | Spacer/suffix | Size in rems | Rem converted to px | . | 1 | 0.25rem | 4px | . | 2 | 0.5rem | 8px | . | 3 | 0.75rem | 12px | . | 4 | 1rem | 16px | . | 5 | 1.5rem | 24px | . | 6 | 2rem | 32px | . | 7 | 2.5rem | 40px | . | 8 | 3rem | 48px | . | auto | auto | auto | . Use mx-auto to horizontally center elements. Examples . In Markdown, use the {: } wrapper to apply custom classes: . This paragraph will have a margin bottom of 1rem/16px at large screens. {: .mb-lg-4 } This paragraph will have 2rem/32px of padding on the right and left at all screen sizes. {: .px-6 } . ",
-    "url": "http://localhost:4000/docs/utilities/layout/#spacing",
+    "url": "https://lopeaa.github.io/docs/utilities/layout/#spacing",
     "relUrl": "/docs/utilities/layout/#spacing"
   },"70": {
     "doc": "Layout",
     "title": "Horizontal Alignment",
     "content": "| Classname | What it does | . | .float-left | float: left | . | .float-right | float: right | . | .flex-justify-start | justify-content: flex-start | . | .flex-justify-end | justify-content: flex-end | . | .flex-justify-between | justify-content: space-between | . | .flex-justify-around | justify-content: space-around | . Note: any of the flex- classes must be used on a parent element that has d-flex applied to it. ",
-    "url": "http://localhost:4000/docs/utilities/layout/#horizontal-alignment",
+    "url": "https://lopeaa.github.io/docs/utilities/layout/#horizontal-alignment",
     "relUrl": "/docs/utilities/layout/#horizontal-alignment"
   },"71": {
     "doc": "Layout",
     "title": "Vertical Alignment",
     "content": "| Classname | What it does | . | .v-align-baseline | vertical-align: baseline | . | .v-align-bottom | vertical-align: bottom | . | .v-align-middle | vertical-align: middle | . | .v-align-text-bottom | vertical-align: text-bottom | . | .v-align-text-top | vertical-align: text-top | . | .v-align-top | vertical-align: top | . ",
-    "url": "http://localhost:4000/docs/utilities/layout/#vertical-alignment",
+    "url": "https://lopeaa.github.io/docs/utilities/layout/#vertical-alignment",
     "relUrl": "/docs/utilities/layout/#vertical-alignment"
   },"72": {
     "doc": "Layout",
     "title": "Display",
     "content": "Display classes aid in adapting the layout of the elements on a page: . | Class |   | . | .d-block | display: block | . | .d-flex | display: flex | . | .d-inline | display: inline | . | .d-inline-block | display: inline-block | . | .d-none | display: none | . Use these classes in conjunction with the responsive modifiers. Examples . In Markdown, use the {: } wrapper to apply custom classes: . This button will be hidden until medium screen sizes: [ A button ](#url) {: .d-none .d-md-inline-block } These headings will be `inline-block`: ### heading 3 {: .d-inline-block } ### heading 3 {: .d-inline-block } . ",
-    "url": "http://localhost:4000/docs/utilities/layout/#display",
+    "url": "https://lopeaa.github.io/docs/utilities/layout/#display",
     "relUrl": "/docs/utilities/layout/#display"
   },"73": {
     "doc": "Layout",
     "title": "Layout",
     "content": " ",
-    "url": "http://localhost:4000/docs/utilities/layout/",
+    "url": "https://lopeaa.github.io/docs/utilities/layout/",
     "relUrl": "/docs/utilities/layout/"
   },"74": {
     "doc": "Operating Systems",
     "title": "Systems OS setup",
     "content": " ",
-    "url": "http://localhost:4000/docs/operating-systems#systems-os-setup",
+    "url": "https://lopeaa.github.io/docs/operating-systems#systems-os-setup",
     "relUrl": "/docs/operating-systems#systems-os-setup"
   },"75": {
     "doc": "Operating Systems",
     "title": "Operating Systems",
     "content": " ",
-    "url": "http://localhost:4000/docs/operating-systems",
+    "url": "https://lopeaa.github.io/docs/operating-systems",
     "relUrl": "/docs/operating-systems"
   },"76": {
     "doc": "Public Key Infrastructure",
     "title": "Public Key Infrastructure",
     "content": "A set of services and scripts related to certificate management, TLS/SSL check and compliance. ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure",
     "relUrl": "/docs/public-key-infrastructure"
   },"77": {
     "doc": "Responsive Modifiers",
     "title": "Responsive modifiers",
     "content": "Just the Docs spacing works in conjunction with a variety of modifiers that allow you to target specific screen sizes responsively. Use these in conjunction with spacing and display prefix and suffix classes. | Modifier | Screen size | . | (none) | All screens until the next modifier | . | xs | 320px (20rem) and up | . | sm | 500px (31.25rem) and up | . | md | 740px (46.25rem) and up | . | lg | 1120px (70rem) and up | . | xl | 1400px (87.5rem) and up | . ",
-    "url": "http://localhost:4000/docs/utilities/responsive-modifiers/#responsive-modifiers",
+    "url": "https://lopeaa.github.io/docs/utilities/responsive-modifiers/#responsive-modifiers",
     "relUrl": "/docs/utilities/responsive-modifiers/#responsive-modifiers"
   },"78": {
     "doc": "Responsive Modifiers",
     "title": "Responsive Modifiers",
     "content": " ",
-    "url": "http://localhost:4000/docs/utilities/responsive-modifiers/",
+    "url": "https://lopeaa.github.io/docs/utilities/responsive-modifiers/",
     "relUrl": "/docs/utilities/responsive-modifiers/"
   },"79": {
     "doc": "Typography",
     "title": "Typography Utilities",
     "content": " ",
-    "url": "http://localhost:4000/docs/utilities/typography/#typography-utilities",
+    "url": "https://lopeaa.github.io/docs/utilities/typography/#typography-utilities",
     "relUrl": "/docs/utilities/typography/#typography-utilities"
   },"80": {
     "doc": "Typography",
     "title": "Table of contents",
     "content": ". | Font size | Font weight | Line height | Text justification | . ",
-    "url": "http://localhost:4000/docs/utilities/typography/#table-of-contents",
+    "url": "https://lopeaa.github.io/docs/utilities/typography/#table-of-contents",
     "relUrl": "/docs/utilities/typography/#table-of-contents"
   },"81": {
     "doc": "Typography",
     "title": "Font size",
     "content": "Use the .fs-1 - .fs-10 to set an explicit font-size. | Class | Small screen size font-size | Large screen size font-size | . | .fs-1 | 9px | 10px | . | .fs-2 | 11px | 12px | . | .fs-3 | 12px | 14px | . | .fs-4 | 14px | 16px | . | .fs-5 | 16px | 18px | . | .fs-6 | 18px | 24px | . | .fs-7 | 24px | 32px | . | .fs-8 | 32px | 38px | . | .fs-9 | 38px | 42px | . | .fs-10 | 42px | 48px | . Font size 1 . Font size 2 . Font size 3 . Font size 4 . Font size 5 . Font size 6 . Font size 7 . Font size 8 . Font size 9 . Font size 10 . In Markdown, use the `{: }` wrapper to apply custom classes: Font size 1 {: .fs-1 } Font size 2 {: .fs-2 } Font size 3 {: .fs-3 } Font size 4 {: .fs-4 } Font size 5 {: .fs-5 } Font size 6 {: .fs-6 } Font size 7 {: .fs-7 } Font size 8 {: .fs-8 } Font size 9 {: .fs-9 } Font size 10 {: .fs-10 } . ",
-    "url": "http://localhost:4000/docs/utilities/typography/#font-size",
+    "url": "https://lopeaa.github.io/docs/utilities/typography/#font-size",
     "relUrl": "/docs/utilities/typography/#font-size"
   },"82": {
     "doc": "Typography",
     "title": "Font weight",
     "content": "Use the .fw-300 - .fw-700 to set an explicit font-size. Font weight 300 . Font weight 400 . Font weight 500 . Font weight 700 . In Markdown, use the `{: }` wrapper to apply custom classes: Font weight 300 {: .fw-300 } Font weight 400 {: .fw-400 } Font weight 500 {: .fw-500 } Font weight 700 {: .fw-700 } . ",
-    "url": "http://localhost:4000/docs/utilities/typography/#font-weight",
+    "url": "https://lopeaa.github.io/docs/utilities/typography/#font-weight",
     "relUrl": "/docs/utilities/typography/#font-weight"
   },"83": {
     "doc": "Typography",
     "title": "Line height",
     "content": "Use the lh- classes to explicitly apply line height to text. | Class | line-height value | Notes | . | .lh-0 | 0 |   | . | .lh-tight | 1.1 | Default for headings | . | .lh-default | 1.4 | Default for body (paragraphs) | . No Line height No Line height . Tight line height Tight line height . Default line height Default line height . In Markdown, use the `{: }` wrapper to apply custom classes: No Line height No Line height {: .lh-0 } Tight line height Tight line height {: .lh-tight } Default line height Default line height {: .fh-default } . ",
-    "url": "http://localhost:4000/docs/utilities/typography/#line-height",
+    "url": "https://lopeaa.github.io/docs/utilities/typography/#line-height",
     "relUrl": "/docs/utilities/typography/#line-height"
   },"84": {
     "doc": "Typography",
     "title": "Text justification",
     "content": "By default text is justified left. Use these text- classes to override settings: . | Class | What it does | . | .text-left | text-align: left | . | .text-right | text-align: right | . | .text-center | text-align: center | . ",
-    "url": "http://localhost:4000/docs/utilities/typography/#text-justification",
+    "url": "https://lopeaa.github.io/docs/utilities/typography/#text-justification",
     "relUrl": "/docs/utilities/typography/#text-justification"
   },"85": {
     "doc": "Typography",
     "title": "Typography",
     "content": " ",
-    "url": "http://localhost:4000/docs/utilities/typography/",
+    "url": "https://lopeaa.github.io/docs/utilities/typography/",
     "relUrl": "/docs/utilities/typography/"
   },"86": {
     "doc": "Typography",
     "title": "Typography",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/typography/",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/typography/",
     "relUrl": "/docs/public-key-infrastructure/typography/"
   },"87": {
     "doc": "Typography",
     "title": "Table of contents",
     "content": ". | Font stack | Responsive type scale | Headings | Body text | Inline elements | Typographic Utilities | . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/typography/#table-of-contents",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/typography/#table-of-contents",
     "relUrl": "/docs/public-key-infrastructure/typography/#table-of-contents"
   },"88": {
     "doc": "Typography",
     "title": "Font stack",
     "content": "By default, Just the Docs uses a native system font stack for sans-serif fonts: . system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif . ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz . For monospace type, like code snippets or the &lt;pre&gt; element, Just the Docs uses a native system font stack for monospace fonts: . \"SFMono-Regular\", Menlo, Consolas, Monospace . ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/typography/#font-stack",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/typography/#font-stack",
     "relUrl": "/docs/public-key-infrastructure/typography/#font-stack"
   },"89": {
     "doc": "Typography",
     "title": "Responsive type scale",
     "content": "Just the Docs uses a responsive type scale that shifts depending on the viewport size. | Selector | Small screen size font-size | Large screen size font-size | . | h1, .text-alpha | 32px | 36px | . | h2, .text-beta | 18px | 24px | . | h3, .text-gamma | 16px | 18px | . | h4, .text-delta | 14px | 16px | . | h5, .text-epsilon | 16px | 18px | . | h6, .text-zeta | 18px | 24px | . | body | 14px | 16px | . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/typography/#responsive-type-scale",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/typography/#responsive-type-scale",
     "relUrl": "/docs/public-key-infrastructure/typography/#responsive-type-scale"
   },"90": {
     "doc": "Typography",
     "title": "Headings",
     "content": "Headings are rendered like this: . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/typography/#headings",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/typography/#headings",
     "relUrl": "/docs/public-key-infrastructure/typography/#headings"
   },"91": {
     "doc": "Typography",
     "title": "Heading 1",
     "content": " ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/typography/",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/typography/",
     "relUrl": "/docs/public-key-infrastructure/typography/"
   },"92": {
     "doc": "Typography",
     "title": "Heading 2",
     "content": "Heading 3 . Heading 4 . Heading 5 . Heading 6 . # Heading 1 ## Heading 2 ### Heading 3 #### Heading 4 ##### Heading 5 ###### Heading 6 . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/typography/",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/typography/",
     "relUrl": "/docs/public-key-infrastructure/typography/"
   },"93": {
     "doc": "Typography",
     "title": "Body text",
     "content": "Default body text is rendered like this: . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/typography/#body-text",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/typography/#body-text",
     "relUrl": "/docs/public-key-infrastructure/typography/#body-text"
   },"94": {
     "doc": "Typography",
     "title": "Inline elements",
     "content": "Text can be bold, italic, or strikethrough. Link to another page. Text can be **bold**, _italic_, or ~~strikethrough~~. [Link to another page](another-page). ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/typography/#inline-elements",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/typography/#inline-elements",
     "relUrl": "/docs/public-key-infrastructure/typography/#inline-elements"
   },"95": {
     "doc": "Typography",
     "title": "Typographic Utilities",
     "content": "There are a number of specific typographic CSS classes that allow you to override default styling for font size, font weight, line height, and capitalization. View typography utilities . ",
-    "url": "http://localhost:4000/docs/public-key-infrastructure/typography/#typographic-utilities",
+    "url": "https://lopeaa.github.io/docs/public-key-infrastructure/typography/#typographic-utilities",
     "relUrl": "/docs/public-key-infrastructure/typography/#typographic-utilities"
   },"96": {
     "doc": "Ubuntu 20.04",
     "title": " Ubuntu 20.04 server setup",
     "content": " ",
-    "url": "http://localhost:4000/docs/operating-systems/ubuntu/#-ubuntu-2004-server-setup",
+    "url": "https://lopeaa.github.io/docs/operating-systems/ubuntu/#-ubuntu-2004-server-setup",
     "relUrl": "/docs/operating-systems/ubuntu/#-ubuntu-2004-server-setup"
   },"97": {
     "doc": "Ubuntu 20.04",
     "title": "Table of contents",
     "content": ". | Setup instructions . | Create sudo user + disable root login | Set system-wide Proxy | Set Proxy for APT package manager | Set Proxy for Wget | LEMP + Curl + Zip | Composer + NPM | MariaDB | Setup Nginx + Let’s encrypt | Default conf file | . | . ",
-    "url": "http://localhost:4000/docs/operating-systems/ubuntu/#table-of-contents",
+    "url": "https://lopeaa.github.io/docs/operating-systems/ubuntu/#table-of-contents",
     "relUrl": "/docs/operating-systems/ubuntu/#table-of-contents"
   },"98": {
     "doc": "Ubuntu 20.04",
     "title": "Setup instructions",
     "content": "Create sudo user + disable root login . adduser &lt;username&gt; usermode -aG sudo &lt;username&gt; sudo &lt;username&gt; pico /etc/ssh/sshd_config --- #PermitRootLogin **no** --- . Set system-wide Proxy . pico /etc/profile.d/proxy.sh . # Should apply for all users # export http_proxy=\"http://10.10.1.10:8080/\" export https_proxy=\"http://10.10.1.10:8080/\" export ftp_proxy=\"http://10.10.1.10:8080/\" export no_proxy=\"127.0.0.1,localhost\" # For curl export HTTP_PROXY=\"http://10.10.1.10:8080/\" export HTTPS_PROXY=\"http://10.10.1.10:8080/\" export FTP_PROXY=\"http://10.10.1.10:8080/\" export NO_PROXY=\"127.0.0.1,localhost\" . chmod +x /etc/profile.d/proxy.sh . source /etc/profile.d/proxy.sh env | grep -i proxy . Set Proxy for APT package manager . pico /etc/profile.d/proxy.sh . # No authenticated vim /etc/apt/apt.conf.d/80proxy Acquire::http::proxy \"http://10.10.1.10:8080/\"; Acquire::https::proxy \"https://10.10.1.10:8080/\"; Acquire::ftp::proxy \"ftp://10.10.1.10:8080/\"; # Authenticated Acquire::http::proxy \"http://&lt;username&gt;:&lt;password&gt;@&lt;proxy&gt;:&lt;port&gt;/\"; Acquire::https::proxy \"https://&lt;username&gt;:&lt;password&gt;@&lt;proxy&gt;:&lt;port&gt;/\"; Acquire::ftp::proxy \"ftp://&lt;username&gt;:&lt;password&gt;@&lt;proxy&gt;:&lt;port&gt;/\"; . Set Proxy for Wget . pico ~/.wgetrc . use_proxy = on http_proxy = http://10.10.1.10:8080/ https_proxy = http://10.10.1.10:8080/ ftp_proxy = http://10.10.1.10:8080/ . LEMP + Curl + Zip . apt update apt install -y php-mbstring php-xml php-fpm php-zip php-common php-fpm php-cli unzip curl nginx . Composer + NPM . apt install composer composer diagnose apt install npm npm install &amp;&amp; npm run . MariaDB . apt install -y mariadb-client mariadb-server systemctl enable --now mariadb.service mysql_secure_installation ### Create a database CREATE DATABASE db_name; CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password'; GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost'; FLUSH PRIVILEGES; . Setup Nginx + Let’s encrypt . ### Certbot plugin for Nginx. apt install certbot python3-certbot-nginx sudo nano /etc/nginx/sites-available/default ... server_name example.com www.example.com; ... sudo nginx -t sudo systemctl reload nginx sudo ufw allow 'Nginx Full' sudo ufw delete allow 'Nginx HTTP' sudo ufw status sudo certbot --nginx -d domain.com -d www.domain.com sudo systemctl status certbot.timer sudo certbot renew --dry-run . ## Test it. https://www.ssllabs.com/ssltest/analyze.html?d=domain.com . Default conf file . server { listen 80; server_name example.com; root /var/www/html/example/public; . add_header X-Frame-Options \"SAMEORIGIN\"; add_header X-XSS-Protection \"1; mode=block\"; add_header X-Content-Type-Options \"nosniff\"; index index.php; charset utf-8; location / { try_files $uri $uri/ /index.php?$query_string; } location = /favicon.ico { access_log off; log_not_found off; } location = /robots.txt { access_log off; log_not_found off; } error_page 404 /index.php; location ~ \\.php$ { fastcgi_pass unix:/var/run/php/php7.4-fpm.sock; fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name; include fastcgi_params; } location ~ /\\.(?!well-known).* { deny all; } } ### Enable Nginx config file ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/ ``` . ",
-    "url": "http://localhost:4000/docs/operating-systems/ubuntu/#setup-instructions",
+    "url": "https://lopeaa.github.io/docs/operating-systems/ubuntu/#setup-instructions",
     "relUrl": "/docs/operating-systems/ubuntu/#setup-instructions"
   },"99": {
     "doc": "Ubuntu 20.04",
     "title": "Ubuntu 20.04",
     "content": " ",
-    "url": "http://localhost:4000/docs/operating-systems/ubuntu/",
+    "url": "https://lopeaa.github.io/docs/operating-systems/ubuntu/",
     "relUrl": "/docs/operating-systems/ubuntu/"
   },"100": {
     "doc": "Utilities",
     "title": "Utilities",
     "content": "CSS utility classes come in handy when you to want to override default styles to create additional whitespace (margins/padding), correct unexpected shifts in font size or weight, add color, or hide (or show) something at a specific screen size. ",
-    "url": "http://localhost:4000/docs/utilities",
+    "url": "https://lopeaa.github.io/docs/utilities",
     "relUrl": "/docs/utilities"
   }
 }
