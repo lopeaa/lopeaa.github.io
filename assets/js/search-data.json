@@ -391,7 +391,7 @@
   },"65": {
     "doc": "Home",
     "title": "Everything must be made as simple as possible. But not simpler.",
-    "content": "Some stuff made out of boredom . | Stuff | Description | Status | . | CA MGMT GUI | It aims to simplify Digital Certificates lifesycle management. | Finished | . | Certificate Expiry Monitor | Just another expiry monitor. | Finished | . | DNS Records | Simple but not simpler DNS Record search. | Finished | . | Website Compliance Check | Simple compliance check before publishing website. | Ongoing | . | Bulk Digital Certificate | generates digital certificates from a .txt file and creates their corresponding .pfx archives | Finished | . | Let´s Encrypt Hub | Attempting centralized Let’s Encrypt certificate requests | Ongoing | . License . Distributed by an MIT license. Code of Conduct . View our Code of Conduct . ",
+    "content": "Lastest updates . # Certificate Authority - Certificate status in Dashboard (Valid/Expiring...) are now calculated correctly. - When CodeSigning (JAR / Microsoft binaries) archives are now saved on disk. # Compliance check script - Checks if application is hsowing te default webserver page. - Checks if error reporting is enabled in application. License . Distributed by an MIT license. Code of Conduct . View our Code of Conduct . ",
     "url": "https://lopeaa.github.io/#everything-must-be-made-as-simple-as-possible-but-not-simpler",
     "relUrl": "/#everything-must-be-made-as-simple-as-possible-but-not-simpler"
   },"66": {
