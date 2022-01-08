@@ -227,95 +227,95 @@
     "url": "https://lopeaa.github.io/docs/certificate-authority/features/",
     "relUrl": "/docs/certificate-authority/features/"
   },"38": {
-    "doc": "Certificate Authority",
-    "title": "Certificate Authority Management GUI",
-    "content": " ",
-    "url": "https://lopeaa.github.io/docs/certificate-authority#certificate-authority-management-gui",
-    "relUrl": "/docs/certificate-authority#certificate-authority-management-gui"
-  },"39": {
-    "doc": "Certificate Authority",
-    "title": "Table of contents",
-    "content": ". | Overwiew | . ",
-    "url": "https://lopeaa.github.io/docs/certificate-authority#table-of-contents",
-    "relUrl": "/docs/certificate-authority#table-of-contents"
-  },"40": {
-    "doc": "Certificate Authority",
-    "title": "Overwiew",
-    "content": "This project aims to simplify the management of the digital certificates lifecycle such as creation of keypairs (csr, private and private keys), signing of csr files created in external systems as well as generating csr by your own private CA. It also includes tools to generate of PFX/P12 archive, keymatch, expiry notifications, converter, decode nad more… . ",
-    "url": "https://lopeaa.github.io/docs/certificate-authority#overwiew",
-    "relUrl": "/docs/certificate-authority#overwiew"
-  },"41": {
-    "doc": "Certificate Authority",
-    "title": "Certificate Authority",
-    "content": " ",
-    "url": "https://lopeaa.github.io/docs/certificate-authority",
-    "relUrl": "/docs/certificate-authority"
-  },"42": {
-    "doc": "Scripts",
-    "title": "Scripts",
-    "content": "Some scripts… . ",
-    "url": "https://lopeaa.github.io/docs/scripts",
-    "relUrl": "/docs/scripts"
-  },"43": {
-    "doc": "Home",
-    "title": "Everything must be made as simple as possible. But not simpler.",
-    "content": "Lastest updates . # Certificate Authority - Certificate status in Dashboard (Valid/Expiring...) are now calculated correctly. - When CodeSigning (JAR / Microsoft binaries) archives are now saved on disk. # Compliance check script - Checks if application is hsowing te default webserver page. - Checks if error reporting is enabled in application. ",
-    "url": "https://lopeaa.github.io/#everything-must-be-made-as-simple-as-possible-but-not-simpler",
-    "relUrl": "/#everything-must-be-made-as-simple-as-possible-but-not-simpler"
-  },"44": {
-    "doc": "Home",
-    "title": "Home",
-    "content": " ",
-    "url": "https://lopeaa.github.io/",
-    "relUrl": "/"
-  },"45": {
     "doc": "Code Snippets",
     "title": "MVC Architecture",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/code-snippets/#mvc-architecture",
     "relUrl": "/docs/certificate-authority/code-snippets/#mvc-architecture"
-  },"46": {
+  },"39": {
     "doc": "Code Snippets",
     "title": "Table of contents",
     "content": ". | Model | View | Controller | . ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/code-snippets/#table-of-contents",
     "relUrl": "/docs/certificate-authority/code-snippets/#table-of-contents"
-  },"47": {
+  },"40": {
     "doc": "Code Snippets",
     "title": "Model",
     "content": "The model contains all the data-related logic that the user works with, like the schemas and interfaces of a project, the databases, and their fields. For example, a customer object will retrieve the customer information from the database, manipulate or update their record in the database, or use it to render data. ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/code-snippets/#model",
     "relUrl": "/docs/certificate-authority/code-snippets/#model"
-  },"48": {
+  },"41": {
     "doc": "Code Snippets",
     "title": "View",
     "content": "The view contains the UI and the presentation of an application. For example, the customer view will include all the UI components such as text boxes, dropdowns, and other things that the user interacts with. ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/code-snippets/#view",
     "relUrl": "/docs/certificate-authority/code-snippets/#view"
-  },"49": {
+  },"42": {
     "doc": "Code Snippets",
     "title": "Controller",
     "content": "The controller’s responsibility is to pull, modify, and provide data to the user. Essentially, the controller is the link between the view and model. Through getter and setter functions, the controller pulls data from the model and initializes the views. If there are any updates from the views, it modifies the data with a setter function. ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/code-snippets/#controller",
     "relUrl": "/docs/certificate-authority/code-snippets/#controller"
-  },"50": {
+  },"43": {
     "doc": "Code Snippets",
     "title": "Code Snippets",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/code-snippets/",
     "relUrl": "/docs/certificate-authority/code-snippets/"
-  },"51": {
+  },"44": {
+    "doc": "Scripts",
+    "title": "Scripts",
+    "content": "Some scripts… . ",
+    "url": "https://lopeaa.github.io/docs/scripts",
+    "relUrl": "/docs/scripts"
+  },"45": {
+    "doc": "Home",
+    "title": "Everything must be made as simple as possible. But not simpler.",
+    "content": "Lastest updates . # Certificate Authority - Certificate status in Dashboard (Valid/Expiring...) are now calculated correctly. - When CodeSigning (JAR / Microsoft binaries) archives are now saved on disk. # Compliance check script - Checks if application is hsowing te default webserver page. - Checks if error reporting is enabled in application. ",
+    "url": "https://lopeaa.github.io/#everything-must-be-made-as-simple-as-possible-but-not-simpler",
+    "relUrl": "/#everything-must-be-made-as-simple-as-possible-but-not-simpler"
+  },"46": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "https://lopeaa.github.io/",
+    "relUrl": "/"
+  },"47": {
     "doc": "Operating Systems",
     "title": "Systems OS setup",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/operating-systems#systems-os-setup",
     "relUrl": "/docs/operating-systems#systems-os-setup"
-  },"52": {
+  },"48": {
     "doc": "Operating Systems",
     "title": "Operating Systems",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/operating-systems",
     "relUrl": "/docs/operating-systems"
+  },"49": {
+    "doc": "Certificate Authority",
+    "title": "Certificate Authority Management GUI",
+    "content": " ",
+    "url": "https://lopeaa.github.io/docs/certificate-authority#certificate-authority-management-gui",
+    "relUrl": "/docs/certificate-authority#certificate-authority-management-gui"
+  },"50": {
+    "doc": "Certificate Authority",
+    "title": "Table of contents",
+    "content": ". | Overwiew | . ",
+    "url": "https://lopeaa.github.io/docs/certificate-authority#table-of-contents",
+    "relUrl": "/docs/certificate-authority#table-of-contents"
+  },"51": {
+    "doc": "Certificate Authority",
+    "title": "Overwiew",
+    "content": "This project aims to simplify the management of the digital certificates lifecycle such as creation of keypairs (csr, private and private keys), signing of csr files created in external systems as well as generating csr by your own private CA. It also includes tools to generate of PFX/P12 archive, keymatch, expiry notifications, converter, decode nad more… . ",
+    "url": "https://lopeaa.github.io/docs/certificate-authority#overwiew",
+    "relUrl": "/docs/certificate-authority#overwiew"
+  },"52": {
+    "doc": "Certificate Authority",
+    "title": "Certificate Authority",
+    "content": " ",
+    "url": "https://lopeaa.github.io/docs/certificate-authority",
+    "relUrl": "/docs/certificate-authority"
   },"53": {
     "doc": "Web Frameworks",
     "title": "Frameworks setup",
@@ -329,192 +329,186 @@
     "url": "https://lopeaa.github.io/docs/web-framework",
     "relUrl": "/docs/web-framework"
   },"55": {
-    "doc": "Keep in touch",
-    "title": "Keep in touch",
-    "content": "Send ",
-    "url": "https://lopeaa.github.io/keepintouch/",
-    "relUrl": "/keepintouch/"
-  },"56": {
     "doc": "Laravel",
     "title": " Laravel Framework",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/web-frameworks/laravel/#-laravel-framework",
     "relUrl": "/docs/web-frameworks/laravel/#-laravel-framework"
-  },"57": {
+  },"56": {
     "doc": "Laravel",
     "title": "Table of contents",
     "content": ". | Overwiew | . ",
     "url": "https://lopeaa.github.io/docs/web-frameworks/laravel/#table-of-contents",
     "relUrl": "/docs/web-frameworks/laravel/#table-of-contents"
-  },"58": {
+  },"57": {
     "doc": "Laravel",
     "title": "Overwiew",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/web-frameworks/laravel/#overwiew",
     "relUrl": "/docs/web-frameworks/laravel/#overwiew"
-  },"59": {
+  },"58": {
     "doc": "Laravel",
     "title": "Laravel",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/web-frameworks/laravel/",
     "relUrl": "/docs/web-frameworks/laravel/"
-  },"60": {
+  },"59": {
     "doc": "Models Snippets",
     "title": "Certificate Authority Models",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/code/models/#certificate-authority-models",
     "relUrl": "/docs/certificate-authority/code/models/#certificate-authority-models"
-  },"61": {
+  },"60": {
     "doc": "Models Snippets",
     "title": "Table of contents",
     "content": ". ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/code/models/#table-of-contents",
     "relUrl": "/docs/certificate-authority/code/models/#table-of-contents"
-  },"62": {
+  },"61": {
     "doc": "Models Snippets",
     "title": "Models Snippets",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/code/models/",
     "relUrl": "/docs/certificate-authority/code/models/"
-  },"63": {
+  },"62": {
     "doc": "Subject Alternative Name",
     "title": "Subject Alternative Name script",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/scripts/san/#subject-alternative-name-script",
     "relUrl": "/docs/scripts/san/#subject-alternative-name-script"
-  },"64": {
+  },"63": {
     "doc": "Subject Alternative Name",
     "title": "Table of contents",
     "content": ". | Description | Bash script | . ",
     "url": "https://lopeaa.github.io/docs/scripts/san/#table-of-contents",
     "relUrl": "/docs/scripts/san/#table-of-contents"
-  },"65": {
+  },"64": {
     "doc": "Subject Alternative Name",
     "title": "Description",
     "content": "This scripts is part of the CA and it populates subjectAltName in openssl.cnf before it is signed by the openssl_csr_sign function. ",
     "url": "https://lopeaa.github.io/docs/scripts/san/#description",
     "relUrl": "/docs/scripts/san/#description"
-  },"66": {
+  },"65": {
     "doc": "Subject Alternative Name",
     "title": "Bash script",
     "content": "asdasdad . ",
     "url": "https://lopeaa.github.io/docs/scripts/san/#bash-script",
     "relUrl": "/docs/scripts/san/#bash-script"
-  },"67": {
+  },"66": {
     "doc": "Subject Alternative Name",
     "title": "Subject Alternative Name",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/scripts/san/",
     "relUrl": "/docs/scripts/san/"
-  },"68": {
+  },"67": {
     "doc": "Setup",
     "title": "Certificate Authority setup",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/setup/#certificate-authority-setup",
     "relUrl": "/docs/certificate-authority/setup/#certificate-authority-setup"
-  },"69": {
+  },"68": {
     "doc": "Setup",
     "title": "Table of contents",
     "content": ". | Manual setup (Ubuntu 20.04 LTS) . | Pre-requisites | Cloning repository | Create Database . | SQLite database | MySQL database | . | Modify .env file . | .env params for SQLite. | .env params for MySQL. | . | Run Composer | Run Migration with Seeds | Generate new encryption key | Recommendations | Login to Dashboard | . | VM .OVA setup . | Recomended requirements | . | . ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/setup/#table-of-contents",
     "relUrl": "/docs/certificate-authority/setup/#table-of-contents"
-  },"70": {
+  },"69": {
     "doc": "Setup",
     "title": "Manual setup (Ubuntu 20.04 LTS)",
     "content": "Pre-requisites . | Package | Version | Docs | . | PHP | 7.4 | Setup instructions | . | NGINX | 1.x | Setup instructions | . | Osslsigncode | Latest | Setup instructions | . | OpenCA | Latest | Setup instructions | . | Curl | Latest | Setup instructions | . Cloning repository . sudo git clone https://github.com/lopeaa/ca-mgmt-console.git . Create Database . SQLite database . sudo touch database/database.sqlite . MySQL database . CREATE DATABASE db_name; CREATE USER 'db_user'@'localhost' IDENTIFIED BY 'password'; GRANT ALL PRIVILEGES ON * . * TO 'db_user'@'localhost'; FLUSH PRIVILEGES; . Modify .env file . cd ca-mgmt-console sudo mv .env.example .env sudo pico .env .env params for SQLite. DB_CONNECTION=sqlite DB_DATABASE=/var/www/ca-mgmt-console/database/database.sqlite .env params for MySQL. DB_CONNECTION=mysql DB_HOST=127.0.0.1 DB_PORT=3306 DB_DATABASE=ca-mgmt-console DB_USERNAME=db_user . Run Composer . sudo composer update # Check for Composer error and install php extensions . Run Migration with Seeds . sudo php artisan migrate --seed . Generate new encryption key . sudo php artisan key:generate . Recommendations . | Configure HTTPS | . Login to Dashboard . Admin Panel . ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/setup/#manual-setup-ubuntu-2004-lts",
     "relUrl": "/docs/certificate-authority/setup/#manual-setup-ubuntu-2004-lts"
-  },"71": {
+  },"70": {
     "doc": "Setup",
     "title": "VM .OVA setup",
     "content": "For easiest setup use the .OVA Image . Recomended requirements . | At least 2GB of RAM | 2 CPU | 20GB of disk storage. | . ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/setup/#vm-ova-setup",
     "relUrl": "/docs/certificate-authority/setup/#vm-ova-setup"
-  },"72": {
+  },"71": {
     "doc": "Setup",
     "title": "Setup",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/setup/",
     "relUrl": "/docs/certificate-authority/setup/"
-  },"73": {
+  },"72": {
     "doc": "Tools",
     "title": "Certificate Authority tools",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/tools/#certificate-authority-tools",
     "relUrl": "/docs/certificate-authority/tools/#certificate-authority-tools"
-  },"74": {
+  },"73": {
     "doc": "Tools",
     "title": "Table of contents",
     "content": ". | Certificate expiry notification | Certificate keymatch | Certificate converter | JAR/MS Authenticode code signing | . ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/tools/#table-of-contents",
     "relUrl": "/docs/certificate-authority/tools/#table-of-contents"
-  },"75": {
+  },"74": {
     "doc": "Tools",
     "title": "Certificate expiry notification",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/tools/#certificate-expiry-notification",
     "relUrl": "/docs/certificate-authority/tools/#certificate-expiry-notification"
-  },"76": {
+  },"75": {
     "doc": "Tools",
     "title": "Certificate keymatch",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/tools/#certificate-keymatch",
     "relUrl": "/docs/certificate-authority/tools/#certificate-keymatch"
-  },"77": {
+  },"76": {
     "doc": "Tools",
     "title": "Certificate converter",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/tools/#certificate-converter",
     "relUrl": "/docs/certificate-authority/tools/#certificate-converter"
-  },"78": {
+  },"77": {
     "doc": "Tools",
     "title": "JAR/MS Authenticode code signing",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/tools/#jarms-authenticode-code-signing",
     "relUrl": "/docs/certificate-authority/tools/#jarms-authenticode-code-signing"
-  },"79": {
+  },"78": {
     "doc": "Tools",
     "title": "Tools",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/tools/",
     "relUrl": "/docs/certificate-authority/tools/"
-  },"80": {
+  },"79": {
     "doc": "Ubuntu 20.04",
     "title": " Ubuntu 20.04 server setup",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/operating-systems/ubuntu/#-ubuntu-2004-server-setup",
     "relUrl": "/docs/operating-systems/ubuntu/#-ubuntu-2004-server-setup"
-  },"81": {
+  },"80": {
     "doc": "Ubuntu 20.04",
     "title": "Table of contents",
     "content": ". | Setup instructions . | Create sudo user + disable root login | Set system-wide Proxy | Set Proxy for APT package manager | Set Proxy for Wget | LEMP + Curl + Zip | Composer + NPM | MariaDB | Setup Nginx + Let’s encrypt | Default conf file | . | . ",
     "url": "https://lopeaa.github.io/docs/operating-systems/ubuntu/#table-of-contents",
     "relUrl": "/docs/operating-systems/ubuntu/#table-of-contents"
-  },"82": {
+  },"81": {
     "doc": "Ubuntu 20.04",
     "title": "Setup instructions",
     "content": "Create sudo user + disable root login . adduser &lt;username&gt; usermode -aG sudo &lt;username&gt; sudo &lt;username&gt; pico /etc/ssh/sshd_config --- #PermitRootLogin **no** --- . Set system-wide Proxy . pico /etc/profile.d/proxy.sh . # Should apply for all users # export http_proxy=\"http://10.10.1.10:8080/\" export https_proxy=\"http://10.10.1.10:8080/\" export ftp_proxy=\"http://10.10.1.10:8080/\" export no_proxy=\"127.0.0.1,localhost\" # For curl export HTTP_PROXY=\"http://10.10.1.10:8080/\" export HTTPS_PROXY=\"http://10.10.1.10:8080/\" export FTP_PROXY=\"http://10.10.1.10:8080/\" export NO_PROXY=\"127.0.0.1,localhost\" . chmod +x /etc/profile.d/proxy.sh . source /etc/profile.d/proxy.sh env | grep -i proxy . Set Proxy for APT package manager . pico /etc/profile.d/proxy.sh . # No authenticated vim /etc/apt/apt.conf.d/80proxy Acquire::http::proxy \"http://10.10.1.10:8080/\"; Acquire::https::proxy \"https://10.10.1.10:8080/\"; Acquire::ftp::proxy \"ftp://10.10.1.10:8080/\"; # Authenticated Acquire::http::proxy \"http://&lt;username&gt;:&lt;password&gt;@&lt;proxy&gt;:&lt;port&gt;/\"; Acquire::https::proxy \"https://&lt;username&gt;:&lt;password&gt;@&lt;proxy&gt;:&lt;port&gt;/\"; Acquire::ftp::proxy \"ftp://&lt;username&gt;:&lt;password&gt;@&lt;proxy&gt;:&lt;port&gt;/\"; . Set Proxy for Wget . pico ~/.wgetrc . use_proxy = on http_proxy = http://10.10.1.10:8080/ https_proxy = http://10.10.1.10:8080/ ftp_proxy = http://10.10.1.10:8080/ . LEMP + Curl + Zip . apt update apt install -y php-mbstring php-xml php-fpm php-zip php-common php-fpm php-cli unzip curl nginx . Composer + NPM . apt install composer composer diagnose apt install npm npm install &amp;&amp; npm run . MariaDB . apt install -y mariadb-client mariadb-server systemctl enable --now mariadb.service mysql_secure_installation ### Create a database CREATE DATABASE db_name; CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password'; GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost'; FLUSH PRIVILEGES; . Setup Nginx + Let’s encrypt . ### Certbot plugin for Nginx. apt install certbot python3-certbot-nginx sudo nano /etc/nginx/sites-available/default ... server_name example.com www.example.com; ... sudo nginx -t sudo systemctl reload nginx sudo ufw allow 'Nginx Full' sudo ufw delete allow 'Nginx HTTP' sudo ufw status sudo certbot --nginx -d domain.com -d www.domain.com sudo systemctl status certbot.timer sudo certbot renew --dry-run . ## Test it. https://www.ssllabs.com/ssltest/analyze.html?d=domain.com . Default conf file . server { listen 80; server_name example.com; root /var/www/html/example/public; . add_header X-Frame-Options \"SAMEORIGIN\"; add_header X-XSS-Protection \"1; mode=block\"; add_header X-Content-Type-Options \"nosniff\"; index index.php; charset utf-8; location / { try_files $uri $uri/ /index.php?$query_string; } location = /favicon.ico { access_log off; log_not_found off; } location = /robots.txt { access_log off; log_not_found off; } error_page 404 /index.php; location ~ \\.php$ { fastcgi_pass unix:/var/run/php/php7.4-fpm.sock; fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name; include fastcgi_params; } location ~ /\\.(?!well-known).* { deny all; } } ### Enable Nginx config file ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/ ``` . ",
     "url": "https://lopeaa.github.io/docs/operating-systems/ubuntu/#setup-instructions",
     "relUrl": "/docs/operating-systems/ubuntu/#setup-instructions"
-  },"83": {
+  },"82": {
     "doc": "Ubuntu 20.04",
     "title": "Ubuntu 20.04",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/operating-systems/ubuntu/",
     "relUrl": "/docs/operating-systems/ubuntu/"
-  },"84": {
+  },"83": {
     "doc": "View Snippets",
     "title": "Certificate Authority Views",
     "content": " ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/code/views/#certificate-authority-views",
     "relUrl": "/docs/certificate-authority/code/views/#certificate-authority-views"
-  },"85": {
+  },"84": {
     "doc": "View Snippets",
     "title": "Table of contents",
     "content": ". ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/code/views/#table-of-contents",
     "relUrl": "/docs/certificate-authority/code/views/#table-of-contents"
-  },"86": {
+  },"85": {
     "doc": "View Snippets",
     "title": "View Snippets",
     "content": " ",
