@@ -1,21 +1,21 @@
 {"0": {
     "doc": "Server Backup",
-    "title": "Server Backup Script",
+    "title": "backup.sh",
     "content": " ",
-    "url": "https://lopeaa.github.io/docs/scripts/backup/#server-backup-script",
-    "relUrl": "/docs/scripts/backup/#server-backup-script"
+    "url": "https://lopeaa.github.io/docs/scripts/backup/#backupsh",
+    "relUrl": "/docs/scripts/backup/#backupsh"
   },"1": {
     "doc": "Server Backup",
     "title": "Table of contents",
-    "content": ". | Description | . ",
+    "content": ". | Overview | . ",
     "url": "https://lopeaa.github.io/docs/scripts/backup/#table-of-contents",
     "relUrl": "/docs/scripts/backup/#table-of-contents"
   },"2": {
     "doc": "Server Backup",
-    "title": "Description",
+    "title": "Overview",
     "content": " ",
-    "url": "https://lopeaa.github.io/docs/scripts/backup/#description",
-    "relUrl": "/docs/scripts/backup/#description"
+    "url": "https://lopeaa.github.io/docs/scripts/backup/#overview",
+    "relUrl": "/docs/scripts/backup/#overview"
   },"3": {
     "doc": "Server Backup",
     "title": "Server Backup",
@@ -96,22 +96,22 @@
     "relUrl": "/docs/certificate-authority/code/controllers/"
   },"16": {
     "doc": "Digital Personal ID",
-    "title": "Digital Personal ID Script",
+    "title": "digitalID.sh",
     "content": " ",
-    "url": "https://lopeaa.github.io/docs/scripts/digital-personal-id/#digital-personal-id-script",
-    "relUrl": "/docs/scripts/digital-personal-id/#digital-personal-id-script"
+    "url": "https://lopeaa.github.io/docs/scripts/digital-personal-id/#digitalidsh",
+    "relUrl": "/docs/scripts/digital-personal-id/#digitalidsh"
   },"17": {
     "doc": "Digital Personal ID",
     "title": "Table of contents",
-    "content": ". | Description | Example .txt file | Bash Scripts | Digital Personal ID Web Application | . ",
+    "content": ". | Overview | Example .txt file | Bash Scripts | Digital Personal ID Web Application | . ",
     "url": "https://lopeaa.github.io/docs/scripts/digital-personal-id/#table-of-contents",
     "relUrl": "/docs/scripts/digital-personal-id/#table-of-contents"
   },"18": {
     "doc": "Digital Personal ID",
-    "title": "Description",
-    "content": "This script creates Digital Personal ID in bulk from a .txt file. It creates one certificate keypair and .PFX archive for each line. ",
-    "url": "https://lopeaa.github.io/docs/scripts/digital-personal-id/#description",
-    "relUrl": "/docs/scripts/digital-personal-id/#description"
+    "title": "Overview",
+    "content": "Creates Digital Personal ID in bulk from a .txt file. It creates one certificate keypair and .PFX archive for each line. ",
+    "url": "https://lopeaa.github.io/docs/scripts/digital-personal-id/#overview",
+    "relUrl": "/docs/scripts/digital-personal-id/#overview"
   },"19": {
     "doc": "Digital Personal ID",
     "title": "Example .txt file",
@@ -271,7 +271,7 @@
   },"45": {
     "doc": "Home",
     "title": "Everything must be made as simple as possible. But not simpler.",
-    "content": "Lastest updates . # Certificate Authority - Certificate status in Dashboard (Valid/Expiring...) are now calculated correctly. - When CodeSigning (JAR / Microsoft binaries) archives are now saved on disk. # Compliance check script - Checks if application is hsowing te default webserver page. - Checks if error reporting is enabled in application. ",
+    "content": "Lastest updates . # Certificate Authority - Certificate status in Dashboard (Valid/Expiring...) are now calculated correctly. - When CodeSigning (JAR / Microsoft binaries), archives are downloaded and not saved on storage. # Compliance check script - Checks if application is showing te default webserver page. - Checks if error reporting is enabled in application. ",
     "url": "https://lopeaa.github.io/#everything-must-be-made-as-simple-as-possible-but-not-simpler",
     "relUrl": "/#everything-must-be-made-as-simple-as-possible-but-not-simpler"
   },"46": {
@@ -307,7 +307,7 @@
   },"51": {
     "doc": "Certificate Authority",
     "title": "Overwiew",
-    "content": "This project aims to simplify the management of the digital certificates lifecycle such as creation of keypairs (csr, private and private keys), signing of csr files created in external systems as well as generating csr by your own private CA. It also includes tools to generate of PFX/P12 archive, keymatch, expiry notifications, converter, decode nad more… . ",
+    "content": "It aims to simplify the management of the digital certificates lifecycle such as creation of keypairs (csr, private and private keys), signing of csr files created in external systems as well as generating csr by your own private CA. It also includes tools to generate of PFX/P12 archive, keymatch, expiry notifications, converter, decode nad more… . ",
     "url": "https://lopeaa.github.io/docs/certificate-authority#overwiew",
     "relUrl": "/docs/certificate-authority#overwiew"
   },"52": {
@@ -372,22 +372,22 @@
     "relUrl": "/docs/certificate-authority/code/models/"
   },"62": {
     "doc": "Subject Alternative Name",
-    "title": "Subject Alternative Name script",
+    "title": "subjectAltName.sh",
     "content": " ",
-    "url": "https://lopeaa.github.io/docs/scripts/san/#subject-alternative-name-script",
-    "relUrl": "/docs/scripts/san/#subject-alternative-name-script"
+    "url": "https://lopeaa.github.io/docs/scripts/san/#subjectaltnamesh",
+    "relUrl": "/docs/scripts/san/#subjectaltnamesh"
   },"63": {
     "doc": "Subject Alternative Name",
     "title": "Table of contents",
-    "content": ". | Description | Bash script | . ",
+    "content": ". | Overview | Bash script | . ",
     "url": "https://lopeaa.github.io/docs/scripts/san/#table-of-contents",
     "relUrl": "/docs/scripts/san/#table-of-contents"
   },"64": {
     "doc": "Subject Alternative Name",
-    "title": "Description",
-    "content": "This scripts is part of the CA and it populates subjectAltName in openssl.cnf before it is signed by the openssl_csr_sign function. ",
-    "url": "https://lopeaa.github.io/docs/scripts/san/#description",
-    "relUrl": "/docs/scripts/san/#description"
+    "title": "Overview",
+    "content": "Part of the CA and it populates subjectAltName in openssl.cnf before it is signed by the openssl_csr_sign function. ",
+    "url": "https://lopeaa.github.io/docs/scripts/san/#overview",
+    "relUrl": "/docs/scripts/san/#overview"
   },"65": {
     "doc": "Subject Alternative Name",
     "title": "Bash script",
@@ -415,7 +415,7 @@
   },"69": {
     "doc": "Setup",
     "title": "Manual setup (Ubuntu 20.04 LTS)",
-    "content": "Pre-requisites . | Package | Version | Docs | . | PHP | 7.4 | Setup instructions | . | NGINX | 1.x | Setup instructions | . | Osslsigncode | Latest | Setup instructions | . | OpenCA | Latest | Setup instructions | . | Curl | Latest | Setup instructions | . Cloning repository . sudo git clone https://github.com/lopeaa/ca-mgmt-console.git . Create Database . SQLite database . sudo touch database/database.sqlite . MySQL database . CREATE DATABASE db_name; CREATE USER 'db_user'@'localhost' IDENTIFIED BY 'password'; GRANT ALL PRIVILEGES ON * . * TO 'db_user'@'localhost'; FLUSH PRIVILEGES; . Modify .env file . cd ca-mgmt-console sudo mv .env.example .env sudo pico .env .env params for SQLite. DB_CONNECTION=sqlite DB_DATABASE=/var/www/ca-mgmt-console/database/database.sqlite .env params for MySQL. DB_CONNECTION=mysql DB_HOST=127.0.0.1 DB_PORT=3306 DB_DATABASE=ca-mgmt-console DB_USERNAME=db_user . Run Composer . sudo composer update # Check for Composer error and install php extensions . Run Migration with Seeds . sudo php artisan migrate --seed . Generate new encryption key . sudo php artisan key:generate . Recommendations . | Configure HTTPS | . Login to Dashboard . Admin Panel . ",
+    "content": "Pre-requisites . | Package | Version | Docs | . | PHP | &gt;= 7.4 | Setup instructions | . | NGINX | 1.x | Setup instructions | . | Osslsigncode | Latest | Setup instructions | . | OpenCA | Latest | Setup instructions | . | Curl | Latest | Setup instructions | . | Openssl | Latest | Setup instructions | . Cloning repository . sudo git clone https://github.com/lopeaa/ca-mgmt-console.git . Create Database . SQLite database . sudo touch database/database.sqlite . MySQL database . CREATE DATABASE db_name; CREATE USER 'db_user'@'localhost' IDENTIFIED BY 'password'; GRANT ALL PRIVILEGES ON * . * TO 'db_user'@'localhost'; FLUSH PRIVILEGES; . Modify .env file . cd ca-mgmt-console sudo mv .env.example .env sudo pico .env .env params for SQLite. DB_CONNECTION=sqlite DB_DATABASE=/var/www/ca-mgmt-console/database/database.sqlite .env params for MySQL. DB_CONNECTION=mysql DB_HOST=127.0.0.1 DB_PORT=3306 DB_DATABASE=ca-mgmt-console DB_USERNAME=db_user . Run Composer . sudo composer update # Check for Composer error and install php extensions . Run Migration with Seeds . sudo php artisan migrate --seed . Generate new encryption key . sudo php artisan key:generate . Recommendations . | Configure HTTPS | . Login to Dashboard . Admin Panel . ",
     "url": "https://lopeaa.github.io/docs/certificate-authority/setup/#manual-setup-ubuntu-2004-lts",
     "relUrl": "/docs/certificate-authority/setup/#manual-setup-ubuntu-2004-lts"
   },"70": {
