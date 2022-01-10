@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scripts on </title>
+    <link>https://lopeaa.github.io/scripts/</link>
+    <description>Recent content in Scripts on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 06 Oct 2020 08:49:55 +0000</lastBuildDate><atom:link href="https://lopeaa.github.io/scripts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>backup.sh</title>
+      <link>https://lopeaa.github.io/scripts/backups/</link>
+      <pubDate>Tue, 06 Oct 2020 08:48:57 +0000</pubDate>
+      
+      <guid>https://lopeaa.github.io/scripts/backups/</guid>
+      <description>Overwiew Use ./backup.sh  </description>
+    </item>
+    
+    <item>
+      <title>digitalID.sh</title>
+      <link>https://lopeaa.github.io/scripts/digitalid/</link>
+      <pubDate>Tue, 06 Oct 2020 08:48:57 +0000</pubDate>
+      
+      <guid>https://lopeaa.github.io/scripts/digitalid/</guid>
+      <description>Overwiew Bash script to create bulk keypairs and .pfx archives from a .txt file.
+.txt file format The scripts reads names line by line to create certificates. line break means a new certificate.
+Name Firstname Secondname &amp;lt;line break&amp;gt; Firstname Secondname Name  Use ./digitalID.sh -f digitalID.txt  </description>
+    </item>
+    
+    <item>
+      <title>subjectAltName.sh</title>
+      <link>https://lopeaa.github.io/scripts/subjectaltname/</link>
+      <pubDate>Tue, 06 Oct 2020 08:48:57 +0000</pubDate>
+      
+      <guid>https://lopeaa.github.io/scripts/subjectaltname/</guid>
+      <description>Get started </description>
+    </item>
+    
+  </channel>
+</rss>
