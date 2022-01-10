@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lopeaa.github.io/sitemap.xml
