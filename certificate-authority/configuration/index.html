@@ -431,6 +431,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_2">
@@ -499,23 +501,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configuration_1" class="md-nav__link">
-    Configuration
+  <a href="#email-notifications" class="md-nav__link">
+    Email Notifications
   </a>
   
-    <nav class="md-nav" aria-label="Configuration">
+    <nav class="md-nav" aria-label="Email Notifications">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#minimal-configuration" class="md-nav__link">
-    Minimal configuration
+  <a href="#using-sendmail-configuration" class="md-nav__link">
+    Using sendmail configuration.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#advanced-configuration" class="md-nav__link">
-    Advanced configuration
+  <a href="#using-msmtp-daemon" class="md-nav__link">
+    Using msmtp daemon.
   </a>
   
 </li>
@@ -526,15 +528,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#previewing-as-you-write" class="md-nav__link">
-    Previewing as you write
+  <a href="#cache" class="md-nav__link">
+    Cache
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#building-your-site" class="md-nav__link">
-    Building your site
+  <a href="#logging" class="md-nav__link">
+    Logging
   </a>
   
 </li>
@@ -623,6 +625,51 @@
         <label class="md-nav__title" for="__nav_2_6">
           <span class="md-nav__icon md-icon"></span>
           Changelog
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" type="checkbox" id="__nav_2_7" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../reference/">References</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="References" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_7">
+          <span class="md-nav__icon md-icon"></span>
+          References
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1259,8 +1306,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/abbreviations/" class="md-nav__link">
-        Abbreviations
+      <a href="../../reference/msmtp/" class="md-nav__link">
+        Msmtp
       </a>
     </li>
   
@@ -1736,23 +1783,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configuration_1" class="md-nav__link">
-    Configuration
+  <a href="#email-notifications" class="md-nav__link">
+    Email Notifications
   </a>
   
-    <nav class="md-nav" aria-label="Configuration">
+    <nav class="md-nav" aria-label="Email Notifications">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#minimal-configuration" class="md-nav__link">
-    Minimal configuration
+  <a href="#using-sendmail-configuration" class="md-nav__link">
+    Using sendmail configuration.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#advanced-configuration" class="md-nav__link">
-    Advanced configuration
+  <a href="#using-msmtp-daemon" class="md-nav__link">
+    Using msmtp daemon.
   </a>
   
 </li>
@@ -1763,15 +1810,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#previewing-as-you-write" class="md-nav__link">
-    Previewing as you write
+  <a href="#cache" class="md-nav__link">
+    Cache
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#building-your-site" class="md-nav__link">
-    Building your site
+  <a href="#logging" class="md-nav__link">
+    Logging
   </a>
   
 </li>
@@ -1790,135 +1837,20 @@
                 
 
 <h1 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h1>
-<p>After you've <a href="getting-started.md">installed</a> Material for MkDocs, you can bootstrap your project 
-documentation using the <code>mkdocs</code> executable. Go to the directory where you want
-your project to be located and enter:</p>
-<pre><code>mkdocs new .
+<p>After <a href="../installation/"><code>installation</code></a> is completed, there are a number of values to configure:</p>
+<h2 id="email-notifications">Email Notifications<a class="headerlink" href="#email-notifications" title="Permanent link">&para;</a></h2>
+<h3 id="using-sendmail-configuration">Using <code>sendmail</code> configuration.<a class="headerlink" href="#using-sendmail-configuration" title="Permanent link">&para;</a></h3>
+<p>Configure driver and sendmail in <code>config/mail.php</code>:</p>
+<pre><code>'driver' =&gt; env('MAIL_DRIVER', 'smtp'),
+'sendmail' =&gt; '/usr/bin/sendmail -t',
 </code></pre>
-<p>Alternatively, if you're running Material for MkDocs from within Docker, use:</p>
-<p>=== "Unix, Powershell"</p>
-<pre><code>```
-docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material new .
-```
+<h3 id="using-msmtp-daemon">Using <a href="https://manpages.ubuntu.com/manpages/focal/en/man1/msmtp.1.html"><code>msmtp</code></a> daemon.<a class="headerlink" href="#using-msmtp-daemon" title="Permanent link">&para;</a></h3>
+<p>Configure driver and sendmail in <code>config/mail.php</code>:</p>
+<pre><code>'driver' =&gt; env('MAIL_DRIVER', 'smtp'),
+'sendmail' =&gt; '/usr/bin/msmtp -C /etc/msmtprc -a default -t',
 </code></pre>
-<p>=== "Windows"</p>
-<pre><code>```
-docker run --rm -it -v "%cd%":/docs squidfunk/mkdocs-material new .
-```
-</code></pre>
-<p>This will create the following structure:</p>
-<pre><code>.
-├─ docs/
-│  └─ index.md
-└─ mkdocs.yml
-</code></pre>
-<h2 id="configuration_1">Configuration<a class="headerlink" href="#configuration_1" title="Permanent link">&para;</a></h2>
-<h3 id="minimal-configuration">Minimal configuration<a class="headerlink" href="#minimal-configuration" title="Permanent link">&para;</a></h3>
-<p>Simply add the following lines to <code>mkdocs.yml</code> to enable the theme. Note that
-since there are several <a href="getting-started.md#installation">installation methods</a>, minimal configuration might be
-slightly different:</p>
-<p>=== ":fontawesome-brands-python: pip"</p>
-<pre><code>``` yaml
-theme:
-  name: material
-```
-</code></pre>
-<p>=== ":fontawesome-brands-docker: docker"</p>
-<pre><code>``` yaml
-theme:
-  name: material
-```
-</code></pre>
-<p>=== ":fontawesome-brands-git-alt: git"</p>
-<pre><code>``` yaml
-theme:
-  name: null
-  custom_dir: mkdocs-material/material
-
-  # 404 page
-  static_templates:
-    - 404.html
-
-  # Necessary for search to work properly
-  include_search_page: false
-  search_index_only: true
-
-  # Default values, taken from mkdocs_theme.yml
-  language: en
-  font:
-    text: Roboto
-    code: Roboto Mono
-  favicon: assets/favicon.png
-  icon:
-    logo: logo
-```
-
-When you clone from GitHub, you must list all of the themes' defaults
-explicitly, because [`mkdocs_theme.yml`][mkdocs_theme.yml] is not
-loaded automatically as described in the [custom theme guide].
-</code></pre>
-<h3 id="advanced-configuration">Advanced configuration<a class="headerlink" href="#advanced-configuration" title="Permanent link">&para;</a></h3>
-<p>Material for MkDocs comes with many configuration options. The setup section
-explains in great detail how to configure and customize colors, fonts, icons
-and much more:</p>
-<div class="mdx-columns">
-<ul>
-<li><a href="setup/changing-the-colors.md">Changing the colors</a></li>
-<li><a href="setup/changing-the-fonts.md">Changing the fonts</a></li>
-<li><a href="setup/changing-the-language.md">Changing the language</a></li>
-<li><a href="setup/changing-the-logo-and-icons.md">Changing the logo and icons</a></li>
-<li><a href="setup/setting-up-navigation.md">Setting up navigation</a></li>
-<li><a href="setup/setting-up-site-search.md">Setting up site search</a></li>
-<li><a href="setup/setting-up-site-analytics.md">Setting up site analytics</a></li>
-<li><a href="setup/setting-up-social-cards.md">Setting up social cards</a></li>
-<li><a href="setup/setting-up-tags.md">Setting up tags</a></li>
-<li><a href="setup/setting-up-versioning.md">Setting up versioning</a></li>
-<li><a href="setup/setting-up-the-header.md">Setting up the header</a></li>
-<li><a href="setup/setting-up-the-footer.md">Setting up the footer</a></li>
-<li><a href="setup/adding-a-git-repository.md">Adding a git repository</a></li>
-<li><a href="setup/adding-a-comment-system.md">Adding a comment system</a></li>
-</ul>
-</div>
-<p>Furthermore, see the list of supported <a href="setup/extensions/index.md">Markdown extensions</a> that are natively
-integrated with Material for MkDocs, delivering a low-effort and unprecedented 
-technical writing experience.</p>
-<h2 id="previewing-as-you-write">Previewing as you write<a class="headerlink" href="#previewing-as-you-write" title="Permanent link">&para;</a></h2>
-<p>MkDocs includes a live preview server, so you can preview your changes as you
-write your documentation. The server will automatically rebuild the site upon
-saving. Start it with:</p>
-<pre><code class="language-sh">mkdocs serve # (1)!
-</code></pre>
-<ol>
-<li>
-<p>If you have a large documentation project, it might take minutes until
-    MkDocs has rebuilt all pages for you to preview. If you're only interested
-    in the current page, the <a href="https://www.mkdocs.org/about/release-notes/#support-for-dirty-builds-990"><code>--dirtyreload</code></a> flag will make
-    rebuilds much faster:</p>
-<p><code>mkdocs serve --dirtyreload</code></p>
-</li>
-</ol>
-<p>If you're running Material for MkDocs from within Docker, use:</p>
-<p>=== "Unix, Powershell"</p>
-<pre><code>```
-docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material
-```
-</code></pre>
-<p>=== "Windows"</p>
-<pre><code>```
-docker run --rm -it -p 8000:8000 -v "%cd%":/docs squidfunk/mkdocs-material
-```
-</code></pre>
-<p>Point your browser to <a href="http://localhost:8000">localhost:8000</a> and you should see:</p>
-<p><a href="assets/screenshots/creating-your-site.png"><img alt="Creating your site" src="assets/screenshots/creating-your-site.png" /></a></p>
-<h2 id="building-your-site">Building your site<a class="headerlink" href="#building-your-site" title="Permanent link">&para;</a></h2>
-<p>When you're finished editing, you can build a static site from your Markdown
-files with:</p>
-<pre><code>mkdocs build
-</code></pre>
-<p>The contents of this directory make up your project documentation. There's no
-need for operating a database or server, as it is completely self-contained.
-The site can be hosted on <a href="publishing-your-site.md#github-pages">GitHub Pages</a>, <a href="publishing-your-site.md#gitlab-pages">GitLab Pages</a>, a CDN of your choice
-or your private web space.</p>
+<h2 id="cache">Cache<a class="headerlink" href="#cache" title="Permanent link">&para;</a></h2>
+<h2 id="logging">Logging<a class="headerlink" href="#logging" title="Permanent link">&para;</a></h2>
 
               
             </article>
