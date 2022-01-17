@@ -1573,28 +1573,28 @@
 <h1 id="publishing">Publishing<a class="headerlink" href="#publishing" title="Permanent link">&para;</a></h1>
 <h2 id="nginx-webserver-https">Nginx Webserver (HTTPS)<a class="headerlink" href="#nginx-webserver-https" title="Permanent link">&para;</a></h2>
 <h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
-<pre><code class="language-sh">sudo apt update
-sudo apt install nginx
-</code></pre>
-<p>Firewall rules:</p>
-<pre><code class="language-sh">sudo ufw enable
-sudo ufw allow 'Nginx HTTPS'
-</code></pre>
-<p>Check status:</p>
-<pre><code class="language-sh">sudo ufw status
-</code></pre>
-<pre><code class="language-sh">Status: active
-
-To                         Action      From
---                         ------      ----
-OpenSSH                    ALLOW       Anywhere                  
-Nginx HTTPS                ALLOW       Anywhere                  
-OpenSSH (v6)               ALLOW       Anywhere (v6)             
-Nginx HTTPS (v6)           ALLOW       Anywhere (v6)
-</code></pre>
-<p>Restart Nginx server</p>
-<pre><code class="language-sh">sudo systemctl status nginx
-</code></pre>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo apt update
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo apt install nginx
+</code></pre></div>
+Firewall rules:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo ufw <span class="nb">enable</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo ufw allow <span class="s1">&#39;Nginx HTTPS&#39;</span>
+</code></pre></div>
+Check status:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo ufw status
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Status: active
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>To                         Action      From
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>--                         ------      ----
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>OpenSSH                    ALLOW       Anywhere                  
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>Nginx HTTPS                ALLOW       Anywhere                  
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>OpenSSH <span class="o">(</span>v6<span class="o">)</span>               ALLOW       Anywhere <span class="o">(</span>v6<span class="o">)</span>             
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>Nginx HTTPS <span class="o">(</span>v6<span class="o">)</span>           ALLOW       Anywhere <span class="o">(</span>v6<span class="o">)</span>
+</code></pre></div>
+Restart Nginx server
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo systemctl status nginx
+</code></pre></div></p>
 <h3 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h3>
 <p>Prerequisites</p>
 <ul>
@@ -1608,67 +1608,67 @@ Nginx HTTPS (v6)           ALLOW       Anywhere (v6)
 <p><a href="https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker">ngxblocker</a> (Optional)</p>
 </li>
 </ul>
-<p>Edit default site conf file</p>
-<pre><code class="language-sh">sudo nano /etc/nginx/sites-available/default
-</code></pre>
-<p>Example</p>
-<pre><code class="language-sh">##
-# Default server configuration SSL/TLS
-##
-server {
-    listen [::]:443 ssl http2 ipv6only=on; # managed by Certbot
-    listen 443 ssl http2; # managed by Certbot
-
-    ssl_certificate /etc/letsencrypt/live/domain.com/fullchain.pem; # managed by Certbot
-    ssl_certificate_key /etc/letsencrypt/live/domain.com/privkey.pem; # managed by Certbot
-    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
-    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
-
-    server_name domain.com www.domain.com;
-
-    root /var/www/ca-mgmt-console/public;
-
-    ##
-    # Nginx Bad Bot Blocker Includes
-    # REPO: https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker
-    ##
-        include /etc/nginx/bots.d/ddos.conf;
-        include /etc/nginx/bots.d/blockbots.conf;
-
-    ##
-    # Security headers
-    ##
-    add_header X-Frame-Options &quot;SAMEORIGIN&quot;;
-    add_header Strict-Transport-Security &quot;max-age=31536000; includeSubdomains; preload&quot;;
-        add_header Content-Security-Policy &quot;default-src 'self' http: https: data: blob: 'unsafe-inline'&quot; always;
-    proxy_hide_header X-Powered-By;
-
-    index index.php index.html;
-
-    location / {
-     limit_except GET HEAD POST { deny all; }
-     try_files $uri $uri/ /index.php?$query_string;
-    }
-
-    error_page 404 /custom_404.html;
-        location = /custom_404.html {
-                root /usr/share/nginx/html;
-                internal;
-        }
-
-    # pass PHP scripts to FastCGI server
-    #
-    location ~ \.php$ {
-        include snippets/fastcgi-php.conf;
-
-        # With php-fpm (or other unix sockets):
-        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
-        # With php-cgi (or other tcp sockets):
-        #fastcgi_pass 127.0.0.1:9000;
-    }
-
-}
-</code></pre>
+<p>Edit default site conf file
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo nano /etc/nginx/sites-available/default
+</code></pre></div>
+Example
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1">##</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="c1"># Default server configuration SSL/TLS</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c1">##</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>server <span class="o">{</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    listen <span class="o">[</span>::<span class="o">]</span>:443 ssl http2 <span class="nv">ipv6only</span><span class="o">=</span>on<span class="p">;</span> <span class="c1"># managed by Certbot</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    listen <span class="m">443</span> ssl http2<span class="p">;</span> <span class="c1"># managed by Certbot</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    ssl_certificate /etc/letsencrypt/live/domain.com/fullchain.pem<span class="p">;</span> <span class="c1"># managed by Certbot</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    ssl_certificate_key /etc/letsencrypt/live/domain.com/privkey.pem<span class="p">;</span> <span class="c1"># managed by Certbot</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>    include /etc/letsencrypt/options-ssl-nginx.conf<span class="p">;</span> <span class="c1"># managed by Certbot</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem<span class="p">;</span> <span class="c1"># managed by Certbot</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>    server_name domain.com www.domain.com<span class="p">;</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>    root /var/www/ca-mgmt-console/public<span class="p">;</span>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>    <span class="c1">##</span>
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>    <span class="c1"># Nginx Bad Bot Blocker Includes</span>
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>    <span class="c1"># REPO: https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker</span>
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>    <span class="c1">##</span>
+<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a>        include /etc/nginx/bots.d/ddos.conf<span class="p">;</span>
+<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a>        include /etc/nginx/bots.d/blockbots.conf<span class="p">;</span>
+<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a>
+<a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a>    <span class="c1">##</span>
+<a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a>    <span class="c1"># Security headers</span>
+<a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a>    <span class="c1">##</span>
+<a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a>    add_header X-Frame-Options <span class="s2">&quot;SAMEORIGIN&quot;</span><span class="p">;</span>
+<a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a>    add_header Strict-Transport-Security <span class="s2">&quot;max-age=31536000; includeSubdomains; preload&quot;</span><span class="p">;</span>
+<a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a>        add_header Content-Security-Policy <span class="s2">&quot;default-src &#39;self&#39; http: https: data: blob: &#39;unsafe-inline&#39;&quot;</span> always<span class="p">;</span>
+<a id="__codelineno-6-30" name="__codelineno-6-30" href="#__codelineno-6-30"></a>    proxy_hide_header X-Powered-By<span class="p">;</span>
+<a id="__codelineno-6-31" name="__codelineno-6-31" href="#__codelineno-6-31"></a>
+<a id="__codelineno-6-32" name="__codelineno-6-32" href="#__codelineno-6-32"></a>    index index.php index.html<span class="p">;</span>
+<a id="__codelineno-6-33" name="__codelineno-6-33" href="#__codelineno-6-33"></a>
+<a id="__codelineno-6-34" name="__codelineno-6-34" href="#__codelineno-6-34"></a>    location / <span class="o">{</span>
+<a id="__codelineno-6-35" name="__codelineno-6-35" href="#__codelineno-6-35"></a>     limit_except GET HEAD POST <span class="o">{</span> deny all<span class="p">;</span> <span class="o">}</span>
+<a id="__codelineno-6-36" name="__codelineno-6-36" href="#__codelineno-6-36"></a>     try_files <span class="nv">$uri</span> <span class="nv">$uri</span>/ /index.php?<span class="nv">$query_string</span><span class="p">;</span>
+<a id="__codelineno-6-37" name="__codelineno-6-37" href="#__codelineno-6-37"></a>    <span class="o">}</span>
+<a id="__codelineno-6-38" name="__codelineno-6-38" href="#__codelineno-6-38"></a>
+<a id="__codelineno-6-39" name="__codelineno-6-39" href="#__codelineno-6-39"></a>    error_page <span class="m">404</span> /custom_404.html<span class="p">;</span>
+<a id="__codelineno-6-40" name="__codelineno-6-40" href="#__codelineno-6-40"></a>        <span class="nv">location</span> <span class="o">=</span> /custom_404.html <span class="o">{</span>
+<a id="__codelineno-6-41" name="__codelineno-6-41" href="#__codelineno-6-41"></a>                root /usr/share/nginx/html<span class="p">;</span>
+<a id="__codelineno-6-42" name="__codelineno-6-42" href="#__codelineno-6-42"></a>                internal<span class="p">;</span>
+<a id="__codelineno-6-43" name="__codelineno-6-43" href="#__codelineno-6-43"></a>        <span class="o">}</span>
+<a id="__codelineno-6-44" name="__codelineno-6-44" href="#__codelineno-6-44"></a>
+<a id="__codelineno-6-45" name="__codelineno-6-45" href="#__codelineno-6-45"></a>    <span class="c1"># pass PHP scripts to FastCGI server</span>
+<a id="__codelineno-6-46" name="__codelineno-6-46" href="#__codelineno-6-46"></a>    <span class="c1">#</span>
+<a id="__codelineno-6-47" name="__codelineno-6-47" href="#__codelineno-6-47"></a>    location ~ <span class="se">\.</span>php$ <span class="o">{</span>
+<a id="__codelineno-6-48" name="__codelineno-6-48" href="#__codelineno-6-48"></a>        include snippets/fastcgi-php.conf<span class="p">;</span>
+<a id="__codelineno-6-49" name="__codelineno-6-49" href="#__codelineno-6-49"></a>
+<a id="__codelineno-6-50" name="__codelineno-6-50" href="#__codelineno-6-50"></a>        <span class="c1"># With php-fpm (or other unix sockets):</span>
+<a id="__codelineno-6-51" name="__codelineno-6-51" href="#__codelineno-6-51"></a>        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock<span class="p">;</span>
+<a id="__codelineno-6-52" name="__codelineno-6-52" href="#__codelineno-6-52"></a>        <span class="c1"># With php-cgi (or other tcp sockets):</span>
+<a id="__codelineno-6-53" name="__codelineno-6-53" href="#__codelineno-6-53"></a>        <span class="c1">#fastcgi_pass 127.0.0.1:9000;</span>
+<a id="__codelineno-6-54" name="__codelineno-6-54" href="#__codelineno-6-54"></a>    <span class="o">}</span>
+<a id="__codelineno-6-55" name="__codelineno-6-55" href="#__codelineno-6-55"></a>
+<a id="__codelineno-6-56" name="__codelineno-6-56" href="#__codelineno-6-56"></a><span class="o">}</span>
+</code></pre></div></p>
 <h2 id="apache-webserver-https">Apache Webserver (HTTPS)<a class="headerlink" href="#apache-webserver-https" title="Permanent link">&para;</a></h2>
 <h3 id="installation_1">Installation<a class="headerlink" href="#installation_1" title="Permanent link">&para;</a></h3>
 <h3 id="configuration_1">Configuration<a class="headerlink" href="#configuration_1" title="Permanent link">&para;</a></h3>
@@ -1732,7 +1732,6 @@ server {
     </div>
   
   
-    Made with
     <a href="https://lopeaa.github.io/" target="_blank" rel="noopener">
       Lopeaa
     </a>

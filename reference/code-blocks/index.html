@@ -1366,6 +1366,33 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#adding-a-title" class="md-nav__link">
+    Adding a title
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-annotations" class="md-nav__link">
+    Adding annotations
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding annotations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stripping-comments" class="md-nav__link">
+    Stripping comments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#adding-line-numbers" class="md-nav__link">
     Adding line numbers
   </a>
@@ -1375,6 +1402,20 @@
           <li class="md-nav__item">
   <a href="#highlighting-specific-lines" class="md-nav__link">
     Highlighting specific lines
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highlighting-inline-code-blocks" class="md-nav__link">
+    Highlighting inline code blocks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#embedding-external-files" class="md-nav__link">
+    Embedding external files
   </a>
   
 </li>
@@ -1564,6 +1605,33 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#adding-a-title" class="md-nav__link">
+    Adding a title
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-annotations" class="md-nav__link">
+    Adding annotations
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding annotations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stripping-comments" class="md-nav__link">
+    Stripping comments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#adding-line-numbers" class="md-nav__link">
     Adding line numbers
   </a>
@@ -1573,6 +1641,20 @@
           <li class="md-nav__item">
   <a href="#highlighting-specific-lines" class="md-nav__link">
     Highlighting specific lines
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highlighting-inline-code-blocks" class="md-nav__link">
+    Highlighting inline code blocks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#embedding-external-files" class="md-nav__link">
+    Embedding external files
   </a>
   
 </li>
@@ -1631,13 +1713,13 @@ during runtime using a JavaScript syntax highlighter.</p>
 <p>This configuration enables syntax highlighting on code blocks and inline code 
 blocks, and allows to include source code directly from other files. Add the 
 following lines to <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">markdown_extensions</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.highlight</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">      </span><span class="nt">anchor_linenums</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.inlinehilite</span><span class="w"></span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.snippets</span><span class="w"></span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.superfences</span><span class="w"></span>
+</code></pre></div>
 <p>The following sections discuss how to use different syntax highlighting features
 with <a href="https://pygments.org">Pygments</a>, the recommended highlighter, so they don't apply when using a
 JavaScript syntax highlighter.</p>
@@ -1656,16 +1738,16 @@ JavaScript syntax highlighter.</p>
 content to specific sections of code blocks by adding numeric markers in block
 and inline comments in the language of the code block. Add the following to
 <code>mkdocs.yml</code> to enable them globally:</p>
-<pre><code class="language-yaml">theme:
-  features:
-    - content.code.annotate # (1)!
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">theme</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.code.annotate</span><span class="w"> </span><span class="c1"># (1)!</span><span class="w"></span>
+</code></pre></div>
 <ol>
 <li><img alt="🙋‍♂️" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f64b-200d-2642-fe0f.svg" title=":man_raising_hand:" /> I'm a code annotation! I can contain <code>code</code>, <strong>formatted
     text</strong>, images, ... basically anything that can be written in Markdown.</li>
 </ol>
 <p>??? info "Enabling code annotations for a specific code block"</p>
-<pre><code>If you don't want to enable code annotations globally, because you don't
+<div class="highlight"><pre><span></span><code>If you don&#39;t want to enable code annotations globally, because you don&#39;t
 like the automatic inlining behavior, you can enable them for a specific
 code block by using a slightly different syntax based on the
 [Attribute Lists] extension:
@@ -1678,7 +1760,7 @@ code block by using a slightly different syntax based on the
 
 Note that the language shortcode which has to come first must now also be 
 prefixed by a `.`.
-</code></pre>
+</code></pre></div>
 <h4 id="anchor-links">Anchor links<a class="headerlink" href="#anchor-links" title="Permanent link">&para;</a></h4>
 <p><a class="mdx-insiders" href="../../insiders/"><span class="twemoji mdx-heart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 20.408c-.492.308-.903.546-1.192.709-.153.086-.308.17-.463.252h-.002a.75.75 0 0 1-.686 0 16.709 16.709 0 0 1-.465-.252 31.147 31.147 0 0 1-4.803-3.34C3.8 15.572 1 12.331 1 8.513 1 5.052 3.829 2.5 6.736 2.5 9.03 2.5 10.881 3.726 12 5.605 13.12 3.726 14.97 2.5 17.264 2.5 20.17 2.5 23 5.052 23 8.514c0 3.818-2.801 7.06-5.389 9.262A31.146 31.146 0 0 1 14 20.408z"/></svg></span> Insiders</a> ·
 <a href="../../insiders/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.75 6.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/><path fill-rule="evenodd" d="M2.5 1A1.5 1.5 0 0 0 1 2.5v8.44c0 .397.158.779.44 1.06l10.25 10.25a1.5 1.5 0 0 0 2.12 0l8.44-8.44a1.5 1.5 0 0 0 0-2.12L12 1.44A1.5 1.5 0 0 0 10.94 1H2.5zm0 1.5h8.44l10.25 10.25-8.44 8.44L2.5 10.94V2.5z"/></svg></span> insiders-4.4.0</a> ·
@@ -1686,8 +1768,8 @@ prefixed by a `.`.
 <p>In order to link to code annotations and share them more easily, <a href="../../insiders/">Insiders</a> adds
 an anchor link to each annotation automatically, which you can copy via right
 click or open in a new tab:</p>
-<pre><code class="language-yaml"># (1)!
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># (1)!</span><span class="w"></span>
+</code></pre></div>
 <ol>
 <li>If you ++cmd++ <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.07 14.27a.997.997 0 0 1 1.33.48l2.3 4.99 1.8-.85-2.31-4.98c-.24-.5-.02-1.1.48-1.33l.28-.08 2.3-.45L8 5.12V15.9l1.82-1.47.25-.16m3.57 7.7a.99.99 0 0 1-1.33-.47l-2.18-4.74-2.51 2.02c-.17.14-.38.22-.62.22a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1c.24 0 .47.09.64.23l.01-.01 11.49 9.64a1.001 1.001 0 0 1-.44 1.75l-3.16.62 2.2 4.73c.26.5.02 1.09-.48 1.32l-3.62 1.69z"/></svg></span> me, I'm
     rendered open in a new tab. You can also right-click me to <strong>copy link
@@ -1696,109 +1778,77 @@ click or open in a new tab:</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>Code blocks must be enclosed with two separate lines containing three backticks.
 To add syntax highlighting to those blocks, add the language shortcode directly
-after the opening block. See the [list of available lexers] to find the
+after the opening block. See the <a href="https://pygments.org/docs/lexers/">list of available lexers</a> to find the
 shortcode for a given language:</p>
-<p>```` markdown title="Code block"</p>
-<pre><code class="language-py">import tensorflow as tf
-</code></pre>
-<pre><code>
-&lt;div class=&quot;result&quot; markdown&gt;
-
-``` py
-import tensorflow as tf
-```
-
-&lt;/div&gt;
-
-  [list of available lexers]: https://pygments.org/docs/lexers/
-
-### Adding a title
-
-[:octicons-tag-24: 7.3.6][Title support] ·
-:octicons-beaker-24: Experimental
-
-In order to provide additional context, a custom title can be added to a code
-block by using the `title=&quot;&lt;custom title&gt;&quot;` option directly after the shortcode,
-e.g. to display the name of a file:
-
-```` markdown title=&quot;Code block with title&quot;
-``` py title=&quot;bubble_sort.py&quot;
-def bubble_sort(items):
-    for i in range(len(items)):
-        for j in range(len(items) - 1 - i):
-            if items[j] &gt; items[j + 1]:
-                items[j], items[j + 1] = items[j + 1], items[j]
-```
-</code></pre>
+<div class="highlight"><span class="filename">Code block</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>``` py
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>import tensorflow as tf
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>```
+</code></pre></div>
 <div class="result">
-<p>``` py title="bubble_sort.py"
-def bubble_sort(items):
-    for i in range(len(items)):
-        for j in range(len(items) - 1 - i):
-            if items[j] &gt; items[j + 1]:
-                items[j], items[j + 1] = items[j + 1], items[j]</p>
-<pre><code>
-&lt;/div&gt;
-
-  [Title support]: https://github.com/squidfunk/mkdocs-material/releases/tag/7.3.6
-
-### Adding annotations
-
-Code annotations can be placed anywhere in a code block where a comment for the
-language of the block can be placed, e.g. for JavaScript in `#!js // ...` and
-`#!js /* ... */`, for YAML in `#!yaml # ...`, etc.[^1]:
-
-  [^1]:
-    Code annotations require syntax highlighting with [Pygments] – they're
-    currently not compatible with JavaScript syntax highlighters, or languages
-    that do not have comments in their grammar. However, we're actively working
-    on supporting alternate ways of defining code annotations, allowing to
-    always place code annotations at the end of lines.
-
-```` markdown title=&quot;Code block with annotation&quot;
-``` yaml
-theme:
-  features:
-    - content.code.annotate # (1)
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+</code></pre></div>
+</div>
+<h3 id="adding-a-title">Adding a title<a class="headerlink" href="#adding-a-title" title="Permanent link">&para;</a></h3>
+<p><a href="https://github.com/squidfunk/mkdocs-material/releases/tag/7.3.6"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.75 6.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/><path fill-rule="evenodd" d="M2.5 1A1.5 1.5 0 0 0 1 2.5v8.44c0 .397.158.779.44 1.06l10.25 10.25a1.5 1.5 0 0 0 2.12 0l8.44-8.44a1.5 1.5 0 0 0 0-2.12L12 1.44A1.5 1.5 0 0 0 10.94 1H2.5zm0 1.5h8.44l10.25 10.25-8.44 8.44L2.5 10.94V2.5z"/></svg></span> 7.3.6</a> ·
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M8 8.807V3.5h-.563a.75.75 0 0 1 0-1.5h9.125a.75.75 0 0 1 0 1.5H16v5.307l5.125 9.301c.964 1.75-.302 3.892-2.299 3.892H5.174c-1.998 0-3.263-2.142-2.3-3.892L8 8.807zM14.5 3.5h-5V9a.75.75 0 0 1-.093.362L7.127 13.5h9.746l-2.28-4.138A.75.75 0 0 1 14.5 9V3.5zM4.189 18.832 6.3 15h11.4l2.111 3.832a1.125 1.125 0 0 1-.985 1.668H5.174a1.125 1.125 0 0 1-.985-1.668z"/></svg></span> Experimental</p>
+<p>In order to provide additional context, a custom title can be added to a code
+block by using the <code>title="&lt;custom title&gt;"</code> option directly after the shortcode,
+e.g. to display the name of a file:</p>
+<div class="highlight"><span class="filename">Code block with title</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>``` py title=&quot;bubble_sort.py&quot;
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>def bubble_sort(items):
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    for i in range(len(items)):
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>        for j in range(len(items) - 1 - i):
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>            if items[j] &gt; items[j + 1]:
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>                items[j], items[j + 1] = items[j + 1], items[j]
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>```
+</code></pre></div>
+<div class="result">
+<div class="highlight"><span class="filename">bubble_sort.py</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)):</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">):</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>            <span class="k">if</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>                <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+</code></pre></div>
+</div>
+<h3 id="adding-annotations">Adding annotations<a class="headerlink" href="#adding-annotations" title="Permanent link">&para;</a></h3>
+<p>Code annotations can be placed anywhere in a code block where a comment for the
+language of the block can be placed, e.g. for JavaScript in <code class="highlight"><span class="c1">// ...</span></code> and
+<code class="highlight"><span class="cm">/* ... */</span></code>, for YAML in <code class="highlight"><span class="c1"># ...</span><span class="w"></span></code>, etc.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>:</p>
+<div class="highlight"><span class="filename">Code block with annotation</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>``` yaml
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>theme:
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  features:
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="k">-</span> content.code.annotate # (1)
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>```
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="k">1.</span>  :man_raising_hand: I&#39;m a code annotation! I can contain <span class="sb">`code`</span>, __formatted
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>    text__, images, ... basically anything that can be written in Markdown.
+</code></pre></div>
+<div class="result">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nt">theme</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.code.annotate</span><span class="w"> </span><span class="c1"># (1)</span><span class="w"></span>
+</code></pre></div>
 <ol>
 <li><img alt="🙋‍♂️" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f64b-200d-2642-fe0f.svg" title=":man_raising_hand:" /> I'm a code annotation! I can contain <code>code</code>, <strong>formatted
     text</strong>, images, ... basically anything that can be written in Markdown.</li>
 </ol>
-<pre><code>
-&lt;div class=&quot;result&quot; markdown&gt;
-
-``` yaml
-theme:
-  features:
-    - content.code.annotate # (1)
-```
-
-1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
-    text__, images, ... basically anything that can be written in Markdown.
-
-&lt;/div&gt;
-
-#### Stripping comments
-
-[:octicons-heart-fill-24:{ .mdx-heart } Insiders][Insiders]{ .mdx-insiders } ·
-[:octicons-tag-24: insiders-4.4.0][Insiders] ·
-:octicons-beaker-24: Experimental
-
-If you wish to strip the comment characters surrounding a code annotation,
-[Insiders] adds a new syntax that allows for just that. Simply add an `!` after
-the closing parens of the code annotation:
-
-```` markdown title=&quot;Code block with annotation, stripped&quot;
-``` yaml
-# (1)!
-```
-
-1.  Look ma, less line noise!
-</code></pre>
+</div>
+<h4 id="stripping-comments">Stripping comments<a class="headerlink" href="#stripping-comments" title="Permanent link">&para;</a></h4>
+<p><a class="mdx-insiders" href="../../insiders/"><span class="twemoji mdx-heart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 20.408c-.492.308-.903.546-1.192.709-.153.086-.308.17-.463.252h-.002a.75.75 0 0 1-.686 0 16.709 16.709 0 0 1-.465-.252 31.147 31.147 0 0 1-4.803-3.34C3.8 15.572 1 12.331 1 8.513 1 5.052 3.829 2.5 6.736 2.5 9.03 2.5 10.881 3.726 12 5.605 13.12 3.726 14.97 2.5 17.264 2.5 20.17 2.5 23 5.052 23 8.514c0 3.818-2.801 7.06-5.389 9.262A31.146 31.146 0 0 1 14 20.408z"/></svg></span> Insiders</a> ·
+<a href="../../insiders/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.75 6.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/><path fill-rule="evenodd" d="M2.5 1A1.5 1.5 0 0 0 1 2.5v8.44c0 .397.158.779.44 1.06l10.25 10.25a1.5 1.5 0 0 0 2.12 0l8.44-8.44a1.5 1.5 0 0 0 0-2.12L12 1.44A1.5 1.5 0 0 0 10.94 1H2.5zm0 1.5h8.44l10.25 10.25-8.44 8.44L2.5 10.94V2.5z"/></svg></span> insiders-4.4.0</a> ·
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M8 8.807V3.5h-.563a.75.75 0 0 1 0-1.5h9.125a.75.75 0 0 1 0 1.5H16v5.307l5.125 9.301c.964 1.75-.302 3.892-2.299 3.892H5.174c-1.998 0-3.263-2.142-2.3-3.892L8 8.807zM14.5 3.5h-5V9a.75.75 0 0 1-.093.362L7.127 13.5h9.746l-2.28-4.138A.75.75 0 0 1 14.5 9V3.5zM4.189 18.832 6.3 15h11.4l2.111 3.832a1.125 1.125 0 0 1-.985 1.668H5.174a1.125 1.125 0 0 1-.985-1.668z"/></svg></span> Experimental</p>
+<p>If you wish to strip the comment characters surrounding a code annotation,
+<a href="../../insiders/">Insiders</a> adds a new syntax that allows for just that. Simply add an <code>!</code> after
+the closing parens of the code annotation:</p>
+<div class="highlight"><span class="filename">Code block with annotation, stripped</span><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>``` yaml
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="gh"># (1)!</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>```
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="k">1.</span>  Look ma, less line noise!
+</code></pre></div>
 <div class="result">
-<pre><code class="language-yaml"># (1)!
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># (1)!</span><span class="w"></span>
+</code></pre></div>
 <ol>
 <li>Look ma, less line noise!</li>
 </ol>
@@ -1811,81 +1861,73 @@ stripped for technical reasons.</p>
 option directly after the shortcode, whereas <code>&lt;start&gt;</code> represents the starting
 line number. A code block can start from a line number other than <code>1</code>, which
 allows to split large code blocks for readability:</p>
-<p><code>` markdown title="Code block with line numbers"</code> py linenums="1"
-def bubble_sort(items):
-    for i in range(len(items)):
-        for j in range(len(items) - 1 - i):
-            if items[j] &gt; items[j + 1]:
-                items[j], items[j + 1] = items[j + 1], items[j]</p>
-<pre><code>````
-
-&lt;div class=&quot;result&quot; markdown&gt;
-
-``` py linenums=&quot;1&quot;
-def bubble_sort(items):
-    for i in range(len(items)):
-        for j in range(len(items) - 1 - i):
-            if items[j] &gt; items[j + 1]:
-                items[j], items[j + 1] = items[j + 1], items[j]
-</code></pre>
+<div class="highlight"><span class="filename">Code block with line numbers</span><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>``` py linenums=&quot;1&quot;
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>def bubble_sort(items):
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    for i in range(len(items)):
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>        for j in range(len(items) - 1 - i):
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>            if items[j] &gt; items[j + 1]:
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>                items[j], items[j + 1] = items[j + 1], items[j]
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>```
+</code></pre></div>
+<div class="result">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
+<span class="normal"><a href="#__codelineno-13-2">2</a></span>
+<span class="normal"><a href="#__codelineno-13-3">3</a></span>
+<span class="normal"><a href="#__codelineno-13-4">4</a></span>
+<span class="normal"><a href="#__codelineno-13-5">5</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)):</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">):</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4"></a>            <span class="k">if</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5"></a>                <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+</code></pre></div>
+</td></tr></table>
 </div>
 <h3 id="highlighting-specific-lines">Highlighting specific lines<a class="headerlink" href="#highlighting-specific-lines" title="Permanent link">&para;</a></h3>
 <p>Specific lines can be highlighted by passing the line numbers to the <code>hl_lines</code>
 argument placed right after the language shortcode. Note that line counts start
 at <code>1</code>, regardless of the starting line number specified as part of
-[<code>linenums</code>][Adding line numbers]:</p>
-<p>```` markdown title="Code block with highlighted lines"</p>
-<pre><code class="language-py" hl_lines="[2, 3]">def bubble_sort(items):
-    for i in range(len(items)):
-        for j in range(len(items) - 1 - i):
-            if items[j] &gt; items[j + 1]:
-                items[j], items[j + 1] = items[j + 1], items[j]
-</code></pre>
-<pre><code>
-&lt;div class=&quot;result&quot; markdown&gt;
-
-``` py linenums=&quot;1&quot; hl_lines=&quot;2 3&quot;
-def bubble_sort(items):
-    for i in range(len(items)):
-        for j in range(len(items) - 1 - i):
-            if items[j] &gt; items[j + 1]:
-                items[j], items[j + 1] = items[j + 1], items[j]
-```
-
-&lt;/div&gt;
-
-  [Adding line numbers]: #adding-line-numbers
-
-### Highlighting inline code blocks
-
-When [InlineHilite] is enabled, syntax highlighting can be applied to inline
-code blocks by prefixing them with a shebang, i.e. `#!`, directly followed by
-the corresponding [language shortcode][list of available lexers].
-
-``` markdown title=&quot;Inline code block&quot;
-The `#!python range()` function is used to generate a sequence of numbers.
-```
-
-&lt;div class=&quot;result&quot; markdown&gt;
-
-The `#!python range()` function is used to generate a sequence of numbers.
-
-&lt;/div&gt;
-
-### Embedding external files
-
-When [Snippets] is enabled, content from other files (including source files)
-can be embedded by using the [`--8&lt;--` notation][Snippets notation] directly
-from within a code block:
-
-```` markdown title=&quot;Code block with external content&quot;
-``` title=&quot;.browserslistrc&quot;
---8&lt;--​ &quot;.browserslistrc&quot;
-```
-</code></pre>
+<a href="#adding-line-numbers"><code>linenums</code></a>:</p>
+<div class="highlight"><span class="filename">Code block with highlighted lines</span><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>``` py hl_lines=&quot;2 3&quot;
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>def bubble_sort(items):
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>    for i in range(len(items)):
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>        for j in range(len(items) - 1 - i):
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>            if items[j] &gt; items[j + 1]:
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>                items[j], items[j + 1] = items[j + 1], items[j]
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>```
+</code></pre></div>
 <div class="result">
-<p><code>title=".browserslistrc"
-last 4 years</code></p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
+<span class="normal"><a href="#__codelineno-15-2">2</a></span>
+<span class="normal"><a href="#__codelineno-15-3">3</a></span>
+<span class="normal"><a href="#__codelineno-15-4">4</a></span>
+<span class="normal"><a href="#__codelineno-15-5">5</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2"></a><span class="hll">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)):</span>
+</span><a id="__codelineno-15-3" name="__codelineno-15-3"></a><span class="hll">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">):</span>
+</span><a id="__codelineno-15-4" name="__codelineno-15-4"></a>            <span class="k">if</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5"></a>                <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+<h3 id="highlighting-inline-code-blocks">Highlighting inline code blocks<a class="headerlink" href="#highlighting-inline-code-blocks" title="Permanent link">&para;</a></h3>
+<p>When <a href="../../setup/extensions/python-markdown-extensions/#inlinehilite">InlineHilite</a> is enabled, syntax highlighting can be applied to inline
+code blocks by prefixing them with a shebang, i.e. <code>#!</code>, directly followed by
+the corresponding <a href="https://pygments.org/docs/lexers/">language shortcode</a>.</p>
+<div class="highlight"><span class="filename">Inline code block</span><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>The <span class="sb">`#!python range()`</span> function is used to generate a sequence of numbers.
+</code></pre></div>
+<div class="result">
+<p>The <code class="highlight"><span class="nb">range</span><span class="p">()</span></code> function is used to generate a sequence of numbers.</p>
+</div>
+<h3 id="embedding-external-files">Embedding external files<a class="headerlink" href="#embedding-external-files" title="Permanent link">&para;</a></h3>
+<p>When <a href="../../setup/extensions/python-markdown-extensions/#snippets">Snippets</a> is enabled, content from other files (including source files)
+can be embedded by using the <a href="https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation"><code>--8&lt;--</code> notation</a> directly
+from within a code block:</p>
+<div class="highlight"><span class="filename">Code block with external content</span><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>``` title=&quot;.browserslistrc&quot;
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>--8&lt;--​ &quot;.browserslistrc&quot;
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>```
+</code></pre></div>
+<div class="result">
+<div class="highlight"><span class="filename">.browserslistrc</span><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>last 4 years
+</code></pre></div>
 </div>
 <h2 id="customization">Customization<a class="headerlink" href="#customization" title="Permanent link">&para;</a></h2>
 <h3 id="custom-syntax-theme">Custom syntax theme<a class="headerlink" href="#custom-syntax-theme" title="Permanent link">&para;</a></h3>
@@ -1911,38 +1953,38 @@ equally well for both <a href="../../setup/changing-the-colors/#color-scheme">co
 <li><span class="twemoji" style="color: var(--md-code-bg-color) "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2z"/></svg></span> <code>--md-code-bg-color</code></li>
 <li><span class="twemoji" style="color: var(--md-code-hl-color) "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2z"/></svg></span> <code>--md-code-hl-color</code></li>
 </ul>
-<p>Let's say you want to change the color of <code>#!js "strings"</code>. While there are
+<p>Let's say you want to change the color of <code class="highlight"><span class="s2">&quot;strings&quot;</span></code>. While there are
 several <a href="https://pygments.org/docs/tokens/#literals">types of string tokens</a>, they use the same color. You can assign
 a new color by using an <a href="../../customization/#additional-css">additional style sheet</a>:</p>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0 1 14.25 15h-9a.75.75 0 0 1 0-1.5h9a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 10 4.25V1.5H5.75a.25.25 0 0 0-.25.25v2.5a.75.75 0 0 1-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 0 0-.011-.013l-2.914-2.914a.272.272 0 0 0-.013-.011zM5.72 6.72a.75.75 0 0 0 0 1.06l1.47 1.47-1.47 1.47a.75.75 0 1 0 1.06 1.06l2-2a.75.75 0 0 0 0-1.06l-2-2a.75.75 0 0 0-1.06 0zM3.28 7.78a.75.75 0 0 0-1.06-1.06l-2 2a.75.75 0 0 0 0 1.06l2 2a.75.75 0 0 0 1.06-1.06L1.81 9.25l1.47-1.47z"/></svg></span> docs/stylesheets/extra.css"</p>
-<pre><code>``` css
+<div class="highlight"><pre><span></span><code>``` css
 :root &gt; * {
   --md-code-hl-string-color: #0FF1CE;
 }
 ```
-</code></pre>
+</code></pre></div>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0 1 14.25 15h-9a.75.75 0 0 1 0-1.5h9a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 10 4.25V1.5H5.75a.25.25 0 0 0-.25.25v2.5a.75.75 0 0 1-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 0 0-.011-.013l-2.914-2.914a.272.272 0 0 0-.013-.011zM5.72 6.72a.75.75 0 0 0 0 1.06l1.47 1.47-1.47 1.47a.75.75 0 1 0 1.06 1.06l2-2a.75.75 0 0 0 0-1.06l-2-2a.75.75 0 0 0-1.06 0zM3.28 7.78a.75.75 0 0 0-1.06-1.06l-2 2a.75.75 0 0 0 0 1.06l2 2a.75.75 0 0 0 1.06-1.06L1.81 9.25l1.47-1.47z"/></svg></span> mkdocs.yml"</p>
-<pre><code>``` yaml
+<div class="highlight"><pre><span></span><code>``` yaml
 extra_css:
   - stylesheets/extra.css
 ```
-</code></pre>
-<p>If you want to tweak a specific type of string, e.g. <code>#!js `backticks`</code>, you
+</code></pre></div>
+<p>If you want to tweak a specific type of string, e.g. <code class="highlight"><span class="sb">`backticks`</span></code>, you
 can lookup the specific CSS class name in the <a href="https://github.com/squidfunk/mkdocs-material/blob/master/src/assets/stylesheets/main/extensions/pymdownx/_highlight.scss">syntax theme definition</a>, and
 override it as part of your <a href="../../customization/#additional-css">additional style sheet</a>:</p>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0 1 14.25 15h-9a.75.75 0 0 1 0-1.5h9a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 10 4.25V1.5H5.75a.25.25 0 0 0-.25.25v2.5a.75.75 0 0 1-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 0 0-.011-.013l-2.914-2.914a.272.272 0 0 0-.013-.011zM5.72 6.72a.75.75 0 0 0 0 1.06l1.47 1.47-1.47 1.47a.75.75 0 1 0 1.06 1.06l2-2a.75.75 0 0 0 0-1.06l-2-2a.75.75 0 0 0-1.06 0zM3.28 7.78a.75.75 0 0 0-1.06-1.06l-2 2a.75.75 0 0 0 0 1.06l2 2a.75.75 0 0 0 1.06-1.06L1.81 9.25l1.47-1.47z"/></svg></span> docs/stylesheets/extra.css"</p>
-<pre><code>``` css
+<div class="highlight"><pre><span></span><code>``` css
 .highlight .sb {
   color: #0FF1CE;
 }
 ```
-</code></pre>
+</code></pre></div>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0 1 14.25 15h-9a.75.75 0 0 1 0-1.5h9a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 10 4.25V1.5H5.75a.25.25 0 0 0-.25.25v2.5a.75.75 0 0 1-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 0 0-.011-.013l-2.914-2.914a.272.272 0 0 0-.013-.011zM5.72 6.72a.75.75 0 0 0 0 1.06l1.47 1.47-1.47 1.47a.75.75 0 1 0 1.06 1.06l2-2a.75.75 0 0 0 0-1.06l-2-2a.75.75 0 0 0-1.06 0zM3.28 7.78a.75.75 0 0 0-1.06-1.06l-2 2a.75.75 0 0 0 0 1.06l2 2a.75.75 0 0 0 1.06-1.06L1.81 9.25l1.47-1.47z"/></svg></span> mkdocs.yml"</p>
-<pre><code>``` yaml
+<div class="highlight"><pre><span></span><code>``` yaml
 extra_css:
   - stylesheets/extra.css
 ```
-</code></pre>
+</code></pre></div>
 <h3 id="annotations-with-numbers">Annotations with numbers<a class="headerlink" href="#annotations-with-numbers" title="Permanent link">&para;</a></h3>
 <p>Prior to <a href="https://github.com/squidfunk/mkdocs-material/releases/tag/8.1.0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.75 6.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/><path fill-rule="evenodd" d="M2.5 1A1.5 1.5 0 0 0 1 2.5v8.44c0 .397.158.779.44 1.06l10.25 10.25a1.5 1.5 0 0 0 2.12 0l8.44-8.44a1.5 1.5 0 0 0 0-2.12L12 1.44A1.5 1.5 0 0 0 10.94 1H2.5zm0 1.5h8.44l10.25 10.25-8.44 8.44L2.5 10.94V2.5z"/></svg></span> 8.1.0</a>, code annotations
 were rendered with markers showing the original number as used by the author.
@@ -1953,7 +1995,7 @@ will close them.</p>
 <p>If you wish to revert to the prior behavior and display code annotation numbers,
 you can add an <a href="../../customization/#additional-css">additional style sheet</a> and copy and paste the following CSS:</p>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0 1 14.25 15h-9a.75.75 0 0 1 0-1.5h9a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 10 4.25V1.5H5.75a.25.25 0 0 0-.25.25v2.5a.75.75 0 0 1-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 0 0-.011-.013l-2.914-2.914a.272.272 0 0 0-.013-.011zM5.72 6.72a.75.75 0 0 0 0 1.06l1.47 1.47-1.47 1.47a.75.75 0 1 0 1.06 1.06l2-2a.75.75 0 0 0 0-1.06l-2-2a.75.75 0 0 0-1.06 0zM3.28 7.78a.75.75 0 0 0-1.06-1.06l-2 2a.75.75 0 0 0 0 1.06l2 2a.75.75 0 0 0 1.06-1.06L1.81 9.25l1.47-1.47z"/></svg></span> docs/stylesheets/extra.css"</p>
-<pre><code>``` css
+<div class="highlight"><pre><span></span><code>``` css
 .md-typeset .md-annotation__index &gt; ::before {
   content: attr(data-md-annotation-id);
 }
@@ -1961,13 +2003,25 @@ you can add an <a href="../../customization/#additional-css">additional style sh
   transform: none;
 }
 ```
-</code></pre>
+</code></pre></div>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0 1 14.25 15h-9a.75.75 0 0 1 0-1.5h9a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 10 4.25V1.5H5.75a.25.25 0 0 0-.25.25v2.5a.75.75 0 0 1-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 0 0-.011-.013l-2.914-2.914a.272.272 0 0 0-.013-.011zM5.72 6.72a.75.75 0 0 0 0 1.06l1.47 1.47-1.47 1.47a.75.75 0 1 0 1.06 1.06l2-2a.75.75 0 0 0 0-1.06l-2-2a.75.75 0 0 0-1.06 0zM3.28 7.78a.75.75 0 0 0-1.06-1.06l-2 2a.75.75 0 0 0 0 1.06l2 2a.75.75 0 0 0 1.06-1.06L1.81 9.25l1.47-1.47z"/></svg></span> mkdocs.yml"</p>
-<pre><code>``` yaml
+<div class="highlight"><pre><span></span><code>``` yaml
 extra_css:
   - stylesheets/extra.css
 ```
-</code></pre>
+</code></pre></div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Code annotations require syntax highlighting with <a href="https://pygments.org">Pygments</a> – they're
+currently not compatible with JavaScript syntax highlighters, or languages
+that do not have comments in their grammar. However, we're actively working
+on supporting alternate ways of defining code annotations, allowing to
+always place code annotations at the end of lines.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
               
             </article>
@@ -2027,7 +2081,6 @@ extra_css:
     </div>
   
   
-    Made with
     <a href="https://lopeaa.github.io/" target="_blank" rel="noopener">
       Lopeaa
     </a>

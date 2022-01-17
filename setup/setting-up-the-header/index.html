@@ -1540,10 +1540,10 @@ It also includes the <a href="../setting-up-site-search/">search bar</a> and a p
 <p>When autohiding is enabled, the header is automatically hidden when the
 user scrolls past a certain threshold, leaving more space for content. Add the
 following lines to <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">theme:
-  features:
-    - header.autohide
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">theme</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">header.autohide</span><span class="w"></span>
+</code></pre></div>
 <h3 id="announcement-bar">Announcement bar<a class="headerlink" href="#announcement-bar" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/squidfunk/mkdocs-material/releases/tag/5.0.0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.75 6.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/><path fill-rule="evenodd" d="M2.5 1A1.5 1.5 0 0 0 1 2.5v8.44c0 .397.158.779.44 1.06l10.25 10.25a1.5 1.5 0 0 0 2.12 0l8.44-8.44a1.5 1.5 0 0 0 0-2.12L12 1.44A1.5 1.5 0 0 0 10.94 1H2.5zm0 1.5h8.44l10.25 10.25-8.44 8.44L2.5 10.94V2.5z"/></svg></span> 5.0.0</a> ·
 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0V3zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5zm-5.692 12-2.104-2.236a.75.75 0 1 1 1.092-1.028l3.294 3.5a.75.75 0 0 1 0 1.028l-3.294 3.5a.75.75 0 1 1-1.092-1.028L9.308 16H4.09a2.59 2.59 0 0 0-2.59 2.59v3.16a.75.75 0 0 1-1.5 0v-3.16a4.09 4.09 0 0 1 4.09-4.09h5.218z"/></svg></span> Customization</p>
@@ -1552,12 +1552,12 @@ display project news or other important information to the user. When the user
 scrolls past the header, the bar will automatically disappear. In order to add
 an announcement bar, <a href="../../customization/#extending-the-theme">extend the theme</a> and <a href="../../customization/#overriding-blocks">override the <code>announce</code>
 block</a>, which is empty by default:</p>
-<pre><code class="language-html">{% extends &quot;base.html&quot; %}
-
-{% block announce %}
-  &lt;!-- Add announcement here, including arbitrary HTML --&gt;
-{% endblock %}
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{% extends &quot;base.html&quot; %}
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>{% block announce %}
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  <span class="cm">&lt;!-- Add announcement here, including arbitrary HTML --&gt;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>{% endblock %}
+</code></pre></div>
 <h4 id="mark-as-read">Mark as read<a class="headerlink" href="#mark-as-read" title="Permanent link">&para;</a></h4>
 <p><a class="mdx-insiders" href="../../insiders/"><span class="twemoji mdx-heart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 20.408c-.492.308-.903.546-1.192.709-.153.086-.308.17-.463.252h-.002a.75.75 0 0 1-.686 0 16.709 16.709 0 0 1-.465-.252 31.147 31.147 0 0 1-4.803-3.34C3.8 15.572 1 12.331 1 8.513 1 5.052 3.829 2.5 6.736 2.5 9.03 2.5 10.881 3.726 12 5.605 13.12 3.726 14.97 2.5 17.264 2.5 20.17 2.5 23 5.052 23 8.514c0 3.818-2.801 7.06-5.389 9.262A31.146 31.146 0 0 1 14 20.408z"/></svg></span> Insiders</a> ·
 <a href="../../insiders/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.75 6.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/><path fill-rule="evenodd" d="M2.5 1A1.5 1.5 0 0 0 1 2.5v8.44c0 .397.158.779.44 1.06l10.25 10.25a1.5 1.5 0 0 0 2.12 0l8.44-8.44a1.5 1.5 0 0 0 0-2.12L12 1.44A1.5 1.5 0 0 0 10.94 1H2.5zm0 1.5h8.44l10.25 10.25-8.44 8.44L2.5 10.94V2.5z"/></svg></span> insiders-4.2.0</a> ·
@@ -1566,10 +1566,10 @@ block</a>, which is empty by default:</p>
 <p>In order to render temporary announcements that can be marked as read by the
 user, a button to dismiss the current announcement can be included. Add the
 following lines to <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">theme:
-  features:
-    - announce.dismiss
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">theme</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">announce.dismiss</span><span class="w"></span>
+</code></pre></div>
 <p>When the user clicks the button, the current announcement is dismissed and not
 displayed again until the content of the announcement changes. This is handled
 automatically.</p>
@@ -1633,7 +1633,6 @@ automatically.</p>
     </div>
   
   
-    Made with
     <a href="https://lopeaa.github.io/" target="_blank" rel="noopener">
       Lopeaa
     </a>

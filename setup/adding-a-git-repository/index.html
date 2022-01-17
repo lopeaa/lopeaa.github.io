@@ -1570,8 +1570,8 @@ documents can be linked to specific source files.</p>
 <p>In order to display a link to the repository of your project as part of your
 documentation, set <a href="https://www.mkdocs.org/user-guide/configuration/#repo_url"><code>repo_url</code></a> in <code>mkdocs.yml</code> to the public URL of
 your repository, e.g.:</p>
-<pre><code class="language-yaml">repo_url: https://github.com/squidfunk/mkdocs-material
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">repo_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/squidfunk/mkdocs-material</span><span class="w"></span>
+</code></pre></div>
 <p>The link to the repository will be rendered next to the search bar on big
 screens and as part of the main navigation drawer on smaller screen sizes.
 Additionally, for public repositories hosted on <a href="https://github.com/">GitHub</a> or <a href="https://about.gitlab.com/">GitLab</a>, the
@@ -1583,8 +1583,8 @@ number of stars and forks is automatically requested and rendered.</p>
 <p>MkDocs will infer the source provider by examining the URL and try to set the
 <em>repository name</em> automatically. If you wish to customize the name, set
 <a href="https://www.mkdocs.org/user-guide/configuration/#repo_name"><code>repo_name</code></a> in <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">repo_name: squidfunk/mkdocs-material
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">repo_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">squidfunk/mkdocs-material</span><span class="w"></span>
+</code></pre></div>
 <h3 id="repository-icon">Repository icon<a class="headerlink" href="#repository-icon" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/squidfunk/mkdocs-material/releases/tag/5.0.0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.75 6.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/><path fill-rule="evenodd" d="M2.5 1A1.5 1.5 0 0 0 1 2.5v8.44c0 .397.158.779.44 1.06l10.25 10.25a1.5 1.5 0 0 0 2.12 0l8.44-8.44a1.5 1.5 0 0 0 0-2.12L12 1.44A1.5 1.5 0 0 0 10.94 1H2.5zm0 1.5h8.44l10.25 10.25-8.44 8.44L2.5 10.94V2.5z"/></svg></span> 5.0.0</a> ·
 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M11.75 1a.75.75 0 0 1 .75.75V4h6.532c.42 0 .826.15 1.143.425l3.187 2.75a1.75 1.75 0 0 1 0 2.65l-3.187 2.75a1.75 1.75 0 0 1-1.143.425H12.5v9.25a.75.75 0 0 1-1.5 0V13H3.75A1.75 1.75 0 0 1 2 11.25v-5.5C2 4.783 2.784 4 3.75 4H11V1.75a.75.75 0 0 1 .75-.75zm0 4.5h7.282a.25.25 0 0 1 .163.06l3.188 2.75a.25.25 0 0 1 0 .38l-3.188 2.75a.25.25 0 0 1-.163.06H3.75a.25.25 0 0 1-.25-.25v-5.5a.25.25 0 0 1 .25-.25h8z"/></svg></span> Default:
@@ -1592,10 +1592,10 @@ number of stars and forks is automatically requested and rendered.</p>
 <p>While the default repository icon is a generic git icon, it can be set to
 <a href="https://github.com/squidfunk/mkdocs-material/tree/master/material/.icons">any icon bundled with the theme</a> by referencing a valid icon
 path in <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">theme:
-  icon:
-    repo: fontawesome/brands/git-alt
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">theme</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">icon</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontawesome/brands/git-alt</span><span class="w"></span>
+</code></pre></div>
 <p>Some popular choices:</p>
 <ul>
 <li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M216.29 158.39H137C97 147.9 6.51 150.63 6.51 233.18c0 30.09 15 51.23 35 61-25.1 23-37 33.85-37 49.21 0 11 4.47 21.14 17.89 26.81C8.13 383.61 0 393.35 0 411.65c0 32.11 28.05 50.82 101.63 50.82 70.75 0 111.79-26.42 111.79-73.18 0-58.66-45.16-56.5-151.63-63l13.43-21.55c27.27 7.58 118.7 10 118.7-67.89 0-18.7-7.73-31.71-15-41.07l37.41-2.84zm-63.42 241.9c0 32.06-104.89 32.1-104.89 2.43 0-8.14 5.27-15 10.57-21.54 77.71 5.3 94.32 3.37 94.32 19.11zm-50.81-134.58c-52.8 0-50.46-71.16 1.2-71.16 49.54 0 50.82 71.16-1.2 71.16zm133.3 100.51v-32.1c26.75-3.66 27.24-2 27.24-11V203.61c0-8.5-2.05-7.38-27.24-16.26l4.47-32.92H324v168.71c0 6.51.4 7.32 6.51 8.14l20.73 2.84v32.1zm52.45-244.31c-23.17 0-36.59-13.43-36.59-36.61s13.42-35.77 36.59-35.77c23.58 0 37 12.62 37 35.77s-13.42 36.61-37 36.61zM512 350.46c-17.49 8.53-43.1 16.26-66.28 16.26-48.38 0-66.67-19.5-66.67-65.46V194.75c0-5.42 1.05-4.06-31.71-4.06V154.5c35.78-4.07 50-22 54.47-66.27h38.63c0 65.83-1.34 61.81 3.26 61.81H501v40.65h-60.56v97.15c0 6.92-4.92 51.41 60.57 26.84z"/></svg></span> – <code>fontawesome/brands/git</code></li>
@@ -1616,27 +1616,27 @@ path in <code>mkdocs.yml</code>:</p>
 an edit button is displayed at the top of each document. This behavior can be
 changed by setting <a href="https://www.mkdocs.org/user-guide/configuration/#edit_uri"><code>edit_uri</code></a> in <code>mkdocs.yml</code>:</p>
 <p>=== "Customize edit path"</p>
-<pre><code>``` yaml
+<div class="highlight"><pre><span></span><code>``` yaml
 edit_uri: edit/master/docs/
 ```
-</code></pre>
+</code></pre></div>
 <p>=== "Hide edit button"</p>
-<pre><code>``` yaml
-edit_uri: ""
+<div class="highlight"><pre><span></span><code>``` yaml
+edit_uri: &quot;&quot;
 ```
-</code></pre>
+</code></pre></div>
 <h3 id="revision-date">Revision date<a class="headerlink" href="#revision-date" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/squidfunk/mkdocs-material/releases/tag/4.6.0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.75 6.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/><path fill-rule="evenodd" d="M2.5 1A1.5 1.5 0 0 0 1 2.5v8.44c0 .397.158.779.44 1.06l10.25 10.25a1.5 1.5 0 0 0 2.12 0l8.44-8.44a1.5 1.5 0 0 0 0-2.12L12 1.44A1.5 1.5 0 0 0 10.94 1H2.5zm0 1.5h8.44l10.25 10.25-8.44 8.44L2.5 10.94V2.5z"/></svg></span> 4.6.0</a> ·
 <a href="https://github.com/zhaoterryy/mkdocs-git-revision-date-plugin"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M8.75 8a.75.75 0 0 0-.75.75v6.5c0 .414.336.75.75.75h6.5a.75.75 0 0 0 .75-.75v-6.5a.75.75 0 0 0-.75-.75h-6.5zm.75 6.5v-5h5v5h-5z"/><path fill-rule="evenodd" d="M15.25 1a.75.75 0 0 1 .75.75V4h2.25c.966 0 1.75.784 1.75 1.75V8h2.25a.75.75 0 0 1 0 1.5H20v5h2.25a.75.75 0 0 1 0 1.5H20v2.25A1.75 1.75 0 0 1 18.25 20H16v2.25a.75.75 0 0 1-1.5 0V20h-5v2.25a.75.75 0 0 1-1.5 0V20H5.75A1.75 1.75 0 0 1 4 18.25V16H1.75a.75.75 0 0 1 0-1.5H4v-5H1.75a.75.75 0 0 1 0-1.5H4V5.75C4 4.784 4.784 4 5.75 4H8V1.75a.75.75 0 0 1 1.5 0V4h5V1.75a.75.75 0 0 1 .75-.75zm3 17.5a.25.25 0 0 0 .25-.25V5.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h12.5z"/></svg></span> Plugin</a></p>
 <p>The <a href="https://github.com/zhaoterryy/mkdocs-git-revision-date-plugin">git-revision-date</a> plugin adds support for displaying the date a
 document was last updated at the bottom of each page. It can be installed
 with <code>pip</code>:</p>
-<pre><code>pip install mkdocs-git-revision-date-plugin
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pip install mkdocs-git-revision-date-plugin
+</code></pre></div>
 <p>Then, add the following lines to <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">plugins:
-  - git-revision-date
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git-revision-date</span><span class="w"></span>
+</code></pre></div>
 <p>The following configuration options are supported:</p>
 <dl>
 <dt><code id="enabled-if-env">enabled_if_env</code></dt>
@@ -1644,10 +1644,10 @@ with <code>pip</code>:</p>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M11.75 1a.75.75 0 0 1 .75.75V4h6.532c.42 0 .826.15 1.143.425l3.187 2.75a1.75 1.75 0 0 1 0 2.65l-3.187 2.75a1.75 1.75 0 0 1-1.143.425H12.5v9.25a.75.75 0 0 1-1.5 0V13H3.75A1.75 1.75 0 0 1 2 11.25v-5.5C2 4.783 2.784 4 3.75 4H11V1.75a.75.75 0 0 1 .75-.75zm0 4.5h7.282a.25.25 0 0 1 .163.06l3.188 2.75a.25.25 0 0 1 0 .38l-3.188 2.75a.25.25 0 0 1-.163.06H3.75a.25.25 0 0 1-.25-.25v-5.5a.25.25 0 0 1 .25-.25h8z"/></svg></span> Default: <em>none</em> – When specified, the plugin will
 only be invoked if the environment variable exists. This makes it easy to
 disable extraction for cases when the repository is not available:</p>
-<p><code>yaml
-plugins:
-  - git-revision-date:
-      enabled_if_env: CI</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">git-revision-date</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">      </span><span class="nt">enabled_if_env</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CI</span><span class="w"></span>
+</code></pre></div>
 </dd>
 </dl>
 <p>The other configuration options of this extension are not officially supported
@@ -1659,12 +1659,12 @@ them at your own risk.</p>
 <p>Similarly, the <a href="https://github.com/timvink/mkdocs-git-revision-date-localized-plugin">git-revision-date-localized</a> plugin adds support for adding
 a localized update and creation date at the bottom of each page. It can be
 installed with <code>pip</code>:</p>
-<pre><code>pip install mkdocs-git-revision-date-localized-plugin
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>pip install mkdocs-git-revision-date-localized-plugin
+</code></pre></div>
 <p>Then, add the following to <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">plugins:
-  - git-revision-date-localized
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git-revision-date-localized</span><span class="w"></span>
+</code></pre></div>
 <p>The following configuration options are supported:</p>
 <dl>
 <dt><code id="type">type</code></dt>
@@ -1672,20 +1672,20 @@ installed with <code>pip</code>:</p>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M11.75 1a.75.75 0 0 1 .75.75V4h6.532c.42 0 .826.15 1.143.425l3.187 2.75a1.75 1.75 0 0 1 0 2.65l-3.187 2.75a1.75 1.75 0 0 1-1.143.425H12.5v9.25a.75.75 0 0 1-1.5 0V13H3.75A1.75 1.75 0 0 1 2 11.25v-5.5C2 4.783 2.784 4 3.75 4H11V1.75a.75.75 0 0 1 .75-.75zm0 4.5h7.282a.25.25 0 0 1 .163.06l3.188 2.75a.25.25 0 0 1 0 .38l-3.188 2.75a.25.25 0 0 1-.163.06H3.75a.25.25 0 0 1-.25-.25v-5.5a.25.25 0 0 1 .25-.25h8z"/></svg></span> Default: <code>date</code> – The format of the date to be
 displayed. Valid values are <code>date</code>, <code>datetime</code>, <code>iso_date</code>, <code>iso_datetime</code>
 and <code>timeago</code>:</p>
-<p><code>yaml
-plugins:
-  - git-revision-date-localized:
-      type: date</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">git-revision-date-localized</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">date</span><span class="w"></span>
+</code></pre></div>
 </dd>
 <dt><code id="fallback-to-build-date">fallback_to_build_date</code></dt>
 <dd>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M11.75 1a.75.75 0 0 1 .75.75V4h6.532c.42 0 .826.15 1.143.425l3.187 2.75a1.75 1.75 0 0 1 0 2.65l-3.187 2.75a1.75 1.75 0 0 1-1.143.425H12.5v9.25a.75.75 0 0 1-1.5 0V13H3.75A1.75 1.75 0 0 1 2 11.25v-5.5C2 4.783 2.784 4 3.75 4H11V1.75a.75.75 0 0 1 .75-.75zm0 4.5h7.282a.25.25 0 0 1 .163.06l3.188 2.75a.25.25 0 0 1 0 .38l-3.188 2.75a.25.25 0 0 1-.163.06H3.75a.25.25 0 0 1-.25-.25v-5.5a.25.25 0 0 1 .25-.25h8z"/></svg></span> Default: <code>false</code> – Enables falling back to
 the time when <code>mkdocs build</code> was executed. Can be used as a fallback when
 the build is performed outside of a git repository:</p>
-<p><code>yaml
-plugins:
-  - git-revision-date-localized:
-      fallback_to_build_date: true</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">git-revision-date-localized</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">      </span><span class="nt">fallback_to_build_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+</code></pre></div>
 </dd>
 <dt><code id="enable-creation-date">enable_creation_date</code></dt>
 <dd>
@@ -1693,10 +1693,10 @@ plugins:
 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M11.75 1a.75.75 0 0 1 .75.75V4h6.532c.42 0 .826.15 1.143.425l3.187 2.75a1.75 1.75 0 0 1 0 2.65l-3.187 2.75a1.75 1.75 0 0 1-1.143.425H12.5v9.25a.75.75 0 0 1-1.5 0V13H3.75A1.75 1.75 0 0 1 2 11.25v-5.5C2 4.783 2.784 4 3.75 4H11V1.75a.75.75 0 0 1 .75-.75zm0 4.5h7.282a.25.25 0 0 1 .163.06l3.188 2.75a.25.25 0 0 1 0 .38l-3.188 2.75a.25.25 0 0 1-.163.06H3.75a.25.25 0 0 1-.25-.25v-5.5a.25.25 0 0 1 .25-.25h8z"/></svg></span> Default: <code>false</code> – Enables the display of the
 creation date of the file associated with the page next to the last updated
 date at the bottom of the page:</p>
-<p><code>yaml
-plugins:
-  - git-revision-date-localized:
-      enable_creation_date: true</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">git-revision-date-localized</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">      </span><span class="nt">enable_creation_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+</code></pre></div>
 </dd>
 </dl>
 <p>The other configuration options of this extension are not officially supported
@@ -1761,7 +1761,6 @@ them at your own risk.</p>
     </div>
   
   
-    Made with
     <a href="https://lopeaa.github.io/" target="_blank" rel="noopener">
       Lopeaa
     </a>

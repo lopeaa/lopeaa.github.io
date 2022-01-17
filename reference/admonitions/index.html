@@ -1311,8 +1311,56 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#changing-the-title" class="md-nav__link">
+    Changing the title
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#removing-the-title" class="md-nav__link">
     Removing the title
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collapsible-blocks" class="md-nav__link">
+    Collapsible blocks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inline-blocks" class="md-nav__link">
+    Inline blocks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-types" class="md-nav__link">
+    Supported types
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customization" class="md-nav__link">
+    Customization
+  </a>
+  
+    <nav class="md-nav" aria-label="Customization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-admonitions" class="md-nav__link">
+    Custom admonitions
   </a>
   
 </li>
@@ -1504,8 +1552,56 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#changing-the-title" class="md-nav__link">
+    Changing the title
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#removing-the-title" class="md-nav__link">
     Removing the title
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collapsible-blocks" class="md-nav__link">
+    Collapsible blocks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inline-blocks" class="md-nav__link">
+    Inline blocks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-types" class="md-nav__link">
+    Supported types
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customization" class="md-nav__link">
+    Customization
+  </a>
+  
+    <nav class="md-nav" aria-label="Customization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-admonitions" class="md-nav__link">
+    Custom admonitions
   </a>
   
 </li>
@@ -1537,11 +1633,11 @@ inclusion and nesting of arbitrary content.</p>
 <p>This configuration enables admonitions, allows to make them collapsible and to
 nest arbitrary content inside admonitions. Add the following lines to
 <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">markdown_extensions</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition</span><span class="w"></span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.details</span><span class="w"></span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.superfences</span><span class="w"></span>
+</code></pre></div>
 <p>See additional configuration options:</p>
 <ul>
 <li><a href="../../setup/extensions/python-markdown/#admonition">Admonition</a></li>
@@ -1554,19 +1650,19 @@ nest arbitrary content inside admonitions. Add the following lines to
 <p>Each of the supported admonition types has a distinct icon, which can be changed
 to any icon bundled with the theme, or even a <a href="icons-emojis.md#additional-icons">custom icon</a>. Add the following
 lines to <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">theme:
-  icon:
-    admonition:
-      &lt;type&gt;: &lt;icon&gt; # (1)!
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">theme</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">icon</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">admonition</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">      </span><span class="nt">&lt;type&gt;</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;icon&gt;</span><span class="w"> </span><span class="c1"># (1)!</span><span class="w"></span>
+</code></pre></div>
 <ol>
 <li>Set <code>&lt;type</code>&gt; to any of the <a href="#supported-types">supported types</a> and <code>&lt;icon&gt;</code> to any valid icon 
     shortcode, which you can find by using the <a href="icons-emojis.md#search">icon search</a>.</li>
 </ol>
 <p>??? example "Expand to show alternate icon sets"</p>
-<pre><code>=== ":octicons-mark-github-16: Octicons"
+<div class="highlight"><pre><span></span><code>=== &quot;:octicons-mark-github-16: Octicons&quot;
 
-    ``` yaml title="Admonition with alternate icon set"
+    ``` yaml title=&quot;Admonition with alternate icon set&quot;
     theme:
       icon:
         admonition:
@@ -1584,16 +1680,16 @@ lines to <code>mkdocs.yml</code>:</p>
           quote: octicons/quote-16
     ```
 
-    &lt;div class="result" markdown&gt;
+    &lt;div class=&quot;result&quot; markdown&gt;
 
     [![Octicons]][Octicons]
 
     &lt;/div&gt;
 
 
-=== ":fontawesome-brands-font-awesome: FontAwesome"
+=== &quot;:fontawesome-brands-font-awesome: FontAwesome&quot;
 
-    ``` yaml title="Admonition with alternate icon set"
+    ``` yaml title=&quot;Admonition with alternate icon set&quot;
     theme:
       icon:
         admonition:
@@ -1611,49 +1707,40 @@ lines to <code>mkdocs.yml</code>:</p>
           quote: fontawesome/solid/quote-left
     ```
 
-    &lt;div class="result" markdown&gt;
+    &lt;div class=&quot;result&quot; markdown&gt;
 
     [![FontAwesome]][FontAwesome]
 
     &lt;/div&gt;
-</code></pre>
+</code></pre></div>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>Admonitions follow a simple syntax: a block starts with <code>!!!</code>, followed by a
-single keyword used as a [type qualifier]. The content of the block follows on
+single keyword used as a <a href="#supported-types">type qualifier</a>. The content of the block follows on
 the next line, indented by four spaces:</p>
-<p>``` markdown title="Admonition"</p>
+<div class="highlight"><span class="filename">Admonition</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>!!! note
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    massa, nec semper lorem quam in massa.
+</code></pre></div>
+<div class="result">
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
 nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
 massa, nec semper lorem quam in massa.</p>
 </div>
-<pre><code>
-&lt;div class=&quot;result&quot; markdown&gt;
-
-!!! note
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-    massa, nec semper lorem quam in massa.
-
-&lt;/div&gt;
-
-  [type qualifier]: #supported-types
-
-### Changing the title
-
-By default, the title will equal the type qualifier in titlecase. However, it
+</div>
+<h3 id="changing-the-title">Changing the title<a class="headerlink" href="#changing-the-title" title="Permanent link">&para;</a></h3>
+<p>By default, the title will equal the type qualifier in titlecase. However, it
 can be changed by adding a quoted string containing valid Markdown (including
-links, formatting, ...) after the type qualifier:
-
-``` markdown title=&quot;Admonition with custom title&quot;
-!!! note &quot;Phasellus posuere in sem ut cursus&quot;
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-    massa, nec semper lorem quam in massa.
-</code></pre>
+links, formatting, ...) after the type qualifier:</p>
+<div class="highlight"><span class="filename">Admonition with custom title</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>!!! note &quot;Phasellus posuere in sem ut cursus&quot;
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    massa, nec semper lorem quam in massa.
+</code></pre></div>
 <div class="result">
 <div class="admonition note">
 <p class="admonition-title">Phasellus posuere in sem ut cursus</p>
@@ -1663,292 +1750,275 @@ massa, nec semper lorem quam in massa.</p>
 </div>
 </div>
 <h3 id="removing-the-title">Removing the title<a class="headerlink" href="#removing-the-title" title="Permanent link">&para;</a></h3>
-<p>Similar to [changing the title], the icon and title can be omitted entirely by
+<p>Similar to <a href="#changing-the-title">changing the title</a>, the icon and title can be omitted entirely by
 adding an empty string directly after the type qualifier. Note that this will
-not work for [collapsible blocks]:</p>
-<p>``` markdown title="Admonition without title"</p>
+not work for <a href="#collapsible-blocks">collapsible blocks</a>:</p>
+<div class="highlight"><span class="filename">Admonition without title</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>!!! note &quot;&quot;
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    massa, nec semper lorem quam in massa.
+</code></pre></div>
+<div class="result">
 <div class="admonition note">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
 nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
 massa, nec semper lorem quam in massa.</p>
 </div>
-<pre><code>
-&lt;div class=&quot;result&quot; markdown&gt;
-
-!!! note &quot;&quot;
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-    massa, nec semper lorem quam in massa.
-
-&lt;/div&gt;
-
-  [changing the title]: #changing-the-title
-  [collapsible blocks]: #collapsible-blocks
-
-### Collapsible blocks
-
-When [Details] is enabled and an admonition block is started with `???` instead
-of `!!!`, the admonition is rendered as a collapsible block with a small toggle
-on the right side:
-
-``` markdown title=&quot;Admonition, collapsible&quot;
-??? note
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-    massa, nec semper lorem quam in massa.
-</code></pre>
+</div>
+<h3 id="collapsible-blocks">Collapsible blocks<a class="headerlink" href="#collapsible-blocks" title="Permanent link">&para;</a></h3>
+<p>When <a href="../../setup/extensions/python-markdown-extensions/#details">Details</a> is enabled and an admonition block is started with <code>???</code> instead
+of <code>!!!</code>, the admonition is rendered as a collapsible block with a small toggle
+on the right side:</p>
+<div class="highlight"><span class="filename">Admonition, collapsible</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>??? note
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    massa, nec semper lorem quam in massa.
+</code></pre></div>
 <div class="result">
 <p>??? note</p>
-<pre><code>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+<div class="highlight"><pre><span></span><code>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
 nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
 massa, nec semper lorem quam in massa.
-</code></pre>
+</code></pre></div>
 </div>
 <p>Adding a <code>+</code> after the <code>???</code> token renders the block expanded:</p>
-<p>``` markdown title="Admonition, collapsible and initially expanded"
-???+ note</p>
-<pre><code>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+<div class="highlight"><span class="filename">Admonition, collapsible and initially expanded</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>???+ note
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    massa, nec semper lorem quam in massa.
+</code></pre></div>
+<div class="result">
+<p>???+ note</p>
+<div class="highlight"><pre><span></span><code>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
 nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
 massa, nec semper lorem quam in massa.
-</code></pre>
-<pre><code>
-&lt;div class=&quot;result&quot; markdown&gt;
+</code></pre></div>
+</div>
+<h3 id="inline-blocks">Inline blocks<a class="headerlink" href="#inline-blocks" title="Permanent link">&para;</a></h3>
+<p><a href="https://github.com/squidfunk/mkdocs-material/releases/tag/7.0.0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.75 6.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/><path fill-rule="evenodd" d="M2.5 1A1.5 1.5 0 0 0 1 2.5v8.44c0 .397.158.779.44 1.06l10.25 10.25a1.5 1.5 0 0 0 2.12 0l8.44-8.44a1.5 1.5 0 0 0 0-2.12L12 1.44A1.5 1.5 0 0 0 10.94 1H2.5zm0 1.5h8.44l10.25 10.25-8.44 8.44L2.5 10.94V2.5z"/></svg></span> 7.0.0</a> ·
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M8 8.807V3.5h-.563a.75.75 0 0 1 0-1.5h9.125a.75.75 0 0 1 0 1.5H16v5.307l5.125 9.301c.964 1.75-.302 3.892-2.299 3.892H5.174c-1.998 0-3.263-2.142-2.3-3.892L8 8.807zM14.5 3.5h-5V9a.75.75 0 0 1-.093.362L7.127 13.5h9.746l-2.28-4.138A.75.75 0 0 1 14.5 9V3.5zM4.189 18.832 6.3 15h11.4l2.111 3.832a1.125 1.125 0 0 1-.985 1.668H5.174a1.125 1.125 0 0 1-.985-1.668z"/></svg></span> Experimental</p>
+<p>Admonitions can also be rendered as inline blocks (i.e. for sidebars), placing
+them to the right using the <code>inline</code> + <code>end</code> modifiers, or to the left using
+only the <code>inline</code> modifier:</p>
+<p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06l2.97-2.97H3.75a.75.75 0 0 1 0-1.5h7.44L8.22 4.03a.75.75 0 0 1 0-1.06z"/></svg></span> inline end"</p>
+<div class="highlight"><pre><span></span><code>!!! info inline end
 
-???+ note
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+    euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+    purus auctor massa, nec semper lorem quam in massa.
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-    massa, nec semper lorem quam in massa.
+``` markdown
+!!! info inline end
 
-&lt;/div&gt;
+    Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit. Nulla et euismod nulla.
+    Curabitur feugiat, tortor non consequat
+    finibus, justo purus auctor massa, nec
+    semper lorem quam in massa.
+```
 
-### Inline blocks
+Use `inline end` to align to the right (left for rtl languages).
+</code></pre></div>
+<p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.78 12.53a.75.75 0 0 1-1.06 0L2.47 8.28a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 1.06L4.81 7h7.44a.75.75 0 0 1 0 1.5H4.81l2.97 2.97a.75.75 0 0 1 0 1.06z"/></svg></span> inline"</p>
+<div class="highlight"><pre><span></span><code>!!! info inline
 
-[:octicons-tag-24: 7.0.0][Inline support] ·
-:octicons-beaker-24: Experimental
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+    euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+    purus auctor massa, nec semper lorem quam in massa.
 
-Admonitions can also be rendered as inline blocks (i.e. for sidebars), placing
-them to the right using the `inline` + `end` modifiers, or to the left using
-only the `inline` modifier:
+``` markdown
+!!! info inline
 
-=== &quot;:octicons-arrow-right-16: inline end&quot;
+    Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit. Nulla et euismod nulla.
+    Curabitur feugiat, tortor non consequat
+    finibus, justo purus auctor massa, nec
+    semper lorem quam in massa.
+```
 
-    !!! info inline end
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-    ``` markdown
-    !!! info inline end
-
-        Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Nulla et euismod nulla.
-        Curabitur feugiat, tortor non consequat
-        finibus, justo purus auctor massa, nec
-        semper lorem quam in massa.
-    ```
-
-    Use `inline end` to align to the right (left for rtl languages).
-
-=== &quot;:octicons-arrow-left-16: inline&quot;
-
-    !!! info inline
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-    ``` markdown
-    !!! info inline
-
-        Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Nulla et euismod nulla.
-        Curabitur feugiat, tortor non consequat
-        finibus, justo purus auctor massa, nec
-        semper lorem quam in massa.
-    ```
-
-    Use `inline` to align to the left (right for rtl languages).
-
-__Important__: admonitions that use the `inline` modifiers _must_ be declared
+Use `inline` to align to the left (right for rtl languages).
+</code></pre></div>
+<p><strong>Important</strong>: admonitions that use the <code>inline</code> modifiers <em>must</em> be declared
 prior to the content block you want to place them beside. If there's
 insufficient space to render the admonition next to the block, the admonition
-will stretch to the full width of the viewport, e.g. on mobile viewports.
-
-  [Inline support]: https://github.com/squidfunk/mkdocs-material/releases/tag/7.0.0
-
-### Supported types
-
-Following is a list of type qualifiers provided by Material for MkDocs, whereas
-the default type, and thus fallback for unknown type qualifiers, is `note`:
-
-`note`{ #type-note }
-
-:   !!! note
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-`abstract`{ #type-abstract }, `summary`, `tldr`
-
-:   !!! abstract
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-`info`{ #type-info }, `todo`
-
-:   !!! info
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-`tip`{ #type-tip }, `hint`, `important`
-
-:   !!! tip
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-`success`{ #type-success }, `check`, `done`
-
-:   !!! success
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-`question`{ #type-question }, `help`, `faq`
-
-:   !!! question
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-`warning`{ #type-warning }, `caution`, `attention`
-
-:   !!! warning
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-`failure`{ #type-failure }, `fail`, `missing`
-
-:   !!! failure
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-`danger`{ #type-danger }, `error`
-
-:   !!! danger
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-`bug`{ #type-bug }
-
-:   !!! bug
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-`example`{ #type-example }
-
-:   !!! example
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-`quote`{ #type-quote }, `cite`
-
-:   !!! quote
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-## Customization
-
-### Custom admonitions
-
-If you want to add a custom admonition type, all you need is a color and an
-`*.svg` icon. Copy the icon's code from the [`.icons`][custom icons] folder
-and add the following CSS to an [additional style sheet]:
-
-&lt;style&gt;
+will stretch to the full width of the viewport, e.g. on mobile viewports.</p>
+<h3 id="supported-types">Supported types<a class="headerlink" href="#supported-types" title="Permanent link">&para;</a></h3>
+<p>Following is a list of type qualifiers provided by Material for MkDocs, whereas
+the default type, and thus fallback for unknown type qualifiers, is <code>note</code>:</p>
+<dl>
+<dt><code id="type-note">note</code></dt>
+<dd>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</div>
+</dd>
+<dt><code id="type-abstract">abstract</code>, <code>summary</code>, <code>tldr</code></dt>
+<dd>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</div>
+</dd>
+<dt><code id="type-info">info</code>, <code>todo</code></dt>
+<dd>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</div>
+</dd>
+<dt><code id="type-tip">tip</code>, <code>hint</code>, <code>important</code></dt>
+<dd>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</div>
+</dd>
+<dt><code id="type-success">success</code>, <code>check</code>, <code>done</code></dt>
+<dd>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</div>
+</dd>
+<dt><code id="type-question">question</code>, <code>help</code>, <code>faq</code></dt>
+<dd>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</div>
+</dd>
+<dt><code id="type-warning">warning</code>, <code>caution</code>, <code>attention</code></dt>
+<dd>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</div>
+</dd>
+<dt><code id="type-failure">failure</code>, <code>fail</code>, <code>missing</code></dt>
+<dd>
+<div class="admonition failure">
+<p class="admonition-title">Failure</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</div>
+</dd>
+<dt><code id="type-danger">danger</code>, <code>error</code></dt>
+<dd>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</div>
+</dd>
+<dt><code id="type-bug">bug</code></dt>
+<dd>
+<div class="admonition bug">
+<p class="admonition-title">Bug</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</div>
+</dd>
+<dt><code id="type-example">example</code></dt>
+<dd>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</div>
+</dd>
+<dt><code id="type-quote">quote</code>, <code>cite</code></dt>
+<dd>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</div>
+</dd>
+</dl>
+<h2 id="customization">Customization<a class="headerlink" href="#customization" title="Permanent link">&para;</a></h2>
+<h3 id="custom-admonitions">Custom admonitions<a class="headerlink" href="#custom-admonitions" title="Permanent link">&para;</a></h3>
+<p>If you want to add a custom admonition type, all you need is a color and an
+<code>*.svg</code> icon. Copy the icon's code from the <a href="https://github.com/squidfunk/mkdocs-material/tree/master/material/.icons"><code>.icons</code></a> folder
+and add the following CSS to an <a href="../../customization/#additional-css">additional style sheet</a>:</p>
+<style>
   :root {
-    --md-admonition-icon--pied-piper: url('data:image/svg+xml;charset=utf-8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 576 512&quot;&gt;&lt;path d=&quot;M244 246c-3.2-2-6.3-2.9-10.1-2.9-6.6 0-12.6 3.2-19.3 3.7l1.7 4.9zm135.9 197.9c-19 0-64.1 9.5-79.9 19.8l6.9 45.1c35.7 6.1 70.1 3.6 106-9.8-4.8-10-23.5-55.1-33-55.1zM340.8 177c6.6 2.8 11.5 9.2 22.7 22.1 2-1.4 7.5-5.2 7.5-8.6 0-4.9-11.8-13.2-13.2-23 11.2-5.7 25.2-6 37.6-8.9 68.1-16.4 116.3-52.9 146.8-116.7C548.3 29.3 554 16.1 554.6 2l-2 2.6c-28.4 50-33 63.2-81.3 100-31.9 24.4-69.2 40.2-106.6 54.6l-6.3-.3v-21.8c-19.6 1.6-19.7-14.6-31.6-23-18.7 20.6-31.6 40.8-58.9 51.1-12.7 4.8-19.6 10-25.9 21.8 34.9-16.4 91.2-13.5 98.8-10zM555.5 0l-.6 1.1-.3.9.6-.6zm-59.2 382.1c-33.9-56.9-75.3-118.4-150-115.5l-.3-6c-1.1-13.5 32.8 3.2 35.1-31l-14.4 7.2c-19.8-45.7-8.6-54.3-65.5-54.3-14.7 0-26.7 1.7-41.4 4.6 2.9 18.6 2.2 36.7-10.9 50.3l19.5 5.5c-1.7 3.2-2.9 6.3-2.9 9.8 0 21 42.8 2.9 42.8 33.6 0 18.4-36.8 60.1-54.9 60.1-8 0-53.7-50-53.4-60.1l.3-4.6 52.3-11.5c13-2.6 12.3-22.7-2.9-22.7-3.7 0-43.1 9.2-49.4 10.6-2-5.2-7.5-14.1-13.8-14.1-3.2 0-6.3 3.2-9.5 4-9.2 2.6-31 2.9-21.5 20.1L15.9 298.5c-5.5 1.1-8.9 6.3-8.9 11.8 0 6 5.5 10.9 11.5 10.9 8 0 131.3-28.4 147.4-32.2 2.6 3.2 4.6 6.3 7.8 8.6 20.1 14.4 59.8 85.9 76.4 85.9 24.1 0 58-22.4 71.3-41.9 3.2-4.3 6.9-7.5 12.4-6.9.6 13.8-31.6 34.2-33 43.7-1.4 10.2-1 35.2-.3 41.1 26.7 8.1 52-3.6 77.9-2.9 4.3-21 10.6-41.9 9.8-63.5l-.3-9.5c-1.4-34.2-10.9-38.5-34.8-58.6-1.1-1.1-2.6-2.6-3.7-4 2.2-1.4 1.1-1 4.6-1.7 88.5 0 56.3 183.6 111.5 229.9 33.1-15 72.5-27.9 103.5-47.2-29-25.6-52.6-45.7-72.7-79.9zm-196.2 46.1v27.2l11.8-3.4-2.9-23.8zm-68.7-150.4l24.1 61.2 21-13.8-31.3-50.9zm84.4 154.9l2 12.4c9-1.5 58.4-6.6 58.4-14.1 0-1.4-.6-3.2-.9-4.6-26.8 0-36.9 3.8-59.5 6.3z&quot;/&gt;&lt;/svg&gt;')
+    --md-admonition-icon--pied-piper: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M244 246c-3.2-2-6.3-2.9-10.1-2.9-6.6 0-12.6 3.2-19.3 3.7l1.7 4.9zm135.9 197.9c-19 0-64.1 9.5-79.9 19.8l6.9 45.1c35.7 6.1 70.1 3.6 106-9.8-4.8-10-23.5-55.1-33-55.1zM340.8 177c6.6 2.8 11.5 9.2 22.7 22.1 2-1.4 7.5-5.2 7.5-8.6 0-4.9-11.8-13.2-13.2-23 11.2-5.7 25.2-6 37.6-8.9 68.1-16.4 116.3-52.9 146.8-116.7C548.3 29.3 554 16.1 554.6 2l-2 2.6c-28.4 50-33 63.2-81.3 100-31.9 24.4-69.2 40.2-106.6 54.6l-6.3-.3v-21.8c-19.6 1.6-19.7-14.6-31.6-23-18.7 20.6-31.6 40.8-58.9 51.1-12.7 4.8-19.6 10-25.9 21.8 34.9-16.4 91.2-13.5 98.8-10zM555.5 0l-.6 1.1-.3.9.6-.6zm-59.2 382.1c-33.9-56.9-75.3-118.4-150-115.5l-.3-6c-1.1-13.5 32.8 3.2 35.1-31l-14.4 7.2c-19.8-45.7-8.6-54.3-65.5-54.3-14.7 0-26.7 1.7-41.4 4.6 2.9 18.6 2.2 36.7-10.9 50.3l19.5 5.5c-1.7 3.2-2.9 6.3-2.9 9.8 0 21 42.8 2.9 42.8 33.6 0 18.4-36.8 60.1-54.9 60.1-8 0-53.7-50-53.4-60.1l.3-4.6 52.3-11.5c13-2.6 12.3-22.7-2.9-22.7-3.7 0-43.1 9.2-49.4 10.6-2-5.2-7.5-14.1-13.8-14.1-3.2 0-6.3 3.2-9.5 4-9.2 2.6-31 2.9-21.5 20.1L15.9 298.5c-5.5 1.1-8.9 6.3-8.9 11.8 0 6 5.5 10.9 11.5 10.9 8 0 131.3-28.4 147.4-32.2 2.6 3.2 4.6 6.3 7.8 8.6 20.1 14.4 59.8 85.9 76.4 85.9 24.1 0 58-22.4 71.3-41.9 3.2-4.3 6.9-7.5 12.4-6.9.6 13.8-31.6 34.2-33 43.7-1.4 10.2-1 35.2-.3 41.1 26.7 8.1 52-3.6 77.9-2.9 4.3-21 10.6-41.9 9.8-63.5l-.3-9.5c-1.4-34.2-10.9-38.5-34.8-58.6-1.1-1.1-2.6-2.6-3.7-4 2.2-1.4 1.1-1 4.6-1.7 88.5 0 56.3 183.6 111.5 229.9 33.1-15 72.5-27.9 103.5-47.2-29-25.6-52.6-45.7-72.7-79.9zm-196.2 46.1v27.2l11.8-3.4-2.9-23.8zm-68.7-150.4l24.1 61.2 21-13.8-31.3-50.9zm84.4 154.9l2 12.4c9-1.5 58.4-6.6 58.4-14.1 0-1.4-.6-3.2-.9-4.6-26.8 0-36.9 3.8-59.5 6.3z"/></svg>')
   }
   .md-typeset .admonition.pied-piper,
   .md-typeset details.pied-piper {
     border-color: rgb(43, 155, 70);
   }
-  .md-typeset .pied-piper &gt; .admonition-title,
-  .md-typeset .pied-piper &gt; summary {
+  .md-typeset .pied-piper > .admonition-title,
+  .md-typeset .pied-piper > summary {
     background-color: rgba(43, 155, 70, 0.1);
     border-color: rgb(43, 155, 70);
   }
-  .md-typeset .pied-piper &gt; .admonition-title::before,
-  .md-typeset .pied-piper &gt; summary::before {
+  .md-typeset .pied-piper > .admonition-title::before,
+  .md-typeset .pied-piper > summary::before {
     background-color: rgb(43, 155, 70);
     -webkit-mask-image: var(--md-admonition-icon--pied-piper);
             mask-image: var(--md-admonition-icon--pied-piper);
   }
-&lt;/style&gt;
+</style>
 
-=== &quot;:octicons-file-code-16: docs/stylesheets/extra.css&quot;
-
-    ``` css
-    :root {
-      --md-admonition-icon--pied-piper: url('data:image/svg+xml;charset=utf-8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 576 512&quot;&gt;&lt;path d=&quot;M244 246c-3.2-2-6.3-2.9-10.1-2.9-6.6 0-12.6 3.2-19.3 3.7l1.7 4.9zm135.9 197.9c-19 0-64.1 9.5-79.9 19.8l6.9 45.1c35.7 6.1 70.1 3.6 106-9.8-4.8-10-23.5-55.1-33-55.1zM340.8 177c6.6 2.8 11.5 9.2 22.7 22.1 2-1.4 7.5-5.2 7.5-8.6 0-4.9-11.8-13.2-13.2-23 11.2-5.7 25.2-6 37.6-8.9 68.1-16.4 116.3-52.9 146.8-116.7C548.3 29.3 554 16.1 554.6 2l-2 2.6c-28.4 50-33 63.2-81.3 100-31.9 24.4-69.2 40.2-106.6 54.6l-6.3-.3v-21.8c-19.6 1.6-19.7-14.6-31.6-23-18.7 20.6-31.6 40.8-58.9 51.1-12.7 4.8-19.6 10-25.9 21.8 34.9-16.4 91.2-13.5 98.8-10zM555.5 0l-.6 1.1-.3.9.6-.6zm-59.2 382.1c-33.9-56.9-75.3-118.4-150-115.5l-.3-6c-1.1-13.5 32.8 3.2 35.1-31l-14.4 7.2c-19.8-45.7-8.6-54.3-65.5-54.3-14.7 0-26.7 1.7-41.4 4.6 2.9 18.6 2.2 36.7-10.9 50.3l19.5 5.5c-1.7 3.2-2.9 6.3-2.9 9.8 0 21 42.8 2.9 42.8 33.6 0 18.4-36.8 60.1-54.9 60.1-8 0-53.7-50-53.4-60.1l.3-4.6 52.3-11.5c13-2.6 12.3-22.7-2.9-22.7-3.7 0-43.1 9.2-49.4 10.6-2-5.2-7.5-14.1-13.8-14.1-3.2 0-6.3 3.2-9.5 4-9.2 2.6-31 2.9-21.5 20.1L15.9 298.5c-5.5 1.1-8.9 6.3-8.9 11.8 0 6 5.5 10.9 11.5 10.9 8 0 131.3-28.4 147.4-32.2 2.6 3.2 4.6 6.3 7.8 8.6 20.1 14.4 59.8 85.9 76.4 85.9 24.1 0 58-22.4 71.3-41.9 3.2-4.3 6.9-7.5 12.4-6.9.6 13.8-31.6 34.2-33 43.7-1.4 10.2-1 35.2-.3 41.1 26.7 8.1 52-3.6 77.9-2.9 4.3-21 10.6-41.9 9.8-63.5l-.3-9.5c-1.4-34.2-10.9-38.5-34.8-58.6-1.1-1.1-2.6-2.6-3.7-4 2.2-1.4 1.1-1 4.6-1.7 88.5 0 56.3 183.6 111.5 229.9 33.1-15 72.5-27.9 103.5-47.2-29-25.6-52.6-45.7-72.7-79.9zm-196.2 46.1v27.2l11.8-3.4-2.9-23.8zm-68.7-150.4l24.1 61.2 21-13.8-31.3-50.9zm84.4 154.9l2 12.4c9-1.5 58.4-6.6 58.4-14.1 0-1.4-.6-3.2-.9-4.6-26.8 0-36.9 3.8-59.5 6.3z&quot;/&gt;&lt;/svg&gt;')
-    }
-    .md-typeset .admonition.pied-piper,
-    .md-typeset details.pied-piper {
-      border-color: rgb(43, 155, 70);
-    }
-    .md-typeset .pied-piper &gt; .admonition-title,
-    .md-typeset .pied-piper &gt; summary {
-      background-color: rgba(43, 155, 70, 0.1);
-      border-color: rgb(43, 155, 70);
-    }
-    .md-typeset .pied-piper &gt; .admonition-title::before,
-    .md-typeset .pied-piper &gt; summary::before {
-      background-color: rgb(43, 155, 70);
-      -webkit-mask-image: var(--md-admonition-icon--pied-piper);
-              mask-image: var(--md-admonition-icon--pied-piper);
-    }
-    ```
-
-=== &quot;:octicons-file-code-16: mkdocs.yml&quot;
-
-    ``` yaml
-    extra_css:
-      - stylesheets/extra.css
-    ```
-
-After applying the customization, you can use the custom admonition type:
-
-``` markdown title=&quot;Admonition with custom type&quot;
-!!! pied-piper &quot;Pied Piper&quot;
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-    euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-    purus auctor massa, nec semper lorem quam in massa.
-</code></pre>
+<p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0 1 14.25 15h-9a.75.75 0 0 1 0-1.5h9a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 10 4.25V1.5H5.75a.25.25 0 0 0-.25.25v2.5a.75.75 0 0 1-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 0 0-.011-.013l-2.914-2.914a.272.272 0 0 0-.013-.011zM5.72 6.72a.75.75 0 0 0 0 1.06l1.47 1.47-1.47 1.47a.75.75 0 1 0 1.06 1.06l2-2a.75.75 0 0 0 0-1.06l-2-2a.75.75 0 0 0-1.06 0zM3.28 7.78a.75.75 0 0 0-1.06-1.06l-2 2a.75.75 0 0 0 0 1.06l2 2a.75.75 0 0 0 1.06-1.06L1.81 9.25l1.47-1.47z"/></svg></span> docs/stylesheets/extra.css"</p>
+<div class="highlight"><pre><span></span><code>``` css
+:root {
+  --md-admonition-icon--pied-piper: url(&#39;data:image/svg+xml;charset=utf-8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 576 512&quot;&gt;&lt;path d=&quot;M244 246c-3.2-2-6.3-2.9-10.1-2.9-6.6 0-12.6 3.2-19.3 3.7l1.7 4.9zm135.9 197.9c-19 0-64.1 9.5-79.9 19.8l6.9 45.1c35.7 6.1 70.1 3.6 106-9.8-4.8-10-23.5-55.1-33-55.1zM340.8 177c6.6 2.8 11.5 9.2 22.7 22.1 2-1.4 7.5-5.2 7.5-8.6 0-4.9-11.8-13.2-13.2-23 11.2-5.7 25.2-6 37.6-8.9 68.1-16.4 116.3-52.9 146.8-116.7C548.3 29.3 554 16.1 554.6 2l-2 2.6c-28.4 50-33 63.2-81.3 100-31.9 24.4-69.2 40.2-106.6 54.6l-6.3-.3v-21.8c-19.6 1.6-19.7-14.6-31.6-23-18.7 20.6-31.6 40.8-58.9 51.1-12.7 4.8-19.6 10-25.9 21.8 34.9-16.4 91.2-13.5 98.8-10zM555.5 0l-.6 1.1-.3.9.6-.6zm-59.2 382.1c-33.9-56.9-75.3-118.4-150-115.5l-.3-6c-1.1-13.5 32.8 3.2 35.1-31l-14.4 7.2c-19.8-45.7-8.6-54.3-65.5-54.3-14.7 0-26.7 1.7-41.4 4.6 2.9 18.6 2.2 36.7-10.9 50.3l19.5 5.5c-1.7 3.2-2.9 6.3-2.9 9.8 0 21 42.8 2.9 42.8 33.6 0 18.4-36.8 60.1-54.9 60.1-8 0-53.7-50-53.4-60.1l.3-4.6 52.3-11.5c13-2.6 12.3-22.7-2.9-22.7-3.7 0-43.1 9.2-49.4 10.6-2-5.2-7.5-14.1-13.8-14.1-3.2 0-6.3 3.2-9.5 4-9.2 2.6-31 2.9-21.5 20.1L15.9 298.5c-5.5 1.1-8.9 6.3-8.9 11.8 0 6 5.5 10.9 11.5 10.9 8 0 131.3-28.4 147.4-32.2 2.6 3.2 4.6 6.3 7.8 8.6 20.1 14.4 59.8 85.9 76.4 85.9 24.1 0 58-22.4 71.3-41.9 3.2-4.3 6.9-7.5 12.4-6.9.6 13.8-31.6 34.2-33 43.7-1.4 10.2-1 35.2-.3 41.1 26.7 8.1 52-3.6 77.9-2.9 4.3-21 10.6-41.9 9.8-63.5l-.3-9.5c-1.4-34.2-10.9-38.5-34.8-58.6-1.1-1.1-2.6-2.6-3.7-4 2.2-1.4 1.1-1 4.6-1.7 88.5 0 56.3 183.6 111.5 229.9 33.1-15 72.5-27.9 103.5-47.2-29-25.6-52.6-45.7-72.7-79.9zm-196.2 46.1v27.2l11.8-3.4-2.9-23.8zm-68.7-150.4l24.1 61.2 21-13.8-31.3-50.9zm84.4 154.9l2 12.4c9-1.5 58.4-6.6 58.4-14.1 0-1.4-.6-3.2-.9-4.6-26.8 0-36.9 3.8-59.5 6.3z&quot;/&gt;&lt;/svg&gt;&#39;)
+}
+.md-typeset .admonition.pied-piper,
+.md-typeset details.pied-piper {
+  border-color: rgb(43, 155, 70);
+}
+.md-typeset .pied-piper &gt; .admonition-title,
+.md-typeset .pied-piper &gt; summary {
+  background-color: rgba(43, 155, 70, 0.1);
+  border-color: rgb(43, 155, 70);
+}
+.md-typeset .pied-piper &gt; .admonition-title::before,
+.md-typeset .pied-piper &gt; summary::before {
+  background-color: rgb(43, 155, 70);
+  -webkit-mask-image: var(--md-admonition-icon--pied-piper);
+          mask-image: var(--md-admonition-icon--pied-piper);
+}
+```
+</code></pre></div>
+<p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0 1 14.25 15h-9a.75.75 0 0 1 0-1.5h9a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 10 4.25V1.5H5.75a.25.25 0 0 0-.25.25v2.5a.75.75 0 0 1-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 0 0-.011-.013l-2.914-2.914a.272.272 0 0 0-.013-.011zM5.72 6.72a.75.75 0 0 0 0 1.06l1.47 1.47-1.47 1.47a.75.75 0 1 0 1.06 1.06l2-2a.75.75 0 0 0 0-1.06l-2-2a.75.75 0 0 0-1.06 0zM3.28 7.78a.75.75 0 0 0-1.06-1.06l-2 2a.75.75 0 0 0 0 1.06l2 2a.75.75 0 0 0 1.06-1.06L1.81 9.25l1.47-1.47z"/></svg></span> mkdocs.yml"</p>
+<div class="highlight"><pre><span></span><code>``` yaml
+extra_css:
+  - stylesheets/extra.css
+```
+</code></pre></div>
+<p>After applying the customization, you can use the custom admonition type:</p>
+<div class="highlight"><span class="filename">Admonition with custom type</span><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>!!! pied-piper &quot;Pied Piper&quot;
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>    euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>    purus auctor massa, nec semper lorem quam in massa.
+</code></pre></div>
 <div class="result">
 <div class="admonition pied-piper">
 <p class="admonition-title">Pied Piper</p>
@@ -2016,7 +2086,6 @@ massa, nec semper lorem quam in massa.</p>
     </div>
   
   
-    Made with
     <a href="https://lopeaa.github.io/" target="_blank" rel="noopener">
       Lopeaa
     </a>

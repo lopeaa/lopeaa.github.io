@@ -1518,29 +1518,29 @@ the <code>docs</code> directory.</p>
 <p>If you want to tweak some colors or change the spacing of certain elements,
 you can do this in a separate style sheet. The easiest way is by creating a
 new style sheet file in the <code>docs</code> directory:</p>
-<pre><code class="language-sh">.
-├─ docs/
-│  └─ stylesheets/
-│     └─ extra.css
-└─ mkdocs.yml
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>.
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├─ docs/
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│  └─ stylesheets/
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│     └─ extra.css
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>└─ mkdocs.yml
+</code></pre></div>
 <p>Then, add the following lines to <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">extra_css:
-  - stylesheets/extra.css
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">extra_css</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stylesheets/extra.css</span><span class="w"></span>
+</code></pre></div>
 <h3 id="additional-javascript">Additional JavaScript<a class="headerlink" href="#additional-javascript" title="Permanent link">&para;</a></h3>
 <p>If you want to integrate another syntax highlighter or add some custom logic to
 your theme, create a new JavaScript file in the <code>docs</code> directory:</p>
-<pre><code class="language-sh">.
-├─ docs/
-│  └─ javascripts/
-│     └─ extra.js
-└─ mkdocs.yml
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>.
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>├─ docs/
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>│  └─ javascripts/
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>│     └─ extra.js
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>└─ mkdocs.yml
+</code></pre></div>
 <p>Then, add the following lines to <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">extra_javascript:
-  - javascripts/extra.js
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">extra_javascript</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">javascripts/extra.js</span><span class="w"></span>
+</code></pre></div>
 <h2 id="extending-the-theme">Extending the theme<a class="headerlink" href="#extending-the-theme" title="Permanent link">&para;</a></h2>
 <p>If you want to alter the HTML source (e.g. add or remove some parts), you can
 extend the theme. MkDocs supports <a href="https://www.mkdocs.org/user-guide/styling-your-docs/#using-the-theme-custom_dir">theme extension</a>, an easy way to override
@@ -1550,10 +1550,10 @@ can update to the latest version more easily.</p>
 <p>Enable Material for MkDocs as usual in <code>mkdocs.yml</code>, and create a new folder
 for <code>overrides</code> which you then reference using the <a href="https://www.mkdocs.org/user-guide/configuration/#custom_dir"><code>custom_dir</code></a>
 setting:</p>
-<pre><code class="language-yaml">theme:
-  name: material
-  custom_dir: overrides
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">theme</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span><span class="w"></span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="nt">custom_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">overrides</span><span class="w"></span>
+</code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">Theme extension prerequisites</p>
 <p>As the <a href="https://www.mkdocs.org/user-guide/configuration/#custom_dir"><code>custom_dir</code></a> setting is used for the theme extension
@@ -1565,49 +1565,49 @@ cloning from <code>git</code>.</p>
 of the original theme, as any file in the <code>overrides</code> directory will replace the
 file with the same name which is part of the original theme. Besides, further
 assets may also be put in the <code>overrides</code> directory:</p>
-<pre><code class="language-sh">.
-├─ .icons/                             # Bundled icon sets
-├─ assets/
-│  ├─ images/                          # Images and icons
-│  ├─ javascripts/                     # JavaScript files
-│  └─ stylesheets/                     # Style sheets
-├─ partials/
-│  ├─ integrations/                    # Third-party integrations
-│  │  ├─ analytics/                    # Analytics integrations
-│  │  └─ analytics.html                # Analytics setup
-│  ├─ languages/                       # Translation languages
-│  ├─ content.html                     # Page content
-│  ├─ copyright.html                   # Copyright and theme information
-│  ├─ footer.html                      # Footer bar
-│  ├─ header.html                      # Header bar
-│  ├─ language.html                    # Translation setup
-│  ├─ logo.html                        # Logo in header and sidebar
-│  ├─ nav.html                         # Main navigation
-│  ├─ nav-item.html                    # Main navigation item
-│  ├─ palette.html                     # Color palette
-│  ├─ search.html                      # Search interface
-│  ├─ social.html                      # Social links
-│  ├─ source.html                      # Repository information
-│  ├─ source-file.html                 # Source file information
-│  ├─ tabs.html                        # Tabs navigation
-│  ├─ tabs-item.html                   # Tabs navigation item
-│  ├─ toc.html                         # Table of contents
-│  └─ toc-item.html                    # Table of contents item
-├─ 404.html                            # 404 error page
-├─ base.html                           # Base template
-└─ main.html                           # Default page
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>.
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>├─ .icons/                             <span class="c1"># Bundled icon sets</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>├─ assets/
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>│  ├─ images/                          <span class="c1"># Images and icons</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>│  ├─ javascripts/                     <span class="c1"># JavaScript files</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>│  └─ stylesheets/                     <span class="c1"># Style sheets</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>├─ partials/
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>│  ├─ integrations/                    <span class="c1"># Third-party integrations</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>│  │  ├─ analytics/                    <span class="c1"># Analytics integrations</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>│  │  └─ analytics.html                <span class="c1"># Analytics setup</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>│  ├─ languages/                       <span class="c1"># Translation languages</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>│  ├─ content.html                     <span class="c1"># Page content</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>│  ├─ copyright.html                   <span class="c1"># Copyright and theme information</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>│  ├─ footer.html                      <span class="c1"># Footer bar</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>│  ├─ header.html                      <span class="c1"># Header bar</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>│  ├─ language.html                    <span class="c1"># Translation setup</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>│  ├─ logo.html                        <span class="c1"># Logo in header and sidebar</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>│  ├─ nav.html                         <span class="c1"># Main navigation</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>│  ├─ nav-item.html                    <span class="c1"># Main navigation item</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>│  ├─ palette.html                     <span class="c1"># Color palette</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>│  ├─ search.html                      <span class="c1"># Search interface</span>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>│  ├─ social.html                      <span class="c1"># Social links</span>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>│  ├─ source.html                      <span class="c1"># Repository information</span>
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>│  ├─ source-file.html                 <span class="c1"># Source file information</span>
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>│  ├─ tabs.html                        <span class="c1"># Tabs navigation</span>
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>│  ├─ tabs-item.html                   <span class="c1"># Tabs navigation item</span>
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>│  ├─ toc.html                         <span class="c1"># Table of contents</span>
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>│  └─ toc-item.html                    <span class="c1"># Table of contents item</span>
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>├─ <span class="m">404</span>.html                            <span class="c1"># 404 error page</span>
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>├─ base.html                           <span class="c1"># Base template</span>
+<a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a>└─ main.html                           <span class="c1"># Default page</span>
+</code></pre></div>
 <h3 id="overriding-partials">Overriding partials<a class="headerlink" href="#overriding-partials" title="Permanent link">&para;</a></h3>
 <p>In order to override a partial, we can replace it with a file of the same name
 and location in the <code>overrides</code> directory. For example, to replace the original
 <code>footer.html</code> partial, create a new <code>footer.html</code> partial in the <code>overrides</code>
 directory:</p>
-<pre><code class="language-sh">.
-├─ overrides/
-│  └─ partials/
-│     └─ footer.html
-└─ mkdocs.yml
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>.
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>├─ overrides/
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>│  └─ partials/
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>│     └─ footer.html
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>└─ mkdocs.yml
+</code></pre></div>
 <p>MkDocs will now use the new partial when rendering the theme. This can be done
 with any file.</p>
 <h3 id="overriding-blocks">Overriding blocks <small>recommended</small><a class="headerlink" href="#overriding-blocks" title="Permanent link">&para;</a></h3>
@@ -1615,18 +1615,18 @@ with any file.</p>
 template blocks, which are defined inside the templates and wrap specific
 features. In order to set up block overrides, create a <code>main.html</code> file inside
 the <code>overrides</code> directory:</p>
-<pre><code class="language-sh">.
-├─ overrides/
-│  └─ main.html
-└─ mkdocs.yml
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>.
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>├─ overrides/
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>│  └─ main.html
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>└─ mkdocs.yml
+</code></pre></div>
 <p>Then, e.g. to override the site title, add the following lines to <code>main.html</code>:</p>
-<pre><code class="language-html">{% extends &quot;base.html&quot; %}
-
-{% block htmltitle %}
-  &lt;title&gt;Lorem ipsum dolor sit amet&lt;/title&gt;
-{% endblock %}
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>{% extends &quot;base.html&quot; %}
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>{% block htmltitle %}
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>{% endblock %}
+</code></pre></div>
 <p>The following template blocks are provided by the theme:</p>
 <table>
 <thead>
@@ -1718,22 +1718,22 @@ directly in the source of the theme and recompile it.</p>
 <h3 id="environment-setup">Environment setup<a class="headerlink" href="#environment-setup" title="Permanent link">&para;</a></h3>
 <p>In order to start development on Material for MkDocs, a <a href="https://nodejs.org">Node.js</a> version of
 at least 14 is required. First, clone the repository:</p>
-<pre><code>git clone https://github.com/squidfunk/mkdocs-material
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>git clone https://github.com/squidfunk/mkdocs-material
+</code></pre></div>
 <p>Next, all dependencies need to be installed, which is done with:</p>
-<pre><code>cd mkdocs-material
-pip install -r requirements.txt
-pip install mkdocs-minify-plugin
-pip install mkdocs-redirects
-npm install
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>cd mkdocs-material
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>pip install -r requirements.txt
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>pip install mkdocs-minify-plugin
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>pip install mkdocs-redirects
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>npm install
+</code></pre></div>
 <h3 id="development-mode">Development mode<a class="headerlink" href="#development-mode" title="Permanent link">&para;</a></h3>
 <p>Start the watcher with:</p>
-<pre><code>npm start
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>npm start
+</code></pre></div>
 <p>Then, in a second terminal window, start the MkDocs live preview server with:</p>
-<pre><code>mkdocs serve --watch-theme
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>mkdocs serve --watch-theme
+</code></pre></div>
 <p>Point your browser to <a href="http://localhost:8000">localhost:8000</a> and you should see this
 very documentation in front of you.</p>
 <div class="admonition warning">
@@ -1744,8 +1744,8 @@ overwritten when the theme is built.</p>
 </div>
 <h3 id="building-the-theme">Building the theme<a class="headerlink" href="#building-the-theme" title="Permanent link">&para;</a></h3>
 <p>When you're finished making your changes, you can build the theme by invoking:</p>
-<pre><code>npm run build
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>npm run build
+</code></pre></div>
 <p>This triggers the production-level compilation and minification of all style
 sheets and JavaScript files. After the command exits, the compiled files are
 located in the <code>material</code> directory. When running <code>mkdocs build</code>, you should
@@ -1786,7 +1786,6 @@ pruning of more than 500 dependencies (~30% less).&#160;<a class="footnote-backr
     </div>
   
   
-    Made with
     <a href="https://lopeaa.github.io/" target="_blank" rel="noopener">
       Lopeaa
     </a>

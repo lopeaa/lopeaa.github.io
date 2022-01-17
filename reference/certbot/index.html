@@ -1545,18 +1545,18 @@
 
 <h1 id="certbot-plugin">Certbot plugin<a class="headerlink" href="#certbot-plugin" title="Permanent link">&para;</a></h1>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<pre><code class="language-sh">sudo apt install certbot python3-certbot-nginx
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo apt install certbot python3-certbot-nginx
+</code></pre></div>
 <h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
-<p>Edit nginx default site conf file and add domain name in <code>server_name</code></p>
-<pre><code class="language-sh">sudo nano /etc/nginx/sites-available/default
-</code></pre>
-<pre><code class="language-sh">server_name domain.com www.domain.com;
-</code></pre>
+<p>Edit nginx default site conf file and add domain name in <code>server_name</code>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo nano /etc/nginx/sites-available/default
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>server_name domain.com www.domain.com<span class="p">;</span>
+</code></pre></div></p>
 <h2 id="get-tls-certificate">Get TLS Certificate<a class="headerlink" href="#get-tls-certificate" title="Permanent link">&para;</a></h2>
-<p><code>This will generate a certificate for each server_name block and configure the config file</code></p>
-<pre><code class="language-sh">sudo certbot --nginx -d domain.com -d www.domain.com
-</code></pre>
+<p><code>This will generate a certificate for each server_name block and configure the config file</code>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo certbot --nginx -d domain.com -d www.domain.com
+</code></pre></div></p>
 
               
             </article>
@@ -1616,7 +1616,6 @@
     </div>
   
   
-    Made with
     <a href="https://lopeaa.github.io/" target="_blank" rel="noopener">
       Lopeaa
     </a>

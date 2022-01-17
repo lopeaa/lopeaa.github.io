@@ -1570,9 +1570,9 @@ can help to discover relevant information faster.</p>
 <p>The built-in tags plugin adds the ability to categorize any page with tags
 as part of the front matter of the page. In order to add support for tags, add
 the following lines to <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">plugins:
-  - tags
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tags</span><span class="w"></span>
+</code></pre></div>
 <p>The following configuration options are available:</p>
 <dl>
 <dt><code id="tags-file">tags_file</code></dt>
@@ -1581,10 +1581,10 @@ the following lines to <code>mkdocs.yml</code>:</p>
 should be used to render the tags index. See the section on <a href="#adding-a-tags-index">adding a tags 
 index</a> for more information. If this option is specified, tags will
 become clickable, pointing to the corresponding section in the tags index:</p>
-<p><code>yaml
-plugins:
-  - tags:
-      tags_file: tags.md</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">tags</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">      </span><span class="nt">tags_file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tags.md</span><span class="w"></span>
+</code></pre></div>
 <p>The page holding the tags index can be linked anywhere in the <code>nav</code> section
 of <code>mkdocs.yml</code>. Note, however, that this options is not required. If this
 option is not specified, tags are still rendered and searchable,
@@ -1596,32 +1596,32 @@ but without a tags index.</p>
 <p>When both, the <a href="#built-in-tags">built-in tags</a> plugin and <a href="../extensions/python-markdown/#metadata">Metadata</a> extension are enabled,
 tags can be added for a document with custom front matter. Add the following
 lines at the top of a Markdown file:</p>
-<pre><code class="language-bash">---
-tags:
-  - insiders
-  - brand new
----
-
-...
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>---
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>tags:
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  - insiders
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  - brand new
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>---
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>...
+</code></pre></div>
 <p>The page will now render with those tags above the main headline and within the
 search preview, which now allows to <strong>find pages by tags</strong>, as shown in the
 following screenshots:</p>
 <p>=== "Tags"</p>
-<pre><code>[![Tags preview]][Tags preview]
-</code></pre>
+<div class="highlight"><pre><span></span><code>[![Tags preview]][Tags preview]
+</code></pre></div>
 <p>=== "Tag search"</p>
-<pre><code>[![Tag search preview]][Tag search preview]
-</code></pre>
+<div class="highlight"><pre><span></span><code>[![Tag search preview]][Tag search preview]
+</code></pre></div>
 <h3 id="adding-a-tags-index">Adding a tags index<a class="headerlink" href="#adding-a-tags-index" title="Permanent link">&para;</a></h3>
 <p>The <a href="#built-in-tags">built-in tags</a> plugin allows to define a file to render a <a href="#tags-file">tags index</a>, which can be any page that is part of the <code>nav</code> section. To
 add a tags index, create a page, e.g. <code>tags.md</code>:</p>
-<pre><code class="language-markdown"># Tags
-
-Following is a list of relevant tags:
-
-[TAGS]
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="gh"># Tags</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Following is a list of relevant tags:
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>[TAGS]
+</code></pre></div>
 <p>The <code>[TAGS]</code> marker specifies the position of the tags index, i.e. it is
 replaced with the actual tags index when the page is rendered. You can include
 arbitrary content before and after the marker:</p>
@@ -1630,14 +1630,14 @@ arbitrary content before and after the marker:</p>
 <p>While the tags are rendered above the main headline, sometimes, it might be
 desirable to hide them for a specific page, which can be achieved by using the
 <a href="../extensions/python-markdown/#metadata">Metadata</a> extension:</p>
-<pre><code class="language-bash">---
-hide:
-  - tags
----
-
-# Document title
-...
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>---
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>hide:
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>  - tags
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>---
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c1"># Document title</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>...
+</code></pre></div>
 
               
             </article>
@@ -1697,7 +1697,6 @@ hide:
     </div>
   
   
-    Made with
     <a href="https://lopeaa.github.io/" target="_blank" rel="noopener">
       Lopeaa
     </a>

@@ -1506,36 +1506,35 @@
 <p>It aims to simplify the management of the Digital Certificates Lifecycle such as creation,renewal and revocation of <a href="https://www">keypairs</a> (csr, private and private keys), signing of csr files created in external systems as well as generating csr by your own private CA. It also includes tools to generate of <a href="https://www">PFX/P12</a> archive, <a href="https://www">keymatch</a>, expiry <a href="https://www">notifications</a>, <a href="https://www">converter</a>, <a href="https://www">decode</a> and more...</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
 <h3 id="git">Git <small>recommended</small><a class="headerlink" href="#git" title="Permanent link">&para;</a></h3>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 1.5a.25.25 0 0 0-.25.25v11.5c0 .138.112.25.25.25h3.5a.75.75 0 0 1 0 1.5h-3.5A1.75 1.75 0 0 1 1 13.25V1.75C1 .784 1.784 0 2.75 0h8a1.75 1.75 0 0 1 1.508.862.75.75 0 1 1-1.289.768.25.25 0 0 0-.219-.13h-8z"/><path fill-rule="evenodd" d="M8 7a4 4 0 1 1 6.49 3.13l.995 4.973a.75.75 0 0 1-.991.852l-2.409-.876a.25.25 0 0 0-.17 0l-2.409.876a.75.75 0 0 1-.991-.852l.994-4.973A3.993 3.993 0 0 1 8 7zm4-2.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm0 6.5a4 4 0 0 0 1.104-.154l.649 3.243-1.155-.42c-.386-.14-.81-.14-1.196 0l-1.155.42.649-3.243A4 4 0 0 0 12 11z"/></svg></span>
-Certificate Authority Management Console can be downloaded with <code>git</code>:</p>
-<p>Clone repository:</p>
-<pre><code class="language-sh">cd /var/www
-</code></pre>
-<pre><code class="language-sh">git clone https://github.com/lopeaa/ca-mgmt-console.git
-</code></pre>
-<pre><code class="language-sh">sudo chown -R $www-data:www-data /var/www/ca-mgmt-console
-</code></pre>
-<pre><code class="language-sh">sudo chmod -R 755 /var/www/ca-mgmt-console
-</code></pre>
-<p>Modify .env database parameters:</p>
-<pre><code class="language-sh">cd ca-mgmt-console
-mv .env.example .env
-nano .env
-</code></pre>
-<p>Example database parameters:</p>
-<pre><code class="language-sh">DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=ca-mgmt-console
-DB_USERNAME=&lt;username&gt;
-DB_PASSWORD=&lt;password&gt;
-</code></pre>
-<p>Update dependencies:</p>
-<pre><code class="language-sh">composer update
-</code></pre>
-<p>Create tables in database:</p>
-<pre><code class="language-sh">php artisan migrate
-</code></pre>
+<p>Certificate Authority Management Console can be downloaded with <code>git</code>:</p>
+<p>Clone repository:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span> /var/www
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git clone https://github.com/lopeaa/ca-mgmt-console.git
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo chown -R <span class="nv">$www</span>-data:www-data /var/www/ca-mgmt-console
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo chmod -R <span class="m">755</span> /var/www/ca-mgmt-console
+</code></pre></div></p>
+<p>Modify .env database parameters:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">cd</span> ca-mgmt-console
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>mv .env.example .env
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>nano .env
+</code></pre></div>
+Example database parameters:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nv">DB_CONNECTION</span><span class="o">=</span>mysql
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nv">DB_HOST</span><span class="o">=</span><span class="m">127</span>.0.0.1
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nv">DB_PORT</span><span class="o">=</span><span class="m">3306</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nv">DB_DATABASE</span><span class="o">=</span>ca-mgmt-console
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nv">DB_USERNAME</span><span class="o">=</span>&lt;username&gt;
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="nv">DB_PASSWORD</span><span class="o">=</span>&lt;password&gt;
+</code></pre></div>
+Update dependencies:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>composer update
+</code></pre></div>
+Create tables in database:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>php artisan migrate
+</code></pre></div></p>
 <h3 id="download-ova-vm-image">Download .OVA VM Image<a class="headerlink" href="#download-ova-vm-image" title="Permanent link">&para;</a></h3>
 <p><a class="md-button" href="https://mega.nz">Download image</a></p>
 
@@ -1597,7 +1596,6 @@ DB_PASSWORD=&lt;password&gt;
     </div>
   
   
-    Made with
     <a href="https://lopeaa.github.io/" target="_blank" rel="noopener">
       Lopeaa
     </a>

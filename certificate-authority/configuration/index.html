@@ -1534,15 +1534,15 @@
 <p>After <a href="../installation/"><code>installation</code></a> is completed, there are a number of values to configure:</p>
 <h2 id="email-notifications">Email Notifications<a class="headerlink" href="#email-notifications" title="Permanent link">&para;</a></h2>
 <h3 id="using-sendmail-configuration">Using <code>sendmail</code> configuration.<a class="headerlink" href="#using-sendmail-configuration" title="Permanent link">&para;</a></h3>
-<p>Configure driver and sendmail in <code>config/mail.php</code>:</p>
-<pre><code>'driver' =&gt; env('MAIL_DRIVER', 'smtp'),
-'sendmail' =&gt; '/usr/bin/sendmail -t',
-</code></pre>
+<p>Configure driver and sendmail in <code>config/mail.php</code>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&#39;driver&#39; =&gt; env(&#39;MAIL_DRIVER&#39;, &#39;smtp&#39;),
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>&#39;sendmail&#39; =&gt; &#39;/usr/bin/sendmail -t&#39;,
+</code></pre></div></p>
 <h3 id="using-msmtp-daemon">Using <a href="https://manpages.ubuntu.com/manpages/focal/en/man1/msmtp.1.html"><code>msmtp</code></a> daemon.<a class="headerlink" href="#using-msmtp-daemon" title="Permanent link">&para;</a></h3>
-<p>Configure driver and sendmail in <code>config/mail.php</code>:</p>
-<pre><code>'driver' =&gt; env('MAIL_DRIVER', 'smtp'),
-'sendmail' =&gt; '/usr/bin/msmtp -C /etc/msmtprc -a default -t',
-</code></pre>
+<p>Configure driver and sendmail in <code>config/mail.php</code>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>&#39;driver&#39; =&gt; env(&#39;MAIL_DRIVER&#39;, &#39;smtp&#39;),
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>&#39;sendmail&#39; =&gt; &#39;/usr/bin/msmtp -C /etc/msmtprc -a default -t&#39;,
+</code></pre></div></p>
 <h2 id="cache">Cache<a class="headerlink" href="#cache" title="Permanent link">&para;</a></h2>
 <h2 id="logging">Logging<a class="headerlink" href="#logging" title="Permanent link">&para;</a></h2>
 
@@ -1604,7 +1604,6 @@
     </div>
   
   
-    Made with
     <a href="https://lopeaa.github.io/" target="_blank" rel="noopener">
       Lopeaa
     </a>

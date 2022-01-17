@@ -1497,8 +1497,8 @@ your GitHub account in order to access the Insiders repository programmatically
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
 <h3 id="with-pip">with pip<a class="headerlink" href="#with-pip" title="Permanent link">&para;</a></h3>
 <p>Material for MkDocs Insiders can be installed with <code>pip</code>:</p>
-<pre><code class="language-sh">pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip install git+https://<span class="si">${</span><span class="nv">GH_TOKEN</span><span class="si">}</span>@github.com/squidfunk/mkdocs-material-insiders.git
+</code></pre></div>
 <p>The <code>GH_TOKEN</code> environment variable must be set to the value of the personal
 access token you generated in the previous step. Note that the personal access
 token must be kept secret at all times, as it allows the owner to access your
@@ -1533,30 +1533,30 @@ pull in the new tag, which is picked up by the <a href="https://github.com/squid
 that builds and publishes the Docker image automatically to your private
 registry.</p>
 <p>Now, you should be able to pull the Docker image from your private registry:</p>
-<pre><code>docker login -u ${GH_USERNAME} -p ${GHCR_TOKEN} ghcr.io
-docker pull ghcr.io/${GH_USERNAME}/mkdocs-material-insiders
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker login -u ${GH_USERNAME} -p ${GHCR_TOKEN} ghcr.io
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>docker pull ghcr.io/${GH_USERNAME}/mkdocs-material-insiders
+</code></pre></div>
 <h3 id="with-git">with git<a class="headerlink" href="#with-git" title="Permanent link">&para;</a></h3>
 <p>Of course, you can use Material for MkDocs Insiders directly from <code>git</code>:</p>
-<pre><code>git clone git@github.com:squidfunk/mkdocs-material-insiders.git mkdocs-material
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git clone git@github.com:squidfunk/mkdocs-material-insiders.git mkdocs-material
+</code></pre></div>
 <p>The theme will reside in the folder <code>mkdocs-material/material</code>. When cloning
 from <code>git</code>, the theme must be installed, so MkDocs can find the built-in
 plugins:</p>
-<pre><code>pip install -e mkdocs-material
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pip install -e mkdocs-material
+</code></pre></div>
 <h2 id="upgrading">Upgrading<a class="headerlink" href="#upgrading" title="Permanent link">&para;</a></h2>
 <p>When upgrading Insiders, you should always check the version of Material for
 MkDocs which makes up the first part of the version qualifier, e.g.Insiders
 <code>4.x.x</code> is currently based on <code>8.x.x</code>:</p>
-<pre><code>8.x.x-insiders-4.x.x
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>8.x.x-insiders-4.x.x
+</code></pre></div>
 <p>If the major version increased, it's a good idea to consult the <a href="../../upgrade/">upgrade
 guide</a> and go through the steps to ensure your configuration is up to date and
 all necessary changes have been made. If you installed Insiders via <code>pip</code>, you
 can upgrade your installation with the following command:</p>
-<pre><code>pip install --upgrade git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pip install --upgrade git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
+</code></pre></div>
 <h2 id="caveats">Caveats<a class="headerlink" href="#caveats" title="Permanent link">&para;</a></h2>
 <p>This sections describes some aspects to consider when using Insiders together
 with Material for MkDocs to ensure that users without access to Insiders can
@@ -1567,23 +1567,23 @@ necessary to split the <code>mkdocs.yml</code> configuration into a base configu
 one with plugin overrides. Note that this is a limitation of MkDocs, which can
 be mitigated by using <a href="https://www.mkdocs.org/user-guide/configuration/#configuration-inheritance">configuration inheritance</a>:</p>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0 1 14.25 15h-9a.75.75 0 0 1 0-1.5h9a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 10 4.25V1.5H5.75a.25.25 0 0 0-.25.25v2.5a.75.75 0 0 1-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 0 0-.011-.013l-2.914-2.914a.272.272 0 0 0-.013-.011zM5.72 6.72a.75.75 0 0 0 0 1.06l1.47 1.47-1.47 1.47a.75.75 0 1 0 1.06 1.06l2-2a.75.75 0 0 0 0-1.06l-2-2a.75.75 0 0 0-1.06 0zM3.28 7.78a.75.75 0 0 0-1.06-1.06l-2 2a.75.75 0 0 0 0 1.06l2 2a.75.75 0 0 0 1.06-1.06L1.81 9.25l1.47-1.47z"/></svg></span> mkdocs.insiders.yml"</p>
-<pre><code>``` yaml
+<div class="highlight"><pre><span></span><code>``` yaml
 INHERIT: mkdocs.yml
 plugins:
   - search
   - social
   - tags
 ```
-</code></pre>
+</code></pre></div>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0 1 14.25 15h-9a.75.75 0 0 1 0-1.5h9a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 10 4.25V1.5H5.75a.25.25 0 0 0-.25.25v2.5a.75.75 0 0 1-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 0 0-.011-.013l-2.914-2.914a.272.272 0 0 0-.013-.011zM5.72 6.72a.75.75 0 0 0 0 1.06l1.47 1.47-1.47 1.47a.75.75 0 1 0 1.06 1.06l2-2a.75.75 0 0 0 0-1.06l-2-2a.75.75 0 0 0-1.06 0zM3.28 7.78a.75.75 0 0 0-1.06-1.06l-2 2a.75.75 0 0 0 0 1.06l2 2a.75.75 0 0 0 1.06-1.06L1.81 9.25l1.47-1.47z"/></svg></span> mkdocs.yml"</p>
-<pre><code>``` yaml
+<div class="highlight"><pre><span></span><code>``` yaml
 # Configuration with everything except Insiders plugins
 ```
-</code></pre>
+</code></pre></div>
 <p>Now, when you're in an environment with access to Insiders (e.g. in your CI
 pipeline), you can build your documentation project with the following lines:</p>
-<pre><code>mkdocs build --config-file mkdocs.insiders.yml
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>mkdocs build --config-file mkdocs.insiders.yml
+</code></pre></div>
 <div class="footnote">
 <hr />
 <ol>
@@ -1638,7 +1638,6 @@ dedicated token which you'll only use for publishing the Docker image.&#160;<a c
     </div>
   
   
-    Made with
     <a href="https://lopeaa.github.io/" target="_blank" rel="noopener">
       Lopeaa
     </a>

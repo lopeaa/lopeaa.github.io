@@ -1582,10 +1582,10 @@ documentation remain untouched.</p>
 <p><a href="https://github.com/jimporter/mike">mike</a> makes it easy to deploy multiple versions of your project documentation.
 It integrates natively with Material for MkDocs and can be enabled via
 <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">extra:
-  version:
-    provider: mike
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">extra</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">provider</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mike</span><span class="w"></span>
+</code></pre></div>
 <p>This renders a version selector in the header:</p>
 <figure>
 <p><a href="../../assets/screenshots/versioning.png"><img alt="Version selector preview" src="../../assets/screenshots/versioning.png" /></a></p>
@@ -1612,15 +1612,15 @@ whatever version of the documentation you want to direct people to.</p>
 <p>If you're using versioning, you might want to display a warning when the user
 visits any other version than the latest version. Using <a href="../../customization/#extending-the-theme">theme extension</a>,
 you can <a href="../../customization/#overriding-blocks">override the <code>outdated</code> block</a>:</p>
-<pre><code class="language-html">{% extends &quot;base.html&quot; %}
-
-{% block outdated %}
-  You're not viewing the latest version.
-  &lt;a href=&quot;{{ '../' ~ base_url }}&quot;&gt; &lt;!-- (1)! --&gt;
-    &lt;strong&gt;Click here to go to latest.&lt;/strong&gt;
-  &lt;/a&gt;
-{% endblock %}
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{% extends &quot;base.html&quot; %}
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>{% block outdated %}
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  You&#39;re not viewing the latest version.
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{ &#39;../&#39; ~ base_url }}&quot;</span><span class="p">&gt;</span> <span class="cm">&lt;!-- (1)! --&gt;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>Click here to go to latest.<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>{% endblock %}
+</code></pre></div>
 <ol>
 <li>Given this value for the <code>href</code> attribute, the link will always redirect to 
     the root of your site, which will then redirect to the latest version. This
@@ -1633,10 +1633,10 @@ you can <a href="../../customization/#overriding-blocks">override the <code>outd
 <p>The default version is identified by the <code>latest</code> alias. If you wish to set
 another alias as the latest version, e.g. <code>stable</code>, add the following lines
 to <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">extra:
-  version:
-    default: stable
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">extra</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stable</span><span class="w"></span>
+</code></pre></div>
 <p>Make sure that this matches the <a href="#setting-a-default-version">default version</a>.</p>
 <h3 id="stay-on-page">Stay on page<a class="headerlink" href="#stay-on-page" title="Permanent link">&para;</a></h3>
 <p><a class="mdx-insiders" href="../../insiders/"><span class="twemoji mdx-heart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 20.408c-.492.308-.903.546-1.192.709-.153.086-.308.17-.463.252h-.002a.75.75 0 0 1-.686 0 16.709 16.709 0 0 1-.465-.252 31.147 31.147 0 0 1-4.803-3.34C3.8 15.572 1 12.331 1 8.513 1 5.052 3.829 2.5 6.736 2.5 9.03 2.5 10.881 3.726 12 5.605 13.12 3.726 14.97 2.5 17.264 2.5 20.17 2.5 23 5.052 23 8.514c0 3.818-2.801 7.06-5.389 9.262A31.146 31.146 0 0 1 14 20.408z"/></svg></span> Insiders</a> ·
@@ -1645,19 +1645,19 @@ to <code>mkdocs.yml</code>:</p>
 version A and B contain a page with the same path name, the user will stay on
 the current page:</p>
 <p>=== "New behavior"</p>
-<pre><code>```
+<div class="highlight"><pre><span></span><code>```
 docs.example.com/0.1/     -&gt; docs.example.com/0.2/
 docs.example.com/0.1/foo/ -&gt; docs.example.com/0.2/foo/
 docs.example.com/0.1/bar/ -&gt; docs.example.com/0.2/bar/
 ```
-</code></pre>
+</code></pre></div>
 <p>=== "Old behavior"</p>
-<pre><code>```
+<div class="highlight"><pre><span></span><code>```
 docs.example.com/0.1/     -&gt; docs.example.com/0.2/
 docs.example.com/0.1/foo/ -&gt; docs.example.com/0.2/
 docs.example.com/0.1/bar/ -&gt; docs.example.com/0.2/
 ```
-</code></pre>
+</code></pre></div>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>While this section outlines the basic workflow for publishing new versions, 
 it's best to check out <a href="https://github.com/jimporter/mike">mike's documentation</a> to make yourself familar
@@ -1665,8 +1665,8 @@ with its mechanics.</p>
 <h3 id="publishing-a-new-version">Publishing a new version<a class="headerlink" href="#publishing-a-new-version" title="Permanent link">&para;</a></h3>
 <p>If you want to publish a new version of your project documentation, choose a
 version identifier and update the alias set as the default version with:</p>
-<pre><code>mike deploy --push --update-aliases 0.1 latest
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>mike deploy --push --update-aliases 0.1 latest
+</code></pre></div>
 <p>Note that every version will be deployed as a subdirectory of your <code>site_url</code>,
 e.g.:</p>
 <ul>
@@ -1678,8 +1678,8 @@ e.g.:</p>
 <p>When starting with <a href="https://github.com/jimporter/mike">mike</a>, a good idea is to set an alias as a default version,
 e.g. <code>latest</code>, and when publishing a new version, always update the alias to
 point to the latest version:</p>
-<pre><code>mike set-default --push latest
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>mike set-default --push latest
+</code></pre></div>
 <p>When publishing a new version, <a href="https://github.com/jimporter/mike">mike</a> will create a redirect in the root of
 your project documentation to the version associated with the alias:</p>
 <p><em>docs.example.com</em> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M13.22 19.03a.75.75 0 0 0 1.06 0l6.25-6.25a.75.75 0 0 0 0-1.06l-6.25-6.25a.75.75 0 1 0-1.06 1.06l4.97 4.97H3.75a.75.75 0 0 0 0 1.5h14.44l-4.97 4.97a.75.75 0 0 0 0 1.06z"/></svg></span> <em>docs.example.com/0.1</em></p>
@@ -1742,7 +1742,6 @@ your project documentation to the version associated with the alias:</p>
     </div>
   
   
-    Made with
     <a href="https://lopeaa.github.io/" target="_blank" rel="noopener">
       Lopeaa
     </a>

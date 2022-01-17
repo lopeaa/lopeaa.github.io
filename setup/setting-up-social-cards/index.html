@@ -1576,9 +1576,9 @@ e.g.:</p>
 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M8 8.807V3.5h-.563a.75.75 0 0 1 0-1.5h9.125a.75.75 0 0 1 0 1.5H16v5.307l5.125 9.301c.964 1.75-.302 3.892-2.299 3.892H5.174c-1.998 0-3.263-2.142-2.3-3.892L8 8.807zM14.5 3.5h-5V9a.75.75 0 0 1-.093.362L7.127 13.5h9.746l-2.28-4.138A.75.75 0 0 1 14.5 9V3.5zM4.189 18.832 6.3 15h11.4l2.111 3.832a1.125 1.125 0 0 1-.985 1.668H5.174a1.125 1.125 0 0 1-.985-1.668z"/></svg></span> Experimental</p>
 <p>First, ensure you've installed all <a href="#dependencies">dependencies</a> and have a valid <a href="https://www.mkdocs.org/user-guide/configuration/#site_url"><code>site_url</code></a>, as social preview images must be referenced via absolute URLs.
 Then, add the following lines to <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">plugins:
-  - social
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">social</span><span class="w"></span>
+</code></pre></div>
 <p>The following configuration options are available:</p>
 <dl>
 <dt><code id="cards">cards</code></dt>
@@ -1586,10 +1586,10 @@ Then, add the following lines to <code>mkdocs.yml</code>:</p>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M11.75 1a.75.75 0 0 1 .75.75V4h6.532c.42 0 .826.15 1.143.425l3.187 2.75a1.75 1.75 0 0 1 0 2.65l-3.187 2.75a1.75 1.75 0 0 1-1.143.425H12.5v9.25a.75.75 0 0 1-1.5 0V13H3.75A1.75 1.75 0 0 1 2 11.25v-5.5C2 4.783 2.784 4 3.75 4H11V1.75a.75.75 0 0 1 .75-.75zm0 4.5h7.282a.25.25 0 0 1 .163.06l3.188 2.75a.25.25 0 0 1 0 .38l-3.188 2.75a.25.25 0 0 1-.163.06H3.75a.25.25 0 0 1-.25-.25v-5.5a.25.25 0 0 1 .25-.25h8z"/></svg></span> Default: <code>true</code> – This option specifies whether
 to generate social card images. If you want to switch the plugin off, e.g.
 for local builds, you can use an <a href="https://www.mkdocs.org/user-guide/configuration/#environment-variables">environment variable</a>:</p>
-<p><code>yaml
-plugins:
-  - social:
-      cards: !ENV [SOCIAL_CARDS, false]</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">social</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">      </span><span class="nt">cards</span><span class="p">:</span><span class="w"> </span><span class="kt">!ENV</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">SOCIAL_CARDS</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">false</span><span class="p p-Indicator">]</span><span class="w"></span>
+</code></pre></div>
 </dd>
 <dt><code id="cards-color">cards_color</code></dt>
 <dd>
@@ -1597,12 +1597,12 @@ plugins:
 Default: <a href="../changing-the-colors/#primary-color"><code>theme.palette.primary</code></a> – This option specifies
 the colors for the background <code>fill</code> and foreground <code>text</code> when generating
 the social card:</p>
-<p><code>yaml
-plugins:
-  - social:
-      cards_color:
-        fill: "#0FF1CE" # (1)!
-        text: "#FFFFFF"</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">social</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">      </span><span class="nt">cards_color</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">        </span><span class="nt">fill</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;#0FF1CE&quot;</span><span class="w"> </span><span class="c1"># (1)!</span><span class="w"></span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">        </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;#FFFFFF&quot;</span><span class="w"></span>
+</code></pre></div>
 <ol>
 <li>Colors can either be defined as HEX colors, or as <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#color_keywords">CSS color keywords</a>.
     Note that HEX colors must be enclosed in quotes.</li>
@@ -1614,20 +1614,20 @@ plugins:
 Default: <a href="../changing-the-fonts/#regular-font"><code>theme.font.text</code></a> – This option specifies which font
 to use for rendering the social card, which can be any font hosted on
 <a href="https://fonts.google.com">Google Fonts</a>:</p>
-<p><code>yaml
-plugins:
-  - social:
-      cards_font: Roboto</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">social</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">      </span><span class="nt">cards_font</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Roboto</span><span class="w"></span>
+</code></pre></div>
 </dd>
 <dt><code id="cards-directory">cards_directory</code></dt>
 <dd>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M11.75 1a.75.75 0 0 1 .75.75V4h6.532c.42 0 .826.15 1.143.425l3.187 2.75a1.75 1.75 0 0 1 0 2.65l-3.187 2.75a1.75 1.75 0 0 1-1.143.425H12.5v9.25a.75.75 0 0 1-1.5 0V13H3.75A1.75 1.75 0 0 1 2 11.25v-5.5C2 4.783 2.784 4 3.75 4H11V1.75a.75.75 0 0 1 .75-.75zm0 4.5h7.282a.25.25 0 0 1 .163.06l3.188 2.75a.25.25 0 0 1 0 .38l-3.188 2.75a.25.25 0 0 1-.163.06H3.75a.25.25 0 0 1-.25-.25v-5.5a.25.25 0 0 1 .25-.25h8z"/></svg></span> Default: <code>assets/images/social</code> – This option
 specifies where the generated social card images will be written to. It's
 normally not necessary to change this option:</p>
-<p><code>yaml
-plugins:
-  - social:
-      cards_directory: assets/images/social</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">social</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">      </span><span class="nt">cards_directory</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">assets/images/social</span><span class="w"></span>
+</code></pre></div>
 </dd>
 </dl>
 <h4 id="dependencies">Dependencies<a class="headerlink" href="#dependencies" title="Permanent link">&para;</a></h4>
@@ -1641,42 +1641,42 @@ social preview images, both of which are based on the <a href="https://www.cairo
 you don't want to use Docker, see the following section which explains how to
 install all dependencies on your system:</p>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg></span> macOS"</p>
-<pre><code>Make sure [Homebrew] is installed, which is a modern package manager for
+<div class="highlight"><pre><span></span><code>Make sure [Homebrew] is installed, which is a modern package manager for
 macOS. Next, use the following command to install all necessary
 dependencies:
 
 ```
 brew install cairo freetype libffi libjpeg libpng zlib
 ```
-</code></pre>
+</code></pre></div>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="m0 93.7 183.6-25.3v177.4H0V93.7zm0 324.6 183.6 25.3V268.4H0v149.9zm203.8 28L448 480V268.4H203.8v177.9zm0-380.6v180.1H448V32L203.8 65.7z"/></svg></span> Windows"</p>
-<pre><code>As stated in the [installation guide], the easiest way to get up and running
+<div class="highlight"><pre><span></span><code>As stated in the [installation guide], the easiest way to get up and running
 with the [Cairo Graphics] library on Windows is by installing [GTK+], since
 it has Cairo as a dependency.
-</code></pre>
+</code></pre></div>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.62 8.35c-.42.28-1.75 1.04-1.95 1.19-.39.31-.75.29-1.14-.01-.2-.16-1.53-.92-1.95-1.19-.48-.31-.45-.7.08-.92 1.64-.69 3.28-.64 4.91.03.49.21.51.6.05.9m7.22 7.28c-.93-2.09-2.2-3.99-3.84-5.66a4.31 4.31 0 0 1-1.06-1.88c-.1-.33-.17-.67-.24-1.01-.2-.88-.29-1.78-.7-2.61-.73-1.58-2-2.4-3.84-2.47-1.81.05-3.16.81-3.95 2.4-.21.43-.36.88-.46 1.34-.17.76-.32 1.55-.5 2.32-.15.65-.45 1.21-.96 1.71-1.61 1.57-2.9 3.37-3.88 5.35-.14.29-.28.58-.37.88-.19.66.29 1.12.99.96.44-.09.88-.18 1.3-.31.41-.15.57-.05.67.35.65 2.15 2.07 3.66 4.24 4.5 4.12 1.56 8.93-.66 9.97-4.58.07-.27.17-.37.47-.27.46.14.93.24 1.4.35.49.09.85-.16.92-.64.03-.26-.06-.49-.16-.73"/></svg></span> Linux"</p>
-<pre><code>There are several package managers for Linux with varying availability per
+<div class="highlight"><pre><span></span><code>There are several package managers for Linux with varying availability per
 distribution. The [installation guide] explains how to install the [Cairo
 Graphics] library for your distribution:
 
-=== ":material-ubuntu: Ubuntu"
+=== &quot;:material-ubuntu: Ubuntu&quot;
 
     ```
     apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
     ```
 
-=== ":material-fedora: Fedora"
+=== &quot;:material-fedora: Fedora&quot;
 
     ```
     yum install cairo-devel freetype-devel libffi-devel libjpeg-devel libpng-devel zlib-devel
     ```
 
-=== ":fontawesome-brands-suse: openSUSE"
+=== &quot;:fontawesome-brands-suse: openSUSE&quot;
 
     ```
     zypper install cairo-devel freetype-devel libffi-devel libjpeg-devel libpng-devel zlib-devel
     ```
-</code></pre>
+</code></pre></div>
 <h4 id="caching">Caching <small>recommended</small><a class="headerlink" href="#caching" title="Permanent link">&para;</a></h4>
 <p>The <a href="#built-in-social-cards">built-in social cards</a> plugin automatically fetches the fonts you define
 in <code>mkdocs.yml</code> from Google Fonts, and uses them to render the text that is
@@ -1689,27 +1689,27 @@ whether the social cards need to be regenerated. You might want to:</p>
 <p>When building your site for publishing, use a build cache to save the
     <code>.cache</code> directory in between builds. Taking the example from the
     <a href="../../publishing-your-site/#with-github-actions">publishing guide</a>, add the following lines:</p>
-<p><code>yaml hl_lines="15-18"
-name: ci
-  on:
-    push:
-      branches:
-        - master
-        - main
-  jobs:
-    deploy:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
-        - uses: actions/setup-python@v2
-          with:
-            python-version: 3.x
-        - uses: actions/cache@v2
-          with:
-            key: ${{ github.ref }}
-            path: .cache
-        - run: pip install mkdocs-material
-        - run: mkdocs gh-deploy --force</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ci</span><span class="w"></span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">on</span><span class="p p-Indicator">:</span><span class="w"></span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="nt">push</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">      </span><span class="nt">branches</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span><span class="w"></span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span><span class="w"></span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w w-Error">  </span><span class="nt">jobs</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">    </span><span class="nt">deploy</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">      </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span><span class="w"></span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="w">      </span><span class="nt">steps</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span><span class="w"></span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/setup-python@v2</span><span class="w"></span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="w">          </span><span class="nt">with</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="w">            </span><span class="nt">python-version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.x</span><span class="w"></span>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="hll"><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/cache@v2</span><span class="w"></span>
+</span><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="hll"><span class="w">          </span><span class="nt">with</span><span class="p">:</span><span class="w"></span>
+</span><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="hll"><span class="w">            </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ github.ref }}</span><span class="w"></span>
+</span><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="hll"><span class="w">            </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.cache</span><span class="w"></span>
+</span><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-material</span><span class="w"></span>
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs gh-deploy --force</span><span class="w"></span>
+</code></pre></div>
 </li>
 </ol>
 <h4 id="meta-tags">Meta tags<a class="headerlink" href="#meta-tags" title="Permanent link">&para;</a></h4>
@@ -1717,41 +1717,41 @@ name: ci
 equivalent to the following two customizations, which you can set manually when
 you don't want to use it:</p>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 17c-.13 0-.26 0-.39.04l-1.61-3.25a2.5 2.5 0 0 0-1.75-4.29c-.13 0-.25 0-.39.04l-1.63-3.25c.48-.45.77-1.08.77-1.79a2.5 2.5 0 0 0-5 0c0 .71.29 1.34.76 1.79L8.64 9.54c-.14-.04-.26-.04-.39-.04a2.5 2.5 0 0 0-1.75 4.29l-1.61 3.25C4.76 17 4.63 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.79c.46-.45.75-1.08.75-1.79s-.29-1.34-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21c-.45.45-.75 1.09-.75 1.79a2.5 2.5 0 0 0 2.5 2.5c.13 0 .25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5z"/></svg></span> Open Graph"</p>
-<pre><code>``` html
+<div class="highlight"><pre><span></span><code>``` html
 {% block extrahead %}
   {% set title = config.site_name %}
   {% if page and page.meta and page.meta.title %}
-    {% set title = title ~ " - " ~ page.meta.title %}
+    {% set title = title ~ &quot; - &quot; ~ page.meta.title %}
   {% elif page and page.title and not page.is_homepage %}
-    {% set title = title ~ " - " ~ page.title %}
+    {% set title = title ~ &quot; - &quot; ~ page.title %}
   {% endif %}
-  &lt;meta property="og:type" content="website" /&gt;
-  &lt;meta property="og:title" content="{{ title }}" /&gt;
-  &lt;meta property="og:description" content="{{ config.site_description }}" /&gt;
-  &lt;meta property="og:url" content="{{ page.canonical_url }}" /&gt;
-  &lt;meta property="og:image" content="&lt;url&gt;" /&gt;
-  &lt;meta property="og:image:type" content="image/png" /&gt;
-  &lt;meta property="og:image:width" content="1200" /&gt;
-  &lt;meta property="og:image:height" content="630" /&gt;
+  &lt;meta property=&quot;og:type&quot; content=&quot;website&quot; /&gt;
+  &lt;meta property=&quot;og:title&quot; content=&quot;{{ title }}&quot; /&gt;
+  &lt;meta property=&quot;og:description&quot; content=&quot;{{ config.site_description }}&quot; /&gt;
+  &lt;meta property=&quot;og:url&quot; content=&quot;{{ page.canonical_url }}&quot; /&gt;
+  &lt;meta property=&quot;og:image&quot; content=&quot;&lt;url&gt;&quot; /&gt;
+  &lt;meta property=&quot;og:image:type&quot; content=&quot;image/png&quot; /&gt;
+  &lt;meta property=&quot;og:image:width&quot; content=&quot;1200&quot; /&gt;
+  &lt;meta property=&quot;og:image:height&quot; content=&quot;630&quot; /&gt;
 {% endblock %}
 ```
-</code></pre>
+</code></pre></div>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></span> Twitter Cards"</p>
-<pre><code>``` html
+<div class="highlight"><pre><span></span><code>``` html
 {% block extrahead %}
   {% set title = config.site_name %}
   {% if page and page.meta and page.meta.title %}
-    {% set title = title ~ " - " ~ page.meta.title %}
+    {% set title = title ~ &quot; - &quot; ~ page.meta.title %}
   {% elif page and page.title and not page.is_homepage %}
-    {% set title = title ~ " - " ~ page.title %}
+    {% set title = title ~ &quot; - &quot; ~ page.title %}
   {% endif %}
-  &lt;meta name="twitter:card" content="summary_large_image" /&gt;
-  &lt;meta name="twitter:title" content="{{ title }}" /&gt;
-  &lt;meta name="twitter:description" content="{{ config.site_description }}" /&gt;
-  &lt;meta name="twitter:image" content="&lt;url&gt;" /&gt;
+  &lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot; /&gt;
+  &lt;meta name=&quot;twitter:title&quot; content=&quot;{{ title }}&quot; /&gt;
+  &lt;meta name=&quot;twitter:description&quot; content=&quot;{{ config.site_description }}&quot; /&gt;
+  &lt;meta name=&quot;twitter:image&quot; content=&quot;&lt;url&gt;&quot; /&gt;
 {% endblock %}
 ```
-</code></pre>
+</code></pre></div>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>If you want to adjust the title or set a custom description for the social card,
 you can use the <a href="../extensions/python-markdown/#metadata">Metadata</a> extension, which takes precedence over the
@@ -1830,7 +1830,6 @@ color.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to foot
     </div>
   
   
-    Made with
     <a href="https://lopeaa.github.io/" target="_blank" rel="noopener">
       Lopeaa
     </a>

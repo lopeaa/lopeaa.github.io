@@ -1526,7 +1526,7 @@ solution, follow the guide on <a href="../../customization/#extending-the-theme"
 <a href="https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/content.html"><code>content.html</code></a> partial and create a file at the same location
 in the <code>overrides</code> folder:</p>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0 1 14.25 15h-9a.75.75 0 0 1 0-1.5h9a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 10 4.25V1.5H5.75a.25.25 0 0 0-.25.25v2.5a.75.75 0 0 1-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 0 0-.011-.013l-2.914-2.914a.272.272 0 0 0-.013-.011zM5.72 6.72a.75.75 0 0 0 0 1.06l1.47 1.47-1.47 1.47a.75.75 0 1 0 1.06 1.06l2-2a.75.75 0 0 0 0-1.06l-2-2a.75.75 0 0 0-1.06 0zM3.28 7.78a.75.75 0 0 0-1.06-1.06l-2 2a.75.75 0 0 0 0 1.06l2 2a.75.75 0 0 0 1.06-1.06L1.81 9.25l1.47-1.47z"/></svg></span> overrides/partials/content.html"</p>
-<pre><code>``` html
+<div class="highlight"><pre><span></span><code>``` html
 &lt;!-- Add copied contents from original content.html here --&gt;
 
 &lt;!-- Get setting from mkdocs.yml, but allow page-level overrides --&gt;
@@ -1537,21 +1537,21 @@ in the <code>overrides</code> folder:</p>
 
 &lt;!-- Inject Disqus into current page --&gt;
 {% if not page.is_homepage and disqus %}
-  &lt;h2 id="__comments"&gt;{{ lang.t("meta.comments") }}&lt;/h2&gt;
-  &lt;div id="disqus_thread"&gt;&lt;/div&gt;
+  &lt;h2 id=&quot;__comments&quot;&gt;{{ lang.t(&quot;meta.comments&quot;) }}&lt;/h2&gt;
+  &lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
   &lt;script&gt;
     var disqus_config = function() {
-      this.page.url = "{{ page.canonical_url }}"
+      this.page.url = &quot;{{ page.canonical_url }}&quot;
       this.page.identifier =
-        "{{ page.canonical_url | replace(config.site_url, '') }}" // (1)!
+        &quot;{{ page.canonical_url | replace(config.site_url, &#39;&#39;) }}&quot; // (1)!
     }
 
     /* Set up for the first time */
-    if (typeof DISQUS === "undefined") {
-      var script = document.createElement("script")
+    if (typeof DISQUS === &quot;undefined&quot;) {
+      var script = document.createElement(&quot;script&quot;)
       script.async = true
-      script.src = "https://{{ disqus }}.disqus.com/embed.js"
-      script.setAttribute("data-timestamp", Date.now())
+      script.src = &quot;https://{{ disqus }}.disqus.com/embed.js&quot;
+      script.setAttribute(&quot;data-timestamp&quot;, Date.now())
 
       /* Inject script tag */
       document.body.appendChild(script)
@@ -1567,21 +1567,21 @@ in the <code>overrides</code> folder:</p>
 {% endif %}
 ```
 
-1.  Ensure you've set [`site_url`][site_url] in `mkdocs.yml`.
-</code></pre>
+1.  Ensure you&#39;ve set [`site_url`][site_url] in `mkdocs.yml`.
+</code></pre></div>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0 1 14.25 15h-9a.75.75 0 0 1 0-1.5h9a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 10 4.25V1.5H5.75a.25.25 0 0 0-.25.25v2.5a.75.75 0 0 1-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 0 0-.011-.013l-2.914-2.914a.272.272 0 0 0-.013-.011zM5.72 6.72a.75.75 0 0 0 0 1.06l1.47 1.47-1.47 1.47a.75.75 0 1 0 1.06 1.06l2-2a.75.75 0 0 0 0-1.06l-2-2a.75.75 0 0 0-1.06 0zM3.28 7.78a.75.75 0 0 0-1.06-1.06l-2 2a.75.75 0 0 0 0 1.06l2 2a.75.75 0 0 0 1.06-1.06L1.81 9.25l1.47-1.47z"/></svg></span> mkdocs.yml"</p>
-<pre><code>``` yaml
+<div class="highlight"><pre><span></span><code>``` yaml
 extra:
   disqus: &lt;shortname&gt; # (1)!
 ```
 
 1.  Add your Disqus [shortname] here.
-</code></pre>
+</code></pre></div>
 <h4 id="on-a-single-page">on a single page<a class="headerlink" href="#on-a-single-page" title="Permanent link">&para;</a></h4>
 <p>When <a href="../extensions/python-markdown/#metadata">Metadata</a> is enabled, Disqus can be enabled or disabled for a single page
 with custom front matter. Add the following lines at the top of a Markdown file:</p>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm3.78-9.72a.75.75 0 0 0-1.06-1.06L6.75 9.19 5.28 7.72a.75.75 0 0 0-1.06 1.06l2 2a.75.75 0 0 0 1.06 0l4.5-4.5z"/></svg></span> Enabled"</p>
-<pre><code>``` bash
+<div class="highlight"><pre><span></span><code>``` bash
 ---
 disqus: &lt;shortname&gt;
 ---
@@ -1589,17 +1589,17 @@ disqus: &lt;shortname&gt;
 # Document title
 ...
 ```
-</code></pre>
+</code></pre></div>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1 1 13 0 6.5 6.5 0 0 1-13 0zM8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.28 5.78a.75.75 0 0 0-1.06-1.06l-5.5 5.5a.75.75 0 1 0 1.06 1.06l5.5-5.5z"/></svg></span> Disabled"</p>
-<pre><code>``` bash
+<div class="highlight"><pre><span></span><code>``` bash
 ---
-disqus: ""
+disqus: &quot;&quot;
 ---
 
 # Document title
 ...
 ```
-</code></pre>
+</code></pre></div>
 
               
             </article>
@@ -1659,7 +1659,6 @@ disqus: ""
     </div>
   
   
-    Made with
     <a href="https://lopeaa.github.io/" target="_blank" rel="noopener">
       Lopeaa
     </a>

@@ -1733,9 +1733,9 @@ with some effort, search can be made available <a href="#offline-search">offline
 adding multilingual client-side search with <a href="https://lunrjs.com">lunr</a> and <a href="https://github.com/MihaiValentin/lunr-languages">lunr-languages</a>. It's 
 enabled by default, but must be re-added to <code>mkdocs.yml</code> when other plugins
 are used:</p>
-<pre><code class="language-yaml">plugins:
-  - search
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search</span><span class="w"></span>
+</code></pre></div>
 <p>The following configuration options are supported:</p>
 <dl>
 <dt><code id="search-lang">lang</code></dt>
@@ -1746,14 +1746,14 @@ Note that Material for MkDocs will set this automatically based on the
 <a href="../changing-the-language/#site-language">site language</a>, but it may be overridden, e.g. to support multiple
 languages:</p>
 <p>=== "A single language"</p>
-<pre><code>``` yaml
+<div class="highlight"><pre><span></span><code>``` yaml
 plugins:
   - search:
       lang: ru
 ```
-</code></pre>
+</code></pre></div>
 <p>=== "Multiple languages"</p>
-<pre><code>``` yaml
+<div class="highlight"><pre><span></span><code>``` yaml
 plugins:
   - search:
       lang: # (1)!
@@ -1764,7 +1764,7 @@ plugins:
 1.  Be aware that including support for other languages increases the
     general JavaScript payload by around 20kb (before `gzip`) and by
     another 15-30kb per language.
-</code></pre>
+</code></pre></div>
 <p>The following languages are supported:</p>
 <div class="mdx-columns" markdown>
 <ul>
@@ -1799,10 +1799,10 @@ best result.</p>
 indexing and query tokenization can be customized, making it possible to
 index parts of words separated by other characters than whitespace and <code>-</code>,
 e.g. by including <code>.</code>:</p>
-<p><code>yaml
-plugins:
-  - search:
-      separator: '[\s\-\.]' # (1)!</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">search</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">      </span><span class="nt">separator</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;[\s\-\.]&#39;</span><span class="w"> </span><span class="c1"># (1)!</span><span class="w"></span>
+</code></pre></div>
 <ol>
 <li>
 <p>Tokenization itself is carried out by <a href="https://github.com/olivernn/lunr.js/blob/aa5a878f62a6bba1e8e5b95714899e17e8150b38/lunr.js#L413-L456">lunr's default tokenizer</a>, which 
@@ -1822,10 +1822,10 @@ Deprecated · <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" view
 <code>false</code> – MkDocs can generate a <a href="https://www.mkdocs.org/user-guide/configuration/#prebuild_index">prebuilt index</a> of all pages during
 build time, which provides performance improvements at the cost of more
 bandwidth, as it reduces the build time of the search index:</p>
-<p><code>yaml
-plugins:
-  - search:
-      prebuild_index: true</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">search</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">      </span><span class="nt">prebuild_index</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+</code></pre></div>
 <p>Note that this configuration option was removed, as the <a href="../../blog/2021/search-better-faster-smaller/">new search
 plugin</a> generates up to <a href="../../blog/2021/search-better-faster-smaller/#benchmarks">50% smaller</a> search indexes, doubling search
 performance.</p>
@@ -1844,11 +1844,11 @@ them at your own risk.</p>
 will render code blocks directly in the search result, and highlight all
 occurrences inside those blocks:</p>
 <p>=== "Insiders"</p>
-<pre><code>![search preview now]
-</code></pre>
+<div class="highlight"><pre><span></span><code>![search preview now]
+</code></pre></div>
 <p>=== "Material for MkDocs"</p>
-<pre><code>![search preview before]
-</code></pre>
+<div class="highlight"><pre><span></span><code>![search preview before]
+</code></pre></div>
 <h3 id="tokenizer-lookahead">Tokenizer lookahead<a class="headerlink" href="#tokenizer-lookahead" title="Permanent link">&para;</a></h3>
 <p><a class="mdx-insiders" href="../../insiders/"><span class="twemoji mdx-heart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 20.408c-.492.308-.903.546-1.192.709-.153.086-.308.17-.463.252h-.002a.75.75 0 0 1-.686 0 16.709 16.709 0 0 1-.465-.252 31.147 31.147 0 0 1-4.803-3.34C3.8 15.572 1 12.331 1 8.513 1 5.052 3.829 2.5 6.736 2.5 9.03 2.5 10.881 3.726 12 5.605 13.12 3.726 14.97 2.5 17.264 2.5 20.17 2.5 23 5.052 23 8.514c0 3.818-2.801 7.06-5.389 9.262A31.146 31.146 0 0 1 14 20.408z"/></svg></span> Insiders</a> ·
 <a href="../../insiders/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.75 6.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/><path fill-rule="evenodd" d="M2.5 1A1.5 1.5 0 0 0 1 2.5v8.44c0 .397.158.779.44 1.06l10.25 10.25a1.5 1.5 0 0 0 2.12 0l8.44-8.44a1.5 1.5 0 0 0 0-2.12L12 1.44A1.5 1.5 0 0 0 10.94 1H2.5zm0 1.5h8.44l10.25 10.25-8.44 8.44L2.5 10.94V2.5z"/></svg></span> insiders-3.0.0</a> ·
@@ -1856,13 +1856,13 @@ occurrences inside those blocks:</p>
 <p>Insiders allows for more complex configurations of the <a href="#search-separator"><code>separator</code></a> 
 setting as part of the <a href="../../blog/2021/search-better-faster-smaller/">new search plugin</a>, yielding more influence on the way 
 documents are tokenized:</p>
-<pre><code class="language-yaml">plugins:
-  - search:
-      separator: '[\s\-,:!=\[\]()&quot;/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&amp;[lg]t;'
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">search</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">      </span><span class="nt">separator</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;[\s\-,:!=\[\]()&quot;/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&amp;[lg]t;&#39;</span><span class="w"></span>
+</code></pre></div>
 <p>The following section explains what can be achieved with tokenizer lookahead:</p>
 <p>=== "Case changes"</p>
-<pre><code>```
+<div class="highlight"><pre><span></span><code>```
 (?!\b)(?=[A-Z][a-z])
 ```
 
@@ -1874,9 +1874,9 @@ individually.
 
 [:octicons-arrow-right-24: Read more on tokenizing case changes]
 [tokenize case changes]
-</code></pre>
+</code></pre></div>
 <p>=== "Version numbers"</p>
-<pre><code>```
+<div class="highlight"><pre><span></span><code>```
 \.(?!\d)
 ```
 
@@ -1887,9 +1887,9 @@ remain as they are, and can be found through search.
 
 [:octicons-arrow-right-24: Read more on tokenizing version numbers]
 [tokenize version numbers]
-</code></pre>
+</code></pre></div>
 <p>=== "HTML/XML tags"</p>
-<pre><code>```
+<div class="highlight"><pre><span></span><code>```
 &amp;[lg]t;
 ```
 
@@ -1900,7 +1900,7 @@ expression to the separator allows for just that.
 
 [:octicons-arrow-right-24: Read more on tokenizing HTML/XML tags]
 [tokenize html-xml tags]
-</code></pre>
+</code></pre></div>
 <h3 id="search-suggestions">Search suggestions<a class="headerlink" href="#search-suggestions" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/squidfunk/mkdocs-material/releases/tag/7.2.0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.75 6.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/><path fill-rule="evenodd" d="M2.5 1A1.5 1.5 0 0 0 1 2.5v8.44c0 .397.158.779.44 1.06l10.25 10.25a1.5 1.5 0 0 0 2.12 0l8.44-8.44a1.5 1.5 0 0 0 0-2.12L12 1.44A1.5 1.5 0 0 0 10.94 1H2.5zm0 1.5h8.44l10.25 10.25-8.44 8.44L2.5 10.94V2.5z"/></svg></span> 7.2.0</a> ·
 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M7.5 7.25C7.5 4.58 9.422 2.5 12 2.5c2.079 0 3.71 1.34 4.282 3.242a.75.75 0 1 0 1.436-.432C16.971 2.825 14.792 1 12 1 8.503 1 6 3.845 6 7.25V9h-.5A2.5 2.5 0 0 0 3 11.5v8A2.5 2.5 0 0 0 5.5 22h13a2.5 2.5 0 0 0 2.5-2.5v-8A2.5 2.5 0 0 0 18.5 9h-11V7.25zm-3 4.25a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-13a1 1 0 0 1-1-1v-8z"/></svg></span> Feature flag ·
@@ -1908,10 +1908,10 @@ expression to the separator allows for just that.
 <p>When search suggestions are enabled, the search will display the likeliest
 completion for the last word which can be accepted with the ++arrow-right++ key.
 Add the following lines to <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">theme:
-  features:
-    - search.suggest
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nt">theme</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search.suggest</span><span class="w"></span>
+</code></pre></div>
 <p>Searching for <a href="?q=search+su"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M14.53 15.59a8.25 8.25 0 1 1 1.06-1.06l5.69 5.69a.75.75 0 1 1-1.06 1.06l-5.69-5.69zM2.5 9.25a6.75 6.75 0 1 1 11.74 4.547.746.746 0 0 0-.443.442A6.75 6.75 0 0 1 2.5 9.25z"/></svg></span> search su</a> yields 
 ^^search suggestions^^ as a suggestion.</p>
 <h3 id="search-highlighting">Search highlighting<a class="headerlink" href="#search-highlighting" title="Permanent link">&para;</a></h3>
@@ -1921,10 +1921,10 @@ Add the following lines to <code>mkdocs.yml</code>:</p>
 <p>When search highlighting is enabled and a user clicks on a search result,
 Material for MkDocs will highlight all occurrences after following the link.
 Add the following lines to <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">theme:
-  features:
-    - search.highlight
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nt">theme</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search.highlight</span><span class="w"></span>
+</code></pre></div>
 <p>Searching for <a href="../../reference/code-blocks/?h=code+blocks"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M14.53 15.59a8.25 8.25 0 1 1 1.06-1.06l5.69 5.69a.75.75 0 1 1-1.06 1.06l-5.69-5.69zM2.5 9.25a6.75 6.75 0 1 1 11.74 4.547.746.746 0 0 0-.443.442A6.75 6.75 0 0 1 2.5 9.25z"/></svg></span> code blocks</a>
 highlights all occurrences of both terms.</p>
 <h3 id="search-sharing">Search sharing<a class="headerlink" href="#search-sharing" title="Permanent link">&para;</a></h3>
@@ -1934,10 +1934,10 @@ highlights all occurrences of both terms.</p>
 <p>When search sharing is activated, a <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08z"/></svg></span> share button is
 rendered next to the reset button, which allows to deep link to the current
 search query and result. Add the following lines to <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">theme:
-  features:
-    - search.share
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nt">theme</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search.share</span><span class="w"></span>
+</code></pre></div>
 <p>When a user clicks the share button, the URL is automatically copied to the
 clipboard.</p>
 <h3 id="offline-search">Offline search<a class="headerlink" href="#offline-search" title="Permanent link">&para;</a></h3>
@@ -1961,14 +1961,14 @@ system, you will also want to set <code>use_directory_urls: false</code> in
 <p>When <a href="../extensions/python-markdown/#metadata">Metadata</a> is enabled, pages can be boosted in search with custom front
 matter, which will make them rank higher. Add the following lines at the top of
 a Markdown file:</p>
-<pre><code class="language-bash">---
-search:
-  boost: 2 # (1)!
----
-
-# Document title
-...
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>---
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>search:
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>  boost: <span class="m">2</span> <span class="c1"># (1)!</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>---
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="c1"># Document title</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>...
+</code></pre></div>
 <ol>
 <li><img alt="🧘‍♀️" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f9d8-200d-2640-fe0f.svg" title=":woman_in_lotus_position:" /> When boosting pages, be gentle and start with
     <strong>low values</strong>.</li>
@@ -1980,20 +1980,20 @@ search:
 <p>When <a href="../extensions/python-markdown/#metadata">Metadata</a> is enabled, pages can be excluded from search with custom front 
 matter, removing them from the index. Add the following lines at the top of a 
 Markdown file:</p>
-<pre><code class="language-bash">---
-search:
-  exclude: true
----
-
-# Document title
-...
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>---
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>search:
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>  exclude: <span class="nb">true</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>---
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="c1"># Document title</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>...
+</code></pre></div>
 <h4 id="excluding-sections">Excluding sections<a class="headerlink" href="#excluding-sections" title="Permanent link">&para;</a></h4>
 <p>When <a href="../extensions/python-markdown/#attribute-lists">Attribute Lists</a> is enabled, specific sections of pages can be excluded
 from search by adding the <code>{ data-search-exclude }</code> pragma after a Markdown
 heading:</p>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0 1 14.25 15h-9a.75.75 0 0 1 0-1.5h9a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 10 4.25V1.5H5.75a.25.25 0 0 0-.25.25v2.5a.75.75 0 0 1-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 0 0-.011-.013l-2.914-2.914a.272.272 0 0 0-.013-.011zM5.72 6.72a.75.75 0 0 0 0 1.06l1.47 1.47-1.47 1.47a.75.75 0 1 0 1.06 1.06l2-2a.75.75 0 0 0 0-1.06l-2-2a.75.75 0 0 0-1.06 0zM3.28 7.78a.75.75 0 0 0-1.06-1.06l-2 2a.75.75 0 0 0 0 1.06l2 2a.75.75 0 0 0 1.06-1.06L1.81 9.25l1.47-1.47z"/></svg></span> docs/page.md"</p>
-<pre><code>``` markdown
+<div class="highlight"><pre><span></span><code>``` markdown
 # Document title
 
 ## Section 1
@@ -2004,32 +2004,32 @@ The content of this section is included
 
 The content of this section is excluded
 ```
-</code></pre>
+</code></pre></div>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8.47 4.97a.75.75 0 0 0 0 1.06L9.94 7.5 8.47 8.97a.75.75 0 1 0 1.06 1.06l2-2a.75.75 0 0 0 0-1.06l-2-2a.75.75 0 0 0-1.06 0zM6.53 6.03a.75.75 0 0 0-1.06-1.06l-2 2a.75.75 0 0 0 0 1.06l2 2a.75.75 0 1 0 1.06-1.06L5.06 7.5l1.47-1.47z"/><path fill-rule="evenodd" d="M12.246 13.307a7.5 7.5 0 1 1 1.06-1.06l2.474 2.473a.75.75 0 1 1-1.06 1.06l-2.474-2.473zM1.5 7.5a6 6 0 1 1 10.386 4.094.75.75 0 0 0-.292.293A6 6 0 0 1 1.5 7.5z"/></svg></span> search_index.json"</p>
-<pre><code>``` json
+<div class="highlight"><pre><span></span><code>``` json
 {
   ...
-  "docs": [
+  &quot;docs&quot;: [
     {
-      "location":"page/",
-      "text":"",
-      "title":"Document title"
+      &quot;location&quot;:&quot;page/&quot;,
+      &quot;text&quot;:&quot;&quot;,
+      &quot;title&quot;:&quot;Document title&quot;
     },
     {
-      "location":"page/#section-1",
-      "text":"&lt;p&gt;The content of this section is included&lt;/p&gt;",
-      "title":"Section 1"
+      &quot;location&quot;:&quot;page/#section-1&quot;,
+      &quot;text&quot;:&quot;&lt;p&gt;The content of this section is included&lt;/p&gt;&quot;,
+      &quot;title&quot;:&quot;Section 1&quot;
     }
   ]
 }
 ```
-</code></pre>
+</code></pre></div>
 <h4 id="excluding-blocks">Excluding blocks<a class="headerlink" href="#excluding-blocks" title="Permanent link">&para;</a></h4>
 <p>When <a href="../extensions/python-markdown/#attribute-lists">Attribute Lists</a> is enabled, specific sections of pages can be excluded
 from search by adding the <code>{ data-search-exclude }</code> pragma after a Markdown
 inline- or block-level element:</p>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0 1 14.25 15h-9a.75.75 0 0 1 0-1.5h9a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 10 4.25V1.5H5.75a.25.25 0 0 0-.25.25v2.5a.75.75 0 0 1-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 0 0-.011-.013l-2.914-2.914a.272.272 0 0 0-.013-.011zM5.72 6.72a.75.75 0 0 0 0 1.06l1.47 1.47-1.47 1.47a.75.75 0 1 0 1.06 1.06l2-2a.75.75 0 0 0 0-1.06l-2-2a.75.75 0 0 0-1.06 0zM3.28 7.78a.75.75 0 0 0-1.06-1.06l-2 2a.75.75 0 0 0 0 1.06l2 2a.75.75 0 0 0 1.06-1.06L1.81 9.25l1.47-1.47z"/></svg></span> docs/page.md"</p>
-<pre><code>``` markdown
+<div class="highlight"><pre><span></span><code>``` markdown
 # Document title
 
 The content of this block is included
@@ -2037,21 +2037,21 @@ The content of this block is included
 The content of this block is excluded
 { data-search-exclude }
 ```
-</code></pre>
+</code></pre></div>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8.47 4.97a.75.75 0 0 0 0 1.06L9.94 7.5 8.47 8.97a.75.75 0 1 0 1.06 1.06l2-2a.75.75 0 0 0 0-1.06l-2-2a.75.75 0 0 0-1.06 0zM6.53 6.03a.75.75 0 0 0-1.06-1.06l-2 2a.75.75 0 0 0 0 1.06l2 2a.75.75 0 1 0 1.06-1.06L5.06 7.5l1.47-1.47z"/><path fill-rule="evenodd" d="M12.246 13.307a7.5 7.5 0 1 1 1.06-1.06l2.474 2.473a.75.75 0 1 1-1.06 1.06l-2.474-2.473zM1.5 7.5a6 6 0 1 1 10.386 4.094.75.75 0 0 0-.292.293A6 6 0 0 1 1.5 7.5z"/></svg></span> search_index.json"</p>
-<pre><code>``` json
+<div class="highlight"><pre><span></span><code>``` json
 {
   ...
-  "docs": [
+  &quot;docs&quot;: [
     {
-      "location":"page/",
-      "text":"&lt;p&gt;The content of this block is included&lt;/p&gt;",
-      "title":"Document title"
+      &quot;location&quot;:&quot;page/&quot;,
+      &quot;text&quot;:&quot;&lt;p&gt;The content of this block is included&lt;/p&gt;&quot;,
+      &quot;title&quot;:&quot;Document title&quot;
     }
   ]
 }
 ```
-</code></pre>
+</code></pre></div>
 <h2 id="customization">Customization<a class="headerlink" href="#customization" title="Permanent link">&para;</a></h2>
 <p>The search implementation of Material for MkDocs is probably its most
 sophisticated feature, as it tries to balance a great typeahead experience,
@@ -2063,18 +2063,18 @@ your needs.</p>
 <p>When a user enters a query into the search box, the query is pre-processed
 before it is submitted to the search index. Material for MkDocs will apply the
 following transformations, which can be customized by <a href="../../customization/#extending-the-theme">extending the theme</a>:</p>
-<pre><code class="language-ts">export function defaultTransform(query: string): string {
-  return query
-    .split(/&quot;([^&quot;]+)&quot;/g) /* (1)! */
-      .map((terms, index) =&gt; index &amp; 1
-        ? terms.replace(/^\b|^(?![^\x00-\x7F]|$)|\s+/g, &quot; +&quot;)
-        : terms
-      )
-      .join(&quot;&quot;)
-    .replace(/&quot;|(?:^|\s+)[*+\-:^~]+(?=\s+|$)/g, &quot;&quot;) /* (2)! */
-    .trim() /* (3)! */
-}
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="k">export</span> <span class="kd">function</span> <span class="nx">defaultTransform</span><span class="p">(</span><span class="nx">query</span>: <span class="kt">string</span><span class="p">)</span><span class="o">:</span> <span class="kt">string</span> <span class="p">{</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>  <span class="k">return</span> <span class="nx">query</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>    <span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="sr">/&quot;([^&quot;]+)&quot;/g</span><span class="p">)</span> <span class="cm">/* (1)! */</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>      <span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">terms</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">index</span> <span class="o">&amp;</span> <span class="mf">1</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>        <span class="o">?</span> <span class="nx">terms</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/^\b|^(?![^\x00-\x7F]|$)|\s+/g</span><span class="p">,</span> <span class="s2">&quot; +&quot;</span><span class="p">)</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>        <span class="o">:</span> <span class="nx">terms</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>      <span class="p">)</span>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>      <span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>    <span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/&quot;|(?:^|\s+)[*+\-:^~]+(?=\s+|$)/g</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="cm">/* (2)! */</span>
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>    <span class="p">.</span><span class="nx">trim</span><span class="p">()</span> <span class="cm">/* (3)! */</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="p">}</span>
+</code></pre></div>
 <ol>
 <li>
 <p>Search for terms in quotation marks and prepend a <code>+</code> modifier to denote
@@ -2098,19 +2098,19 @@ following transformations, which can be customized by <a href="../../customizati
 themes, both of which don't transform the query prior to submission, or
 customize the <code>transform</code> function, you can do this by <a href="../../customization/#overriding-blocks">overriding the
 <code>config</code> block</a>:</p>
-<pre><code class="language-html">{% extends &quot;base.html&quot; %}
-
-{% block config %}
-  {{ super() }}
-  &lt;script&gt;
-    var __search = {
-      transform: function(query) {
-        return query
-      }
-    }
-  &lt;/script&gt;
-{% endblock %}
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>{% extends &quot;base.html&quot; %}
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>{% block config %}
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>  {{ super() }}
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>    <span class="kd">var</span> <span class="nx">__search</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>      <span class="nx">transform</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">query</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>        <span class="k">return</span> <span class="nx">query</span>
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>      <span class="p">}</span>
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>    <span class="p">}</span>
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>  <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>{% endblock %}
+</code></pre></div>
 <p>The <code>transform</code> function will receive the query string as entered by the user
 and must return the processed query string to be submitted to the search index.</p>
 <h3 id="custom-search">Custom search<a class="headerlink" href="#custom-search" title="Permanent link">&para;</a></h3>
@@ -2118,15 +2118,15 @@ and must return the processed query string to be submitted to the search index.<
 want to switch the web worker with your own implementation, e.g. to submit
 search to an external service, you can add a custom JavaScript file to the
 <code>docs</code> directory and <a href="../../customization/#overriding-blocks">override the <code>config</code> block</a>:</p>
-<pre><code class="language-html">{% block config %}
-  {{ super() }}
-  &lt;script&gt;
-    var __search = {
-      worker: &quot;&lt;url&gt;&quot;
-    }
-  &lt;/script&gt;
-{% endblock %}
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>{% block config %}
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>  {{ super() }}
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>    <span class="kd">var</span> <span class="nx">__search</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>      <span class="nx">worker</span><span class="o">:</span> <span class="s2">&quot;&lt;url&gt;&quot;</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>    <span class="p">}</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>  <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>{% endblock %}
+</code></pre></div>
 <p>Communication with the search worker is implemented using a designated message
 format using discriminated unions, i.e. through the <code>type</code> property of the
 message. See the following interface definitions to learn about the message
@@ -2201,7 +2201,6 @@ formats:</p>
     </div>
   
   
-    Made with
     <a href="https://lopeaa.github.io/" target="_blank" rel="noopener">
       Lopeaa
     </a>

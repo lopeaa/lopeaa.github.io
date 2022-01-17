@@ -1333,6 +1333,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#adding-primary-buttons" class="md-nav__link">
+    Adding primary buttons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#adding-icon-buttons" class="md-nav__link">
     Adding icon buttons
   </a>
@@ -1492,6 +1499,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#adding-primary-buttons" class="md-nav__link">
+    Adding primary buttons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#adding-icon-buttons" class="md-nav__link">
     Adding icon buttons
   </a>
@@ -1524,9 +1538,9 @@ useful for documents or landing pages with dedicated <em>call-to-actions</em>.</
 <p>This configuration allows to add attributes to all inline- and block-level
 elements with a simple syntax, turning any link into a button. Add the
 following lines to <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">markdown_extensions:
-  - attr_list
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">markdown_extensions</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">attr_list</span><span class="w"></span>
+</code></pre></div>
 <p>See additional configuration options:</p>
 <ul>
 <li><a href="../../setup/extensions/python-markdown/#attribute-lists">Attribute Lists</a></li>
@@ -1535,39 +1549,28 @@ following lines to <code>mkdocs.yml</code>:</p>
 <h3 id="adding-buttons">Adding buttons<a class="headerlink" href="#adding-buttons" title="Permanent link">&para;</a></h3>
 <p>In order to render a link as a button, suffix it with curly braces and add the
 <code>.md-button</code> class selector to it. The button will receive the selected
-[primary color] and [accent color] if active.</p>
-<p>``` markdown title="Button"
-<a class="md-button" href="#">Subscribe to our newsletter</a></p>
-<pre><code>
-&lt;div class=&quot;result&quot; markdown&gt;
-
-[Subscribe to our newsletter][Demo]{ .md-button }
-
-&lt;/div&gt;
-
-  [primary color]: ../setup/changing-the-colors.md#primary-color
-  [accent color]: ../setup/changing-the-colors.md#accent-color 
-  [Demo]: javascript:alert$.next(&quot;Demo&quot;)
-
-### Adding primary buttons
-
-If you want to display a filled, primary button (like on the [landing page]
-of Material for MkDocs), add both, the `.md-button` and `.md-button--primary`
-CSS class selectors.
-
-``` markdown title=&quot;Button, primary&quot;
-[Subscribe to our newsletter](#){ .md-button .md-button--primary }
-</code></pre>
+<a href="../../setup/changing-the-colors/#primary-color">primary color</a> and <a href="../../setup/changing-the-colors/#accent-color">accent color</a> if active.</p>
+<div class="highlight"><span class="filename">Button</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>[<span class="nt">Subscribe to our newsletter</span>](<span class="na">#</span>){ .md-button }
+</code></pre></div>
 <div class="result">
-<p>[Subscribe to our newsletter][Demo]{ .md-button .md-button--primary }</p>
+<p><a class="md-button" href="javascript:alert$.next(&quot;Demo&quot;)">Subscribe to our newsletter</a></p>
+</div>
+<h3 id="adding-primary-buttons">Adding primary buttons<a class="headerlink" href="#adding-primary-buttons" title="Permanent link">&para;</a></h3>
+<p>If you want to display a filled, primary button (like on the <a href="../..">landing page</a>
+of Material for MkDocs), add both, the <code>.md-button</code> and <code>.md-button--primary</code>
+CSS class selectors.</p>
+<div class="highlight"><span class="filename">Button, primary</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>[<span class="nt">Subscribe to our newsletter</span>](<span class="na">#</span>){ .md-button .md-button--primary }
+</code></pre></div>
+<div class="result">
+<p><a class="md-button md-button--primary" href="javascript:alert$.next(&quot;Demo&quot;)">Subscribe to our newsletter</a></p>
 </div>
 <h3 id="adding-icon-buttons">Adding icon buttons<a class="headerlink" href="#adding-icon-buttons" title="Permanent link">&para;</a></h3>
 <p>Of course, icons can be added to all types of buttons by using the <a href="icons-emojis.md#using-icons">icon syntax</a>
 together with any valid icon shortcode, which can be easily found with a few keystrokes through the <a href="icons-emojis.md#search">icon search</a>.</p>
-<p><code>markdown title="Button with icon"
-[Send :fontawesome-solid-paper-plane:](#){ .md-button }</code></p>
+<div class="highlight"><span class="filename">Button with icon</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>[<span class="nt">Send :fontawesome-solid-paper-plane:</span>](<span class="na">#</span>){ .md-button }
+</code></pre></div>
 <div class="result">
-<p>[Send <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M476 3.2 12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"/></svg></span>][Demo]{ .md-button }</p>
+<p><a class="md-button" href="javascript:alert$.next(&quot;Demo&quot;)">Send <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M476 3.2 12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"/></svg></span></a></p>
 </div>
 
               
@@ -1628,7 +1631,6 @@ together with any valid icon shortcode, which can be easily found with a few key
     </div>
   
   
-    Made with
     <a href="https://lopeaa.github.io/" target="_blank" rel="noopener">
       Lopeaa
     </a>

@@ -1648,76 +1648,76 @@
 <h1 id="msmtp">Msmtp<a class="headerlink" href="#msmtp" title="Permanent link">&para;</a></h1>
 <p>SMTP Client that replace Sendmail daemon and delivers emails to an SMTP Server. It support proxy SOCKS5 and profiles.</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<pre><code class="language-sh">sudo apt-get install -y msmtp ca-certificates
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo apt-get install -y msmtp ca-certificates
+</code></pre></div>
 <h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
 <h3 id="create-msmtprc">Create <code>msmtprc</code><a class="headerlink" href="#create-msmtprc" title="Permanent link">&para;</a></h3>
-<pre><code class="language-sh">nano /etc/msmtprc
-</code></pre>
-<pre><code class="language-sh"># Set default values for all following accounts.
-defaults
-
-# Use the mail submission port 587 instead of the SMTP port 25.
-port 587
-
-# Always use TLS.
-tls on
-
-# Set a list of trusted CAs for TLS. The default is to use system settings, but
-# you can select your own file.
-tls_trust_file /etc/ssl/certs/ca-certificates.crt
-
-logfile /var/log/msmtp/msmtp.log
-
-# The Gmail SMTP server
-account gmail
-host smtp.gmail.com
-from alias@gmail.com
-auth on
-user alias
-#password password
-
-# Keepassxc-cli password store. See References-&gt;Keepassxc-cli or # OpenPGP-encrypted password file
-passwordeval gpg --no-tty --quiet --decrypt ~/.msmtp-gmail.gpg
-
-
-# Set default account to gmail
-account default: gmail
-
-# Map local users to mail addresses
-#aliases /etc/aliases
-</code></pre>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>nano /etc/msmtprc
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Set default values for all following accounts.</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>defaults
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Use the mail submission port 587 instead of the SMTP port 25.</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>port <span class="m">587</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># Always use TLS.</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>tls on
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="c1"># Set a list of trusted CAs for TLS. The default is to use system settings, but</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="c1"># you can select your own file.</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>tls_trust_file /etc/ssl/certs/ca-certificates.crt
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>logfile /var/log/msmtp/msmtp.log
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="c1"># The Gmail SMTP server</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>account gmail
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>host smtp.gmail.com
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>from alias@gmail.com
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>auth on
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>user <span class="nb">alias</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="c1">#password password</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="c1"># Keepassxc-cli password store. See References-&gt;Keepassxc-cli or # OpenPGP-encrypted password file</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>passwordeval gpg --no-tty --quiet --decrypt ~/.msmtp-gmail.gpg
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="c1"># Set default account to gmail</span>
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>account default: gmail
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="c1"># Map local users to mail addresses</span>
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="c1">#aliases /etc/aliases</span>
+</code></pre></div></p>
 <h3 id="permissions">Permissions<a class="headerlink" href="#permissions" title="Permanent link">&para;</a></h3>
-<pre><code class="language-sh">sudo mkdir /var/log/msmtp
-sudo chown -R www-data:adm /var/log/msmtp
-sudo chmod 0600 /etc/msmtprc
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo mkdir /var/log/msmtp
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sudo chown -R www-data:adm /var/log/msmtp
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>sudo chmod <span class="m">0600</span> /etc/msmtprc
+</code></pre></div>
 <h3 id="log-file-rotation">Log file rotation<a class="headerlink" href="#log-file-rotation" title="Permanent link">&para;</a></h3>
-<pre><code class="language-sh">nano /etc/logrotate.d/msmtp
-</code></pre>
-<pre><code class="language-sh">/var/log/msmtp/*.log {
-rotate 12
-monthly
-compress
-missingok
-notifempty
-}
-</code></pre>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>nano /etc/logrotate.d/msmtp
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>/var/log/msmtp/*.log <span class="o">{</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>rotate <span class="m">12</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>monthly
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>compress
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>missingok
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>notifempty
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="o">}</span>
+</code></pre></div></p>
 <h3 id="update-sendmail-path">Update sendmail path<a class="headerlink" href="#update-sendmail-path" title="Permanent link">&para;</a></h3>
-<pre><code class="language-sh">nano /etc/php/7.x/php.ini
-</code></pre>
-<pre><code class="language-sh">sendmail_path = &quot;/usr/bin/msmtp -C /etc/msmtprc -a -t&quot;
-</code></pre>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>nano /etc/php/7.x/php.ini
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nv">sendmail_path</span> <span class="o">=</span> <span class="s2">&quot;/usr/bin/msmtp -C /etc/msmtprc -a -t&quot;</span>
+</code></pre></div></p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p><a href="https://www.php.net/manual/es/function.mail.php">Mail()</a></p>
-<pre><code class="language-sh"> mail(
-    string $to,
-    string $subject,
-    string $message,
-    string $additional_headers = ?,
-    string $additional_parameters = ?
-): bool
-</code></pre>
+<p><a href="https://www.php.net/manual/es/function.mail.php">Mail()</a>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a> mail<span class="o">(</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    string <span class="nv">$to</span>,
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    string <span class="nv">$subject</span>,
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    string <span class="nv">$message</span>,
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    string <span class="nv">$additional_headers</span> <span class="o">=</span> ?,
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>    string <span class="nv">$additional_parameters</span> <span class="o">=</span> ?
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="o">)</span>: bool
+</code></pre></div></p>
 
               
             </article>
@@ -1777,7 +1777,6 @@ notifempty
     </div>
   
   
-    Made with
     <a href="https://lopeaa.github.io/" target="_blank" rel="noopener">
       Lopeaa
     </a>

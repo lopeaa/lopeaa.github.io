@@ -1374,6 +1374,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#grouping-other-content" class="md-nav__link">
+    Grouping other content
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#embedded-content" class="md-nav__link">
     Embedded content
   </a>
@@ -1518,6 +1525,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#grouping-other-content" class="md-nav__link">
+    Grouping other content
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#embedded-content" class="md-nav__link">
     Embedded content
   </a>
@@ -1551,11 +1565,11 @@ grouping code blocks and other content.</p>
 <p>This configuration enables content tabs, and allows to nest arbitrary content
 inside content tabs, including code blocks and ... more content tabs! Add the 
 following lines to <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">markdown_extensions:
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true 
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">markdown_extensions</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.superfences</span><span class="w"></span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.tabbed</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">      </span><span class="nt">alternate_style</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"> </span>
+</code></pre></div>
 <p>See additional configuration options:</p>
 <ul>
 <li><a href="../../setup/extensions/python-markdown-extensions/#superfences">SuperFences</a></li>
@@ -1569,144 +1583,136 @@ following lines to <code>mkdocs.yml</code>:</p>
 <p>When enabled, all content tabs across the whole documentation site will be
 linked and switch to the same label when the user clicks on a tab. Add the 
 following lines to <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">theme:
-  features:
-    - content.tabs.link
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">theme</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.tabs.link</span><span class="w"></span>
+</code></pre></div>
 <p>Content tabs are linked based on their label, not offset. This means that all
 tabs with the same label will be activated when a user clicks a content tab
 regardless of order inside a container. Furthermore, this feature is fully
 integrated with <a href="../../setup/setting-up-navigation/#instant-loading">instant loading</a> and persisted across page loads.</p>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm3.78-9.72a.75.75 0 0 0-1.06-1.06L6.75 9.19 5.28 7.72a.75.75 0 0 0-1.06 1.06l2 2a.75.75 0 0 0 1.06 0l4.5-4.5z"/></svg></span> Enabled"</p>
-<pre><code>[![content.tabs.link enabled]][content.tabs.link enabled]
-</code></pre>
+<div class="highlight"><pre><span></span><code>[![content.tabs.link enabled]][content.tabs.link enabled]
+</code></pre></div>
 <p>=== "<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1 1 13 0 6.5 6.5 0 0 1-13 0zM8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.28 5.78a.75.75 0 0 0-1.06-1.06l-5.5 5.5a.75.75 0 1 0 1.06 1.06l5.5-5.5z"/></svg></span> Disabled"</p>
-<pre><code>[![content.tabs.link disabled]][content.tabs.link disabled]
-</code></pre>
+<div class="highlight"><pre><span></span><code>[![content.tabs.link disabled]][content.tabs.link disabled]
+</code></pre></div>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <h3 id="grouping-code-blocks">Grouping code blocks<a class="headerlink" href="#grouping-code-blocks" title="Permanent link">&para;</a></h3>
 <p>Code blocks are one of the primary targets to be grouped, and can be considered
 a special case of content tabs, as tabs with a single code block are always
 rendered without horizontal spacing:</p>
-<p>``` title="Content tabs with code blocks"
-=== "C"</p>
-<pre><code>``` c
+<div class="highlight"><span class="filename">Content tabs with code blocks</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>=== &quot;C&quot;
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    ``` c
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    #include &lt;stdio.h&gt;
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    int main(void) {
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>      printf(&quot;Hello world!\n&quot;);
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>      return 0;
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    }
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    ```
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>=== &quot;C++&quot;
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    ``` c++
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>    #include &lt;iostream&gt;
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>    int main(void) {
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>      std::cout &lt;&lt; &quot;Hello world!&quot; &lt;&lt; std::endl;
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>      return 0;
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>    }
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>    ```
+</code></pre></div>
+<div class="result">
+<p>=== "C"</p>
+<div class="highlight"><pre><span></span><code>``` c
 #include &lt;stdio.h&gt;
 
 int main(void) {
-  printf("Hello world!\n");
+  printf(&quot;Hello world!\n&quot;);
   return 0;
 }
 ```
-</code></pre>
+</code></pre></div>
 <p>=== "C++"</p>
-<pre><code>``` c++
+<div class="highlight"><pre><span></span><code>``` c++
 #include &lt;iostream&gt;
 
 int main(void) {
-  std::cout &lt;&lt; "Hello world!" &lt;&lt; std::endl;
+  std::cout &lt;&lt; &quot;Hello world!&quot; &lt;&lt; std::endl;
   return 0;
 }
 ```
-</code></pre>
-<pre><code>
-&lt;div class=&quot;result&quot; markdown&gt;
-
-=== &quot;C&quot;
-
-    ``` c
-    #include &lt;stdio.h&gt;
-
-    int main(void) {
-      printf(&quot;Hello world!\n&quot;);
-      return 0;
-    }
-    ```
-
-=== &quot;C++&quot;
-
-    ``` c++
-    #include &lt;iostream&gt;
-
-    int main(void) {
-      std::cout &lt;&lt; &quot;Hello world!&quot; &lt;&lt; std::endl;
-      return 0;
-    }
-    ```
-
-&lt;/div&gt;
-
-### Grouping other content
-
-When a content tab contains more than one code block, it is rendered with
+</code></pre></div>
+</div>
+<h3 id="grouping-other-content">Grouping other content<a class="headerlink" href="#grouping-other-content" title="Permanent link">&para;</a></h3>
+<p>When a content tab contains more than one code block, it is rendered with
 horizontal spacing. Vertical spacing is never added, but can be achieved
-by nesting tabs in other blocks:
-
-``` title=&quot;Content tabs&quot;
-=== &quot;Unordered list&quot;
-
-    * Sed sagittis eleifend rutrum
-    * Donec vitae suscipit est
-    * Nulla tempor lobortis orci
-
-=== &quot;Ordered list&quot;
-
-    1. Sed sagittis eleifend rutrum
-    2. Donec vitae suscipit est
-    3. Nulla tempor lobortis orci
-</code></pre>
+by nesting tabs in other blocks:</p>
+<div class="highlight"><span class="filename">Content tabs</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>=== &quot;Unordered list&quot;
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    * Sed sagittis eleifend rutrum
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    * Donec vitae suscipit est
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    * Nulla tempor lobortis orci
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>=== &quot;Ordered list&quot;
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    1. Sed sagittis eleifend rutrum
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>    2. Donec vitae suscipit est
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>    3. Nulla tempor lobortis orci
+</code></pre></div>
 <div class="result">
 <p>=== "Unordered list"</p>
-<pre><code>* Sed sagittis eleifend rutrum
+<div class="highlight"><pre><span></span><code>* Sed sagittis eleifend rutrum
 * Donec vitae suscipit est
 * Nulla tempor lobortis orci
-</code></pre>
+</code></pre></div>
 <p>=== "Ordered list"</p>
-<pre><code>1. Sed sagittis eleifend rutrum
+<div class="highlight"><pre><span></span><code>1. Sed sagittis eleifend rutrum
 2. Donec vitae suscipit est
 3. Nulla tempor lobortis orci
-</code></pre>
+</code></pre></div>
 </div>
 <h3 id="embedded-content">Embedded content<a class="headerlink" href="#embedded-content" title="Permanent link">&para;</a></h3>
 <p>When <a href="../../setup/extensions/python-markdown-extensions/#superfences">SuperFences</a> is enabled, content tabs can contain arbitrary nested
 content, including further content tabs, and can be nested in other blocks like
 <a href="../admonitions/">admonitions</a> or blockquotes:</p>
-<p>``` title="Content tabs in admonition"</p>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<p>=== "Unordered List"</p>
-<pre><code>``` markdown title="List, unordered"
-* Sed sagittis eleifend rutrum
-* Donec vitae suscipit est
-* Nulla tempor lobortis orci
-```
-</code></pre>
-<p>=== "Ordered List"</p>
-<pre><code>``` markdown title="List, ordered"
-1. Sed sagittis eleifend rutrum
-2. Donec vitae suscipit est
-3. Nulla tempor lobortis orci
-```
-</code></pre>
-</div>
-<p>```</p>
+<div class="highlight"><span class="filename">Content tabs in admonition</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>!!! example
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    === &quot;Unordered List&quot;
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        ``` markdown title=&quot;List, unordered&quot;
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        * Sed sagittis eleifend rutrum
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>        * Donec vitae suscipit est
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>        * Nulla tempor lobortis orci
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>        ```
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    === &quot;Ordered List&quot;
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>        ``` markdown title=&quot;List, ordered&quot;
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>        1. Sed sagittis eleifend rutrum
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>        2. Donec vitae suscipit est
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>        3. Nulla tempor lobortis orci
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>        ```
+</code></pre></div>
 <div class="result">
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p>=== "Unordered List"</p>
-<pre><code>``` markdown title="List, unordered"
+<div class="highlight"><pre><span></span><code>``` markdown title=&quot;List, unordered&quot;
 * Sed sagittis eleifend rutrum
 * Donec vitae suscipit est
 * Nulla tempor lobortis orci
 ```
-</code></pre>
+</code></pre></div>
 <p>=== "Ordered List"</p>
-<pre><code>``` markdown title="List, ordered"
+<div class="highlight"><pre><span></span><code>``` markdown title=&quot;List, ordered&quot;
 1. Sed sagittis eleifend rutrum
 2. Donec vitae suscipit est
 3. Nulla tempor lobortis orci
 ```
-</code></pre>
+</code></pre></div>
 </div>
 </div>
 
@@ -1768,7 +1774,6 @@ content, including further content tabs, and can be nested in other blocks like
     </div>
   
   
-    Made with
     <a href="https://lopeaa.github.io/" target="_blank" rel="noopener">
       Lopeaa
     </a>

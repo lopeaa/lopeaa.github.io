@@ -1511,9 +1511,9 @@ within Markdown files.</p>
 <p>This configuration allows to set a title and description for a page, change the
 template or define an icon to be rendered in the navigation. Add the following 
 lines to <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">markdown_extensions:
-  - meta
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">markdown_extensions</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">meta</span><span class="w"></span>
+</code></pre></div>
 <p>See additional configuration options:</p>
 <ul>
 <li><a href="../setup/extensions/python-markdown/#metadata">Metadata</a></li>
@@ -1522,13 +1522,13 @@ lines to <code>mkdocs.yml</code>:</p>
 <h3 id="setting-the-page-title">Setting the page title<a class="headerlink" href="#setting-the-page-title" title="Permanent link">&para;</a></h3>
 <p>When <a href="../setup/extensions/python-markdown/#metadata">Metadata</a> is enabled, the page title can be overridden for a document with
 some custom front matter. Add the following lines at the top of a Markdown file:</p>
-<pre><code class="language-bash">---
-title: Lorem ipsum dolor sit amet # (1)!
----
-
-# Document title
-...
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>---
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>title: Lorem ipsum dolor sit amet <span class="c1"># (1)!</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>---
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># Document title</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>...
+</code></pre></div>
 <ol>
 <li>This will set the <a href="#setting-the-page-title"><code>title</code></a> inside the HTML document's <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head"><code>head</code></a>
     for the generated page to this value. Note that the site title, which is set
@@ -1538,13 +1538,13 @@ title: Lorem ipsum dolor sit amet # (1)!
 <p>When <a href="../setup/extensions/python-markdown/#metadata">Metadata</a> is enabled, the page description can be overridden for a
 document with custom front matter. Add the following lines at the top of a
 Markdown file:</p>
-<pre><code class="language-bash">---
-description: Nullam urna elit, malesuada eget finibus ut, ac tortor. # (1)!
----
-
-# Document title
-...
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>---
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>description: Nullam urna elit, malesuada eget finibus ut, ac tortor. <span class="c1"># (1)!</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>---
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1"># Document title</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>...
+</code></pre></div>
 <ol>
 <li>This will set the <code>meta</code> tag containing the site description inside the
     document <code>head</code> for the current page to the provided value.</li>
@@ -1556,13 +1556,13 @@ description: Nullam urna elit, malesuada eget finibus ut, ac tortor. # (1)!
 <p>An icon can be assigned to each page, which is then rendered as part of the
 navigation sidebar. Ensure <a href="../setup/extensions/python-markdown/#metadata">Metadata</a> is enabled and add the following lines
 at the top of a Markdown file:</p>
-<pre><code class="language-bash">---
-icon: material/emoticon-happy # (1)!
----
-
-# Document title
-...
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>---
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>icon: material/emoticon-happy <span class="c1"># (1)!</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>---
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1"># Document title</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>...
+</code></pre></div>
 <ol>
 <li>Check out the left sidebar to see icons in action! Also check out our
     <a href="icons-emojis.md#search">icon search</a> to find the perfect icon with a few keystrokes.</li>
@@ -1571,39 +1571,39 @@ icon: material/emoticon-happy # (1)!
 <p>If you're using <a href="../customization/#extending-the-theme">theme extension</a> and created a new page template in the
 <code>overrides</code> directory, you can enable it for a specific page. Add the following 
 lines at the top of a Markdown file:</p>
-<pre><code class="language-bash">---
-template: custom.html
----
-
-# Document title
-...
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>---
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>template: custom.html
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>---
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="c1"># Document title</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>...
+</code></pre></div>
 <h2 id="customization">Customization<a class="headerlink" href="#customization" title="Permanent link">&para;</a></h2>
 <h3 id="using-metadata-in-templates">Using metadata in templates<a class="headerlink" href="#using-metadata-in-templates" title="Permanent link">&para;</a></h3>
 <h4 id="on-all-pages">on all pages<a class="headerlink" href="#on-all-pages" title="Permanent link">&para;</a></h4>
 <p>In order to add custom <code>meta</code> tags to your document, you can <a href="../customization/#extending-the-theme">extend the theme
 </a> and <a href="../customization/#overriding-blocks">override the <code>extrahead</code> block</a>,
 e.g. to add indexing policies for search engines via the <code>robots</code> property:</p>
-<pre><code class="language-html">{% extends &quot;base.html&quot; %}
-
-{% block extrahead %}
-  &lt;meta property=&quot;robots&quot; content=&quot;noindex, nofollow&quot; /&gt;
-{% endblock %}
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>{% extends &quot;base.html&quot; %}
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>{% block extrahead %}
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">&quot;robots&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;noindex, nofollow&quot;</span> <span class="p">/&gt;</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>{% endblock %}
+</code></pre></div>
 <h4 id="on-a-single-page">on a single page<a class="headerlink" href="#on-a-single-page" title="Permanent link">&para;</a></h4>
 <p>If you want to set a <code>meta</code> tag on a single page, or want to set different
 values for different pages, you can use the <code>page.meta</code> object inside your
 template override, e.g.:</p>
-<pre><code class="language-html">{% extends &quot;base.html&quot; %}
-
-{% block extrahead %}
-  {% if page and page.meta and page.meta.robots %}
-    &lt;meta property=&quot;robots&quot; content=&quot;{{ page.meta.robots }}&quot; /&gt;
-  {% else %}
-    &lt;meta property=&quot;robots&quot; content=&quot;index, follow&quot; /&gt;
-  {% endif %}
-{% endblock %}
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>{% extends &quot;base.html&quot; %}
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>{% block extrahead %}
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>  {% if page and page.meta and page.meta.robots %}
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">&quot;robots&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;{{ page.meta.robots }}&quot;</span> <span class="p">/&gt;</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>  {% else %}
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">&quot;robots&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;index, follow&quot;</span> <span class="p">/&gt;</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>  {% endif %}
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>{% endblock %}
+</code></pre></div>
 <p>You can now use <code>robots</code> exactly like <a href="#setting-the-page-title"><code>title</code></a> and
 <a href="#setting-the-page-description"><code>description</code></a> to set values. Note that in this case, the
 template defines an <code>else</code> branch, which would set a default if none was given.</p>
@@ -1666,7 +1666,6 @@ template defines an <code>else</code> branch, which would set a default if none 
     </div>
   
   
-    Made with
     <a href="https://lopeaa.github.io/" target="_blank" rel="noopener">
       Lopeaa
     </a>

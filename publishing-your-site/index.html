@@ -1458,7 +1458,7 @@ documentation. At the root of your repository, create a new GitHub Actions
 workflow, e.g. <code>.github/workflows/ci.yml</code>, and copy and paste the following
 contents:</p>
 <p>=== "Material for MkDocs"</p>
-<pre><code>``` yaml
+<div class="highlight"><pre><span></span><code>``` yaml
 name: ci # (1)!
 on:
   push:
@@ -1491,9 +1491,9 @@ jobs:
       mkdocs-awesome-pages-plugin \
       ...
     ```
-</code></pre>
+</code></pre></div>
 <p>=== "Insiders"</p>
-<pre><code>``` yaml
+<div class="highlight"><pre><span></span><code>``` yaml
 name: ci
 on:
   push:
@@ -1518,7 +1518,7 @@ env:
 1.  Remember to set the `GH_TOKEN` environment variable to the value of your
     [personal access token] when deploying [Insiders], which can be done
     using [GitHub secrets].
-</code></pre>
+</code></pre></div>
 <p>Now, when a new commit is pushed to either the <code>master</code> or <code>main</code> branches,
 the static site is automatically built and deployed. Push your changes to see
 the workflow in action.</p>
@@ -1529,15 +1529,15 @@ for your GitHub Page is set to <code>gh-pages</code>.</p>
 <h3 id="with-mkdocs">with MkDocs<a class="headerlink" href="#with-mkdocs" title="Permanent link">&para;</a></h3>
 <p>If you prefer to deploy your project documentation manually, you can just invoke
 the following command from the directory containing the <code>mkdocs.yml</code> file:</p>
-<pre><code>mkdocs gh-deploy --force
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>mkdocs gh-deploy --force
+</code></pre></div>
 <h2 id="gitlab-pages">GitLab Pages<a class="headerlink" href="#gitlab-pages" title="Permanent link">&para;</a></h2>
 <p>If you're hosting your code on GitLab, deploying to <a href="https://gitlab.com/pages">GitLab Pages</a> can be done
 by using the <a href="https://docs.gitlab.com/ee/ci/">GitLab CI</a> task runner. At the root of your repository, create a
 task definition named <code>.gitlab-ci.yml</code> and copy and paste the following
 contents:</p>
 <p>=== "Material for MkDocs"</p>
-<pre><code>``` yaml
+<div class="highlight"><pre><span></span><code>``` yaml
 image: python:latest
 pages:
   stage: deploy
@@ -1554,9 +1554,9 @@ pages:
 
 1.  At some point, GitLab renamed `master` to `main`. If your default branch
     is named `master`, you can safely remove `main`, vice versa.
-</code></pre>
+</code></pre></div>
 <p>=== "Insiders"</p>
-<pre><code>``` yaml
+<div class="highlight"><pre><span></span><code>``` yaml
 image: python:latest
 pages:
   stage: deploy
@@ -1574,7 +1574,7 @@ pages:
 1.  Remember to set the `GH_TOKEN` environment variable to the value of your
     [personal access token] when deploying [Insiders], which can be done
     using [masked custom variables].
-</code></pre>
+</code></pre></div>
 <p>Now, when a new commit is pushed to <code>master</code>, the static site is automatically
 built and deployed. Commit and push the file to your repository to see the
 workflow in action.</p>
@@ -1603,7 +1603,6 @@ workflow in action.</p>
     </div>
   
   
-    Made with
     <a href="https://lopeaa.github.io/" target="_blank" rel="noopener">
       Lopeaa
     </a>

@@ -1417,8 +1417,22 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#highlighting-text" class="md-nav__link">
+    Highlighting text
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#sub-and-superscripts" class="md-nav__link">
     Sub- and superscripts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-keyboard-keys" class="md-nav__link">
+    Adding keyboard keys
   </a>
   
 </li>
@@ -1492,8 +1506,22 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#highlighting-text" class="md-nav__link">
+    Highlighting text
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#sub-and-superscripts" class="md-nav__link">
     Sub- and superscripts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-keyboard-keys" class="md-nav__link">
+    Adding keyboard keys
   </a>
   
 </li>
@@ -1525,13 +1553,13 @@ for a document.</p>
 <p>This configuration enables support for keyboard keys, tracking changes in
 documents, defining sub- and superscript and highlighting text. Add the 
 following lines to <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yaml">markdown_extensions:
-  - pymdownx.critic
-  - pymdownx.caret
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">markdown_extensions</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.critic</span><span class="w"></span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.caret</span><span class="w"></span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.keys</span><span class="w"></span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.mark</span><span class="w"></span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.tilde</span><span class="w"></span>
+</code></pre></div>
 <p>See additional configuration options:</p>
 <ul>
 <li><a href="../../setup/extensions/python-markdown-extensions/#critic">Critic</a></li>
@@ -1542,46 +1570,41 @@ following lines to <code>mkdocs.yml</code>:</p>
 <h3 id="highlighting-changes">Highlighting changes<a class="headerlink" href="#highlighting-changes" title="Permanent link">&para;</a></h3>
 <p>When <a href="../../setup/extensions/python-markdown-extensions/#critic">Critic</a> is enabled, <a href="https://github.com/CriticMarkup/CriticMarkup-toolkit">Critic Markup</a> can be used, which adds the ability to 
 highlight suggested changes, as well as add inline comments to a document:</p>
-<p>``` title="Text with suggested changes"
-Text can be {--deleted--} and replacement text {++added++}. This can also be
-combined into {~~one~&gt;a single~~} operation. {==Highlighting==} is also
-possible {&gt;&gt;and comments can be added inline&lt;&lt;}.</p>
-<p>{==</p>
-<p>Formatting can also be applied to blocks by putting the opening and closing
-tags on separate lines and adding new lines between the tags and the content.</p>
-<p>==}</p>
-<pre><code>
-&lt;div class=&quot;result&quot; markdown&gt;
-
-Text can be &lt;del class=&quot;critic&quot;&gt;deleted&lt;/del&gt; and replacement text
-&lt;ins class=&quot;critic&quot;&gt;added&lt;/ins&gt;. This can also be combined into
-&lt;del class=&quot;critic&quot;&gt;one&lt;/del&gt;&lt;ins class=&quot;critic&quot;&gt;a single&lt;/ins&gt; operation.
-&lt;mark class=&quot;critic&quot;&gt;Highlighting&lt;/mark&gt; is also possible
-&lt;span class=&quot;critic comment&quot;&gt;and comments can be added inline&lt;/span&gt;.
-
-&lt;div&gt;
-  &lt;mark class=&quot;critic block&quot;&gt;
-    &lt;p&gt;
+<div class="highlight"><span class="filename">Text with suggested changes</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Text can be {--deleted--} and replacement text {++added++}. This can also be
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>combined into {~~one~&gt;a single~~} operation. {==Highlighting==} is also
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>possible {&gt;&gt;and comments can be added inline&lt;&lt;}.
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>{==
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>Formatting can also be applied to blocks by putting the opening and closing
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>tags on separate lines and adding new lines between the tags and the content.
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>==}
+</code></pre></div>
+<div class="result">
+<p>Text can be <del class="critic">deleted</del> and replacement text
+<ins class="critic">added</ins>. This can also be combined into
+<del class="critic">one</del><ins class="critic">a single</ins> operation.
+<mark class="critic">Highlighting</mark> is also possible
+<span class="critic comment">and comments can be added inline</span>.</p>
+<div>
+  <mark class="critic block">
+    <p>
       Formatting can also be applied to blocks by putting the opening and
       closing tags on separate lines and adding new lines between the tags and
       the content.
-    &lt;/p&gt;
-  &lt;/mark&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-### Highlighting text
-
-When [Caret, Mark &amp; Tilde] are enabled, text can be highlighted with a simple 
+    </p>
+  </mark>
+</div>
+</div>
+<h3 id="highlighting-text">Highlighting text<a class="headerlink" href="#highlighting-text" title="Permanent link">&para;</a></h3>
+<p>When <a href="../../setup/extensions/python-markdown-extensions/#caret-mark-tilde">Caret, Mark &amp; Tilde</a> are enabled, text can be highlighted with a simple 
 syntax, which is more convenient that directly using the corresponding
-[`mark`][mark], [`ins`][ins] and [`del`][del] HTML tags:
-
-``` title=&quot;Text with highlighting&quot;
-- ==This was marked==
-- ^^This was inserted^^
-- ~~This was deleted~~
-</code></pre>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark"><code>mark</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins"><code>ins</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del"><code>del</code></a> HTML tags:</p>
+<div class="highlight"><span class="filename">Text with highlighting</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>- ==This was marked==
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>- ^^This was inserted^^
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>- ~~This was deleted~~
+</code></pre></div>
 <div class="result">
 <ul>
 <li>==This was marked==</li>
@@ -1592,30 +1615,22 @@ syntax, which is more convenient that directly using the corresponding
 <h3 id="sub-and-superscripts">Sub- and superscripts<a class="headerlink" href="#sub-and-superscripts" title="Permanent link">&para;</a></h3>
 <p>When <a href="../../setup/extensions/python-markdown-extensions/#caret-mark-tilde">Caret &amp; Tilde</a> are enabled, text can be sub- and 
 superscripted with a simple syntax, which is more convenient that directly
-using the corresponding [<code>sub</code>][sub] and [<code>sup</code>][sup] HTML tags:</p>
-<p>``` markdown title="Text with sub- und superscripts"
-- H~2~0
-- A^T^A</p>
-<pre><code>
-&lt;div class=&quot;result&quot; markdown&gt;
-
-- H~2~0
-- A^T^A
-
-&lt;/div&gt;
-
-  [sub]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub
-  [sup]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup
-
-### Adding keyboard keys
-
-When [Keys] is enabled, keyboard keys can be rendered with a simple syntax.
-Consult the [Python Markdown Extensions] documentation to learn about all
-available shortcodes:
-
-``` markdown title=&quot;Keyboard keys&quot;
-++ctrl+alt+del++
-</code></pre>
+using the corresponding <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub"><code>sub</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup"><code>sup</code></a> HTML tags:</p>
+<div class="highlight"><span class="filename">Text with sub- und superscripts</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">-</span> H~2~0
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">-</span> A^T^A
+</code></pre></div>
+<div class="result">
+<ul>
+<li>H~2~0</li>
+<li>A^T^A</li>
+</ul>
+</div>
+<h3 id="adding-keyboard-keys">Adding keyboard keys<a class="headerlink" href="#adding-keyboard-keys" title="Permanent link">&para;</a></h3>
+<p>When <a href="../../setup/extensions/python-markdown-extensions/#keys">Keys</a> is enabled, keyboard keys can be rendered with a simple syntax.
+Consult the <a href="https://facelessuser.github.io/pymdown-extensions/extensions/keys/#extendingmodifying-key-map-index">Python Markdown Extensions</a> documentation to learn about all
+available shortcodes:</p>
+<div class="highlight"><span class="filename">Keyboard keys</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>++ctrl+alt+del++
+</code></pre></div>
 <div class="result">
 <p>++ctrl+alt+del++</p>
 </div>
@@ -1663,7 +1678,6 @@ available shortcodes:
     </div>
   
   
-    Made with
     <a href="https://lopeaa.github.io/" target="_blank" rel="noopener">
       Lopeaa
     </a>
