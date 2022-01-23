@@ -1,0 +1,56 @@
+##
+# Default server configuration
+#
+server {
+	listen [::]:443 ssl http2 ipv6only=on; # managed by Certbot
+	listen 443 ssl http2; # managed by Certbot
+	
+	ssl_certificate /etc/letsencrypt/live/domain.com/fullchain.pem; # managed by Certbot
+	ssl_certificate_key /etc/letsencrypt/live/domain.com/privkey.pem; # managed by Certbot
+	include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+	ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+	server_name domain.com www.domain.com;
+
+	root /var/www/html;
+
+	##
+	# Nginx Bad Bot Blocker Includes
+        # REPO: https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker
+	##
+        include /etc/nginx/bots.d/ddos.conf;
+        include /etc/nginx/bots.d/blockbots.conf;
+
+	##
+	# Security headers
+	##
+	add_header X-Frame-Options "SAMEORIGIN";
+	add_header Strict-Transport-Security "max-age=31536000; includeSubdomains; preload";
+        add_header Content-Security-Policy "default-src 'self' http: https: data: blob: 'unsafe-inline'" always;
+	proxy_hide_header X-Powered-By;
+
+	index index.php index.html;
+
+	location / {
+	 limit_except GET HEAD POST { deny all; }
+	 try_files $uri $uri/ /index.php?$query_string;
+	}
+
+	error_page 404 /custom_404.html;
+        location = /custom_404.html {
+                root /usr/share/nginx/html;
+                internal;
+        }
+
+	# pass PHP scripts to FastCGI server
+	#
+	location ~ \.php$ {
+		include snippets/fastcgi-php.conf;
+	
+		# With php-fpm (or other unix sockets):
+		fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+		# With php-cgi (or other tcp sockets):
+		#fastcgi_pass 127.0.0.1:9000;
+	}
+
+}

@@ -10,14 +10,14 @@
         <meta name="author" content="Lopeaa">
       
       
-        <link rel="canonical" href="https://lopeaa.github.io/certificate-authority/configuration/">
+        <link rel="canonical" href="https://lopeaa.github.io/setups/nginx/">
       
       <link rel="icon" href="../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, Lopeaa's Docs-8.1.6">
     
     
       
-        <title>Configuration - Prototypes</title>
+        <title>Nginx - Prototypes</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configuration" class="md-skip">
+        <a href="#nginx" class="md-skip">
           Skip to content
         </a>
       
@@ -130,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configuration
+              Nginx
             
           </span>
         </div>
@@ -242,15 +242,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../installation/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../certificate-authority/installation/" class="md-tabs__link">
         Certificate Authority
       </a>
     </li>
@@ -272,13 +270,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../setups/msmtp/" class="md-tabs__link">
+      <a href="../msmtp/" class="md-tabs__link md-tabs__link--active">
         Setups
       </a>
     </li>
@@ -371,14 +371,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
@@ -415,7 +413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../installation/" class="md-nav__link">
+      <a href="../../certificate-authority/installation/" class="md-nav__link">
         Installation
       </a>
     </li>
@@ -427,86 +425,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Configuration
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../certificate-authority/configuration/" class="md-nav__link">
         Configuration
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#email-notifications" class="md-nav__link">
-    Email Notifications
-  </a>
-  
-    <nav class="md-nav" aria-label="Email Notifications">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#using-sendmail-configuration" class="md-nav__link">
-    Using sendmail configuration.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-msmtp-daemon" class="md-nav__link">
-    Using msmtp daemon.
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cache" class="md-nav__link">
-    Cache
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#logging" class="md-nav__link">
-    Logging
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -518,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../publishing/" class="md-nav__link">
+      <a href="../../certificate-authority/publishing/" class="md-nav__link">
         Publishing
       </a>
     </li>
@@ -532,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../customization/" class="md-nav__link">
+      <a href="../../certificate-authority/customization/" class="md-nav__link">
         Customization
       </a>
     </li>
@@ -582,7 +505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../code-snippets/models/" class="md-nav__link">
+      <a href="../../certificate-authority/code-snippets/models/" class="md-nav__link">
         Models
       </a>
     </li>
@@ -596,7 +519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../code-snippets/views/" class="md-nav__link">
+      <a href="../../certificate-authority/code-snippets/views/" class="md-nav__link">
         Views
       </a>
     </li>
@@ -610,7 +533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../code-snippets/controllers/" class="md-nav__link">
+      <a href="../../certificate-authority/code-snippets/controllers/" class="md-nav__link">
         Controllers
       </a>
     </li>
@@ -697,12 +620,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -739,7 +664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../setups/msmtp/" class="md-nav__link">
+      <a href="../msmtp/" class="md-nav__link">
         Msmtp
       </a>
     </li>
@@ -753,7 +678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../setups/keepassxc-cli/" class="md-nav__link">
+      <a href="../keepassxc-cli/" class="md-nav__link">
         Keepassxc-cli
       </a>
     </li>
@@ -767,7 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../setups/openpgp-encrypted-password/" class="md-nav__link">
+      <a href="../openpgp-encrypted-password/" class="md-nav__link">
         OpenPGP Encrypted Password
       </a>
     </li>
@@ -781,7 +706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../setups/certbot/" class="md-nav__link">
+      <a href="../certbot/" class="md-nav__link">
         Certbot
       </a>
     </li>
@@ -795,7 +720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../setups/php/" class="md-nav__link">
+      <a href="../php/" class="md-nav__link">
         PHP
       </a>
     </li>
@@ -807,11 +732,100 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../setups/nginx/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Nginx
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Nginx
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurations-files" class="md-nav__link">
+    Configurations files
+  </a>
+  
+    <nav class="md-nav" aria-label="Configurations files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#full-examples" class="md-nav__link">
+    Full Examples
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-http" class="md-nav__link">
+    Default HTTP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-https" class="md-nav__link">
+    Custom HTTPS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enabling-configuration-files" class="md-nav__link">
+    Enabling configuration files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra-configuration" class="md-nav__link">
+    Extra configuration
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -962,23 +976,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#email-notifications" class="md-nav__link">
-    Email Notifications
+  <a href="#installation" class="md-nav__link">
+    Installation
   </a>
   
-    <nav class="md-nav" aria-label="Email Notifications">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurations-files" class="md-nav__link">
+    Configurations files
+  </a>
+  
+    <nav class="md-nav" aria-label="Configurations files">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#using-sendmail-configuration" class="md-nav__link">
-    Using sendmail configuration.
+  <a href="#full-examples" class="md-nav__link">
+    Full Examples
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#using-msmtp-daemon" class="md-nav__link">
-    Using msmtp daemon.
+  <a href="#default-http" class="md-nav__link">
+    Default HTTP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-https" class="md-nav__link">
+    Custom HTTPS
   </a>
   
 </li>
@@ -989,15 +1017,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cache" class="md-nav__link">
-    Cache
+  <a href="#enabling-configuration-files" class="md-nav__link">
+    Enabling configuration files
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#logging" class="md-nav__link">
-    Logging
+  <a href="#extra-configuration" class="md-nav__link">
+    Extra configuration
   </a>
   
 </li>
@@ -1015,21 +1043,176 @@
               
                 
 
-<h1 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h1>
-<p>After <a href="../installation/"><code>installation</code></a> is completed, there are a number of values to configure:</p>
-<h2 id="email-notifications">Email Notifications<a class="headerlink" href="#email-notifications" title="Permanent link">&para;</a></h2>
-<h3 id="using-sendmail-configuration">Using <code>sendmail</code> configuration.<a class="headerlink" href="#using-sendmail-configuration" title="Permanent link">&para;</a></h3>
-<p>Configure driver and sendmail in <code>config/mail.php</code>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&#39;driver&#39; =&gt; env(&#39;MAIL_DRIVER&#39;, &#39;smtp&#39;),
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>&#39;sendmail&#39; =&gt; &#39;/usr/bin/sendmail -t&#39;,
+<h1 id="nginx">Nginx<a class="headerlink" href="#nginx" title="Permanent link">&para;</a></h1>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo apt update
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo apt install nginx
+</code></pre></div>
+<h2 id="configurations-files">Configurations files<a class="headerlink" href="#configurations-files" title="Permanent link">&para;</a></h2>
+<h3 id="full-examples">Full Examples<a class="headerlink" href="#full-examples" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.nginx.com/resources/wiki/start/topics/examples/full/">Example Configurations</a></li>
+</ul>
+<h3 id="default-http">Default HTTP<a class="headerlink" href="#default-http" title="Permanent link">&para;</a></h3>
+<div class="highlight"><span class="filename">/etc/nginx/sites-available/default</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>##
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a># Default server configuration
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>#
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>server {
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>        listen 80 default_server;
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>        listen [::]:80 default_server;
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>        # SSL configuration
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>        #
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>        # listen 443 ssl default_server;
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>        # listen [::]:443 ssl default_server;
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>        #
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>        # Note: You should disable gzip for SSL traffic.
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>        # See: https://bugs.debian.org/773332
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>        #
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>        # Read up on ssl_ciphers to ensure a secure configuration.
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>        # See: https://bugs.debian.org/765782
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>        #
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>        # Self signed certs generated by the ssl-cert package
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>        # Don&#39;t use them in a production server!
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>        #
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>        # include snippets/snakeoil.conf;
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>        root /var/www/html;
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>        # Add index.php to the list if you are using PHP
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>        index index.html index.htm index.nginx-debian.html;
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>        server_name _;
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>        location / {
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>                # First attempt to serve request as file, then
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>                # as directory, then fall back to displaying a 404.
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>                try_files $uri $uri/ =404;
+<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>                # proxy_pass http://localhost:8080;
+<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>                # proxy_http_version 1.1;
+<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>                # proxy_set_header Upgrade $http_upgrade;
+<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>                # proxy_set_header Connection &#39;upgrade&#39;;
+<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>                # proxy_set_header Host $host;
+<a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>                # proxy_cache_bypass $http_upgrade;
+<a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>        }
+<a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a>
+<a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a>        # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+<a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a>        #
+<a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a>        #location ~ \.php$ {
+<a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a>        # include snippets/fastcgi-php.conf;
+<a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a>        #
+<a id="__codelineno-1-48" name="__codelineno-1-48" href="#__codelineno-1-48"></a>        #       # With php7.0-cgi alone:
+<a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a>        #       fastcgi_pass 127.0.0.1:9000;
+<a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a>        #       # With php7.0-fpm:
+<a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a>        #       fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+<a id="__codelineno-1-52" name="__codelineno-1-52" href="#__codelineno-1-52"></a>        #}
+<a id="__codelineno-1-53" name="__codelineno-1-53" href="#__codelineno-1-53"></a>
+<a id="__codelineno-1-54" name="__codelineno-1-54" href="#__codelineno-1-54"></a>        # deny access to .htaccess files, if Apache&#39;s document root
+<a id="__codelineno-1-55" name="__codelineno-1-55" href="#__codelineno-1-55"></a>        # concurs with nginx&#39;s one
+<a id="__codelineno-1-56" name="__codelineno-1-56" href="#__codelineno-1-56"></a>        #
+<a id="__codelineno-1-57" name="__codelineno-1-57" href="#__codelineno-1-57"></a>        #location ~ /\.ht {
+<a id="__codelineno-1-58" name="__codelineno-1-58" href="#__codelineno-1-58"></a>        #       deny all;
+<a id="__codelineno-1-59" name="__codelineno-1-59" href="#__codelineno-1-59"></a>        #}
+<a id="__codelineno-1-60" name="__codelineno-1-60" href="#__codelineno-1-60"></a>}
+<a id="__codelineno-1-61" name="__codelineno-1-61" href="#__codelineno-1-61"></a>
+<a id="__codelineno-1-62" name="__codelineno-1-62" href="#__codelineno-1-62"></a>
+<a id="__codelineno-1-63" name="__codelineno-1-63" href="#__codelineno-1-63"></a># Virtual Host configuration for example.com
+<a id="__codelineno-1-64" name="__codelineno-1-64" href="#__codelineno-1-64"></a>#
+<a id="__codelineno-1-65" name="__codelineno-1-65" href="#__codelineno-1-65"></a># You can move that to a different file under sites-available/ and symlink that
+<a id="__codelineno-1-66" name="__codelineno-1-66" href="#__codelineno-1-66"></a># to sites-enabled/ to enable it.
+<a id="__codelineno-1-67" name="__codelineno-1-67" href="#__codelineno-1-67"></a>#
+<a id="__codelineno-1-68" name="__codelineno-1-68" href="#__codelineno-1-68"></a>#server {
+<a id="__codelineno-1-69" name="__codelineno-1-69" href="#__codelineno-1-69"></a>#       listen 80;
+<a id="__codelineno-1-70" name="__codelineno-1-70" href="#__codelineno-1-70"></a>#       listen [::]:80;
+<a id="__codelineno-1-71" name="__codelineno-1-71" href="#__codelineno-1-71"></a>#
+<a id="__codelineno-1-72" name="__codelineno-1-72" href="#__codelineno-1-72"></a>#       server_name example.com;
+<a id="__codelineno-1-73" name="__codelineno-1-73" href="#__codelineno-1-73"></a>#
+<a id="__codelineno-1-74" name="__codelineno-1-74" href="#__codelineno-1-74"></a>#       root /var/www/example.com;
+<a id="__codelineno-1-75" name="__codelineno-1-75" href="#__codelineno-1-75"></a>#       index index.html;
+<a id="__codelineno-1-76" name="__codelineno-1-76" href="#__codelineno-1-76"></a>#
+<a id="__codelineno-1-77" name="__codelineno-1-77" href="#__codelineno-1-77"></a>#       location / {
+<a id="__codelineno-1-78" name="__codelineno-1-78" href="#__codelineno-1-78"></a>#              try_files $uri $uri/ =404;
+<a id="__codelineno-1-79" name="__codelineno-1-79" href="#__codelineno-1-79"></a>#       }
+<a id="__codelineno-1-80" name="__codelineno-1-80" href="#__codelineno-1-80"></a>#
+</code></pre></div>
+<h3 id="custom-https">Custom HTTPS<a class="headerlink" href="#custom-https" title="Permanent link">&para;</a></h3>
+<div class="admonition note tip">
+<p class="admonition-title">Using Let's Encrypt</p>
+<p><strong><a href="/setups/certbot/#obtaining-tls-certificate">Obtaining TLS Certificate</a></strong></p>
+<p><strong><a href="https://www.ssllabs.com/ssltest/">SSL Labs Server Check</a></strong></p>
+</div>
+<div class="highlight"><span class="filename">/etc/nginx/sites-available/custom</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>##
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a># Default server configuration
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>#
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>server {
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    listen [::]:443 ssl http2 ipv6only=on; # managed by Certbot
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    listen 443 ssl http2; # managed by Certbot
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    ssl_certificate /etc/letsencrypt/live/domain.com/fullchain.pem; # managed by Certbot
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    ssl_certificate_key /etc/letsencrypt/live/domain.com/privkey.pem; # managed by Certbot
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    server_name domain.com www.domain.com;
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>    root /var/www/html;
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>    ##
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>    # Nginx Bad Bot Blocker Includes
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>        # REPO: https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>    ##
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>        include /etc/nginx/bots.d/ddos.conf;
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>        include /etc/nginx/bots.d/blockbots.conf;
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>    ##
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>    # Security headers
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>    ##
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>    add_header X-Frame-Options &quot;SAMEORIGIN&quot;;
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>    add_header Strict-Transport-Security &quot;max-age=31536000; includeSubdomains; preload&quot;;
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>        add_header Content-Security-Policy &quot;default-src &#39;self&#39; http: https: data: blob: &#39;unsafe-inline&#39;&quot; always;
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>    proxy_hide_header X-Powered-By;
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a>
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>    index index.php index.html;
+<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a>
+<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>    location / {
+<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a>     limit_except GET HEAD POST { deny all; }
+<a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a>     try_files $uri $uri/ /index.php?$query_string;
+<a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a>    }
+<a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a>
+<a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a>    error_page 404 /custom_404.html;
+<a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a>        location = /custom_404.html {
+<a id="__codelineno-2-41" name="__codelineno-2-41" href="#__codelineno-2-41"></a>                root /usr/share/nginx/html;
+<a id="__codelineno-2-42" name="__codelineno-2-42" href="#__codelineno-2-42"></a>                internal;
+<a id="__codelineno-2-43" name="__codelineno-2-43" href="#__codelineno-2-43"></a>        }
+<a id="__codelineno-2-44" name="__codelineno-2-44" href="#__codelineno-2-44"></a>
+<a id="__codelineno-2-45" name="__codelineno-2-45" href="#__codelineno-2-45"></a>    # pass PHP scripts to FastCGI server
+<a id="__codelineno-2-46" name="__codelineno-2-46" href="#__codelineno-2-46"></a>    #
+<a id="__codelineno-2-47" name="__codelineno-2-47" href="#__codelineno-2-47"></a>    location ~ \.php$ {
+<a id="__codelineno-2-48" name="__codelineno-2-48" href="#__codelineno-2-48"></a>        include snippets/fastcgi-php.conf;
+<a id="__codelineno-2-49" name="__codelineno-2-49" href="#__codelineno-2-49"></a>
+<a id="__codelineno-2-50" name="__codelineno-2-50" href="#__codelineno-2-50"></a>        # With php-fpm (or other unix sockets):
+<a id="__codelineno-2-51" name="__codelineno-2-51" href="#__codelineno-2-51"></a>        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+<a id="__codelineno-2-52" name="__codelineno-2-52" href="#__codelineno-2-52"></a>        # With php-cgi (or other tcp sockets):
+<a id="__codelineno-2-53" name="__codelineno-2-53" href="#__codelineno-2-53"></a>        #fastcgi_pass 127.0.0.1:9000;
+<a id="__codelineno-2-54" name="__codelineno-2-54" href="#__codelineno-2-54"></a>    }
+<a id="__codelineno-2-55" name="__codelineno-2-55" href="#__codelineno-2-55"></a>
+<a id="__codelineno-2-56" name="__codelineno-2-56" href="#__codelineno-2-56"></a>}
+</code></pre></div>
+<h2 id="enabling-configuration-files">Enabling configuration files<a class="headerlink" href="#enabling-configuration-files" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo ln -s /etc/nginx/sites-available/config_file_name /etc/nginx/sites-enabled/
+</code></pre></div>
+<h2 id="extra-configuration">Extra configuration<a class="headerlink" href="#extra-configuration" title="Permanent link">&para;</a></h2>
+<div class="admonition note warning">
+<p class="admonition-title">Hash bucket memory problem</p>
+<p>To avoid hash bucket memory problem when adding additional server names, adjust a single value in the <strong>/etc/nginx/nginx.conf</strong> file.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>...
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>http {
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    ...
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    server_names_hash_bucket_size 64;
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    ...
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>}
 </code></pre></div></p>
-<h3 id="using-msmtp-daemon">Using <a href="https://manpages.ubuntu.com/manpages/focal/en/man1/msmtp.1.html"><code>msmtp</code></a> daemon.<a class="headerlink" href="#using-msmtp-daemon" title="Permanent link">&para;</a></h3>
-<p>Configure driver and sendmail in <code>config/mail.php</code>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>&#39;driver&#39; =&gt; env(&#39;MAIL_DRIVER&#39;, &#39;smtp&#39;),
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>&#39;sendmail&#39; =&gt; &#39;/usr/bin/msmtp -C /etc/msmtprc -a default -t&#39;,
-</code></pre></div></p>
-<h2 id="cache">Cache<a class="headerlink" href="#cache" title="Permanent link">&para;</a></h2>
-<h2 id="logging">Logging<a class="headerlink" href="#logging" title="Permanent link">&para;</a></h2>
+</div>
 
               
             </article>
@@ -1048,7 +1231,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../installation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installation" rel="prev">
+        <a href="../php/" class="md-footer__link md-footer__link--prev" aria-label="Previous: PHP" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1057,20 +1240,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Installation
+              PHP
             </div>
           </div>
         </a>
       
       
         
-        <a href="../publishing/" class="md-footer__link md-footer__link--next" aria-label="Next: Publishing" rel="next">
+        <a href="../../references/" class="md-footer__link md-footer__link--next" aria-label="Next: References" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Publishing
+              References
             </div>
           </div>
           <div class="md-footer__button md-icon">
