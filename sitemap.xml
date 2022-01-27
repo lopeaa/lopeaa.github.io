@@ -2,122 +2,147 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://lopeaa.github.io/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/license/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/certificate-authority/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/certificate-authority/configuration/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/certificate-authority/customization/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/certificate-authority/installation/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/certificate-authority/publishing/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lopeaa.github.io/certificate-authority/api/</loc>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/certificate-authority/code-snippets/controllers/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/certificate-authority/code-snippets/models/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/certificate-authority/code-snippets/views/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/certificate-monitor/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/changelog/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/references/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/references/bluecoat/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/references/checkpoint/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/references/f5-networks/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/references/fortigate/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lopeaa.github.io/scanners/</loc>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lopeaa.github.io/scanners/ofbca/</loc>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lopeaa.github.io/scanners/sca/</loc>
+         <lastmod>2022-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lopeaa.github.io/scanners/tls/</loc>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/setups/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/setups/certbot/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/setups/keepassxc-cli/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/setups/msmtp/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/setups/nginx/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/setups/openpgp-encrypted-password/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lopeaa.github.io/setups/php/</loc>
-         <lastmod>2022-01-23</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

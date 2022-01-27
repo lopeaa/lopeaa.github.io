@@ -10,21 +10,21 @@
         <meta name="author" content="Lopeaa">
       
       
-        <link rel="canonical" href="https://lopeaa.github.io/certificate-authority/code-snippets/views/">
+        <link rel="canonical" href="https://lopeaa.github.io/scanners/tls/">
       
-      <link rel="icon" href="../../../assets/favicon.png">
+      <link rel="icon" href="../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, Lopeaa's Docs-8.1.6">
     
     
       
-        <title>Views - Prototypes</title>
+        <title>Webserver TLS/SSL - Prototypes</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.db47a8c0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.db47a8c0.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
@@ -38,7 +38,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -51,7 +51,7 @@
 
     
     
-  <link rel="stylesheet" href="../../../overrides/assets/stylesheets/main.c1d34250.min.css">
+  <link rel="stylesheet" href="../../overrides/assets/stylesheets/main.c1d34250.min.css">
 
   </head>
   
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#certificate-authority-views" class="md-skip">
+        <a href="#tlsssl" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Prototypes" class="md-header__button md-logo" aria-label="Prototypes" data-md-component="logo">
+    <a href="../.." title="Prototypes" class="md-header__button md-logo" aria-label="Prototypes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
@@ -130,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Views
+              Webserver TLS/SSL
             
           </span>
         </div>
@@ -233,8 +233,36 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../.." class="md-tabs__link">
+    <a href="../.." class="md-tabs__link">
       Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../certificate-authority/installation/" class="md-tabs__link">
+        Certificate Authority
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Certificate Monitor
     </a>
   </li>
 
@@ -250,35 +278,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../installation/" class="md-tabs__link md-tabs__link--active">
-        Certificate Authority
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../../.." class="md-tabs__link">
-      Certificate Monitor
-    </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../scanners/sca/" class="md-tabs__link">
+      <a href="../sca/" class="md-tabs__link md-tabs__link--active">
         Scanners
       </a>
     </li>
@@ -294,7 +294,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../setups/msmtp/" class="md-tabs__link">
+      <a href="../../setups/msmtp/" class="md-tabs__link">
         Setups
       </a>
     </li>
@@ -310,7 +310,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../references/" class="md-tabs__link">
+      <a href="../../references/" class="md-tabs__link">
         References
       </a>
     </li>
@@ -338,7 +338,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Prototypes" class="md-nav__button md-logo" aria-label="Prototypes" data-md-component="logo">
+    <a href="../.." title="Prototypes" class="md-nav__button md-logo" aria-label="Prototypes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
@@ -374,7 +374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -387,14 +387,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
@@ -431,7 +429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/" class="md-nav__link">
+      <a href="../../certificate-authority/installation/" class="md-nav__link">
         Installation
       </a>
     </li>
@@ -445,7 +443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../configuration/" class="md-nav__link">
+      <a href="../../certificate-authority/configuration/" class="md-nav__link">
         Configuration
       </a>
     </li>
@@ -459,7 +457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../publishing/" class="md-nav__link">
+      <a href="../../certificate-authority/publishing/" class="md-nav__link">
         Publishing
       </a>
     </li>
@@ -473,7 +471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../customization/" class="md-nav__link">
+      <a href="../../certificate-authority/customization/" class="md-nav__link">
         Customization
       </a>
     </li>
@@ -485,16 +483,14 @@
               
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
       
       
       
@@ -525,7 +521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../models/" class="md-nav__link">
+      <a href="../../certificate-authority/code-snippets/models/" class="md-nav__link">
         Models
       </a>
     </li>
@@ -537,52 +533,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Views
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../certificate-authority/code-snippets/views/" class="md-nav__link">
         Views
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#dashboard" class="md-nav__link">
-    Dashboard
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -594,7 +549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../controllers/" class="md-nav__link">
+      <a href="../../certificate-authority/code-snippets/controllers/" class="md-nav__link">
         Controllers
       </a>
     </li>
@@ -634,7 +589,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../changelog/">Changelog</a>
+          <a href="../../changelog/">Changelog</a>
           
         </div>
       
@@ -668,7 +623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Certificate Monitor
       </a>
     </li>
@@ -681,12 +636,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -719,7 +676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../scanners/sca/" class="md-nav__link">
+      <a href="../sca/" class="md-nav__link">
         Security Configuration Assessment
       </a>
     </li>
@@ -733,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../scanners/ofbca/" class="md-nav__link">
+      <a href="../ofbca/" class="md-nav__link">
         Out-of-Band Configuration Assessment
       </a>
     </li>
@@ -745,11 +702,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../scanners/tls/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Webserver TLS/SSL
       </a>
+      
     </li>
   
 
@@ -761,7 +728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../scanners/cert-expiry-notification.md" class="md-nav__link">
+      <a href="../cert-expiry-notification.md" class="md-nav__link">
         Certificates expiry notification
       </a>
     </li>
@@ -823,7 +790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setups/msmtp/" class="md-nav__link">
+      <a href="../../setups/msmtp/" class="md-nav__link">
         Msmtp
       </a>
     </li>
@@ -837,7 +804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setups/keepassxc-cli/" class="md-nav__link">
+      <a href="../../setups/keepassxc-cli/" class="md-nav__link">
         Keepassxc-cli
       </a>
     </li>
@@ -851,7 +818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setups/openpgp-encrypted-password/" class="md-nav__link">
+      <a href="../../setups/openpgp-encrypted-password/" class="md-nav__link">
         OpenPGP Encrypted Password
       </a>
     </li>
@@ -865,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setups/certbot/" class="md-nav__link">
+      <a href="../../setups/certbot/" class="md-nav__link">
         Certbot
       </a>
     </li>
@@ -879,7 +846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setups/php/" class="md-nav__link">
+      <a href="../../setups/php/" class="md-nav__link">
         PHP
       </a>
     </li>
@@ -893,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setups/nginx/" class="md-nav__link">
+      <a href="../../setups/nginx/" class="md-nav__link">
         Nginx
       </a>
     </li>
@@ -940,7 +907,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../references/">References</a>
+          <a href="../../references/">References</a>
           
             <label for="__nav_6">
               <span class="md-nav__icon md-icon"></span>
@@ -963,7 +930,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../references/f5-networks/" class="md-nav__link">
+      <a href="../../references/f5-networks/" class="md-nav__link">
         F5 Networks
       </a>
     </li>
@@ -977,7 +944,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../references/bluecoat/" class="md-nav__link">
+      <a href="../../references/bluecoat/" class="md-nav__link">
         BlueCoat
       </a>
     </li>
@@ -991,7 +958,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../references/fortigate/" class="md-nav__link">
+      <a href="../../references/fortigate/" class="md-nav__link">
         FortiGate
       </a>
     </li>
@@ -1005,7 +972,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../references/checkpoint/" class="md-nav__link">
+      <a href="../../references/checkpoint/" class="md-nav__link">
         CheckPoint
       </a>
     </li>
@@ -1039,21 +1006,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#dashboard" class="md-nav__link">
-    Dashboard
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1065,8 +1017,7 @@
               
                 
 
-<h1 id="certificate-authority-views">Certificate Authority Views<a class="headerlink" href="#certificate-authority-views" title="Permanent link">&para;</a></h1>
-<h2 id="dashboard">Dashboard<a class="headerlink" href="#dashboard" title="Permanent link">&para;</a></h2>
+<h1 id="tlsssl">TLS/SSL<a class="headerlink" href="#tlsssl" title="Permanent link">&para;</a></h1>
 
               
             </article>
@@ -1085,7 +1036,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../models/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Models" rel="prev">
+        <a href="../ofbca/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Out-of-Band Configuration Assessment" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1094,20 +1045,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Models
+              Out-of-Band Configuration Assessment
             </div>
           </div>
         </a>
       
       
         
-        <a href="../controllers/" class="md-footer__link md-footer__link--next" aria-label="Next: Controllers" rel="next">
+        <a href="../../setups/msmtp/" class="md-footer__link md-footer__link--next" aria-label="Next: Msmtp" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Controllers
+              Msmtp
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1171,14 +1122,14 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
     
     
   
-      <script src="../../../assets/javascripts/bundle.1514a9a0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.1514a9a0.min.js"></script>
       
     
-  <script src="../../../overrides/assets/javascripts/bundle.de8129cf.min.js"></script>
+  <script src="../../overrides/assets/javascripts/bundle.de8129cf.min.js"></script>
 
   </body>
 </html>
