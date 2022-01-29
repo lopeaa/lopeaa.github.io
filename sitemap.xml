@@ -96,7 +96,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lopeaa.github.io/scripts/ofbca/</loc>
+         <loc>https://lopeaa.github.io/scripts/git/</loc>
+         <lastmod>2022-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lopeaa.github.io/scripts/new-ca/</loc>
          <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -106,12 +111,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lopeaa.github.io/scripts/sca/</loc>
+         <loc>https://lopeaa.github.io/scripts/system-install/</loc>
          <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lopeaa.github.io/scripts/tls/</loc>
+         <loc>https://lopeaa.github.io/scripts/scanners/cen/</loc>
+         <lastmod>2022-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lopeaa.github.io/scripts/scanners/ofbca/</loc>
+         <lastmod>2022-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lopeaa.github.io/scripts/scanners/sca/</loc>
+         <lastmod>2022-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lopeaa.github.io/scripts/scanners/tls/</loc>
          <lastmod>2022-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
