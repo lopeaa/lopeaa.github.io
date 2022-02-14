@@ -17,7 +17,7 @@
     
     
       
-        <title>Overview - Prototypes</title>
+        <title>Installation - Prototypes</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#installation" class="md-skip">
           Skip to content
         </a>
       
@@ -130,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Installation
             
           </span>
         </div>
@@ -479,29 +479,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#git" class="md-nav__link">
     Git
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#download-vm-image" class="md-nav__link">
-    Download VM Image
+      
+        <li class="md-nav__item">
+  <a href="#vm-image" class="md-nav__link">
+    VM image
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#docker-image" class="md-nav__link">
+    Docker image
+  </a>
   
 </li>
       
@@ -1179,10 +1173,9 @@
               
                 
 
-<h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
+<h1 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h1>
 <p>It aims to simplify the management of the Digital Certificates Lifecycle such as creation,renewal and revocation of <a href="https://www">keypairs</a> (csr, private and private keys), signing of csr files created in external systems as well as generating csr by your own private CA. It also includes tools to generate of <a href="https://www">PFX/P12</a> archive, <a href="https://www">keymatch</a>, expiry <a href="https://www">notifications</a>, <a href="https://www">converter</a>, <a href="https://www">decode</a> and more...</p>
-<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<h3 id="git">Git <small>recommended</small><a class="headerlink" href="#git" title="Permanent link">&para;</a></h3>
+<h2 id="git">Git <small>recommended</small><a class="headerlink" href="#git" title="Permanent link">&para;</a></h2>
 <p>Certificate Authority Management Console can be downloaded with <code>git</code>:</p>
 <p>Clone repository:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span> /var/www
@@ -1212,8 +1205,9 @@ Update dependencies:
 Create tables in database:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>php artisan migrate
 </code></pre></div></p>
-<h3 id="download-vm-image">Download VM Image<a class="headerlink" href="#download-vm-image" title="Permanent link">&para;</a></h3>
+<h2 id="vm-image">VM image<a class="headerlink" href="#vm-image" title="Permanent link">&para;</a></h2>
 <p><a class="md-button" href="https://mega.nz">Download image</a></p>
+<h2 id="docker-image">Docker image<a class="headerlink" href="#docker-image" title="Permanent link">&para;</a></h2>
 
               
             </article>
